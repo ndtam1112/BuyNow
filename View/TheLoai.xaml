@@ -1,0 +1,181 @@
+﻿<Window x:Class="View.TheLoai"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        AllowsTransparency="True"
+        Title="TheLoai" Height="740" Width="450">
+    <Grid>
+        <Grid>
+            <Border Height="740" Width="450" CornerRadius="30">
+                <Border.Background>
+                    <ImageBrush ImageSource="image\thumb\thumb-4.jpg" />
+                </Border.Background>
+            </Border>
+        </Grid>
+        <Border>
+
+            <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                              Grid.ColumnSpan="2"
+                              Grid.RowSpan="4">
+                <StackPanel  Orientation="Vertical">
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="230"></RowDefinition>
+                            <RowDefinition Height="230"></RowDefinition>
+                            <RowDefinition Height="230"></RowDefinition>
+                            <RowDefinition Height="230"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBox Text="Ten The Loai" TextAlignment="Center"
+
+                           Grid.ColumnSpan="2"
+                           FontSize="30"></TextBox>
+
+                        <Button Grid.Row="1" VerticalAlignment="Top"
+                                Background="Transparent">
+                            <Image Source="image\SanPham\sweater-1.jpg" Height="150" ></Image>
+                        </Button>
+                        <TextBlock Grid.Row="1" Height="30" FontSize="20"
+                                   Text="ten san pham" TextAlignment="Center"
+                                   Background="Transparent" Margin="-10,150,10,50"></TextBlock>
+                        <TextBlock Grid.Row="1" Height="30" FontSize="20"
+                                   Text="gia" TextAlignment="Center"
+                                   Background="Transparent" Margin="-10,150,10,10"></TextBlock>
+                        <Button Grid.Row="2">
+                        </Button>
+                        <Button Grid.Row="3">
+                        </Button>
+                        <Button Grid.Row="4">
+                        </Button>
+                        <Button Grid.Row="1" Grid.Column="2">
+                        </Button>
+                        <Button Grid.Row="2" Grid.Column="2">
+                        </Button>
+                        <Button Grid.Row="3" Grid.Column="2">
+                        </Button>
+                        <Button Grid.Row="4" Grid.Column="2">
+                        </Button>
+
+                        <Button Height="30" Width="30"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Background="Transparent"
+                        Margin="0,0,10,0"
+                        BorderThickness="0" Grid.Column="1">
+                            <!--Click="Close_Click"-->
+                            <Image Source="image\icon\close-window-2.png" ></Image>
+                        </Button>
+                        <Button Height="30" Width="30"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,40,0"
+                        BorderThickness="0"
+                        Background="Transparent" Grid.Column="1">
+                            <!--Click="Minimize_Click"-->
+                            <Image Source="image\icon\macos-minimize-2.png"></Image>
+                        </Button>
+                        
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+            
+        </Border>
+        <Border Width="400"
+                Height="50"
+                Background="White"
+                CornerRadius="25"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="25,0,25,40"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="3">
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Background="Transparent"
+                            Height="50"
+                            BorderThickness="0"
+                            VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                            Grid.Column="0">
+
+                        <!--Click="New_Click"-->
+
+                        <Image Source="image\icon\new-2.png"></Image>
+                    </Button>
+                    <Button Background="Transparent"
+                            Height="50"
+                            BorderThickness="0"
+                            VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                            Grid.Column="1">
+
+                        <!--Click="Category_Click"-->
+
+                        <Image Source="image\icon\category.png"></Image>
+                    </Button>
+
+                    <Button Background="Transparent"
+                            Height="50"
+                            BorderThickness="0"
+                            VerticalAlignment="Top"
+                        HorizontalAlignment="Center"
+                            Grid.Column="2">
+
+                        <!--Click="Home_Click"-->
+
+                        <Image Source="image\thumb\logo-1.png" />
+                    </Button>
+
+                    <Button Background="Transparent"
+                            Height="50"
+                            BorderThickness="0"
+                            VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                            Grid.Column="3">
+
+                        <!--Click="Search_Click"-->
+
+                        <Image Source="image\icon\search.png" ></Image>
+                    </Button>
+
+                    <Button Background="Transparent"
+                            Height="50"
+                            BorderThickness="0"
+                            VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                            Grid.Column="4">
+
+                        <!--Click="Account_Click"-->
+
+                        <Image Source="image\icon\account.png" ></Image>
+                    </Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
