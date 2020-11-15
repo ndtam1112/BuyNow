@@ -6,21 +6,40 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         WindowStyle="None"
-        Title="item" Height="230" Width="230"
+        Title="item" Height="400" Width="200"
         ResizeMode="NoResize">
     <Grid>
-        <Button Height="230" Width="230" Background="Transparent" BorderThickness="1" BorderBrush="Black" >
-            <Button.Content>
-                <StackPanel>
-                    <Image Source="image\SanPham\sweater-1.jpg" Height="160" ></Image>
-                    <TextBlock Height="30" FontSize="20" 
+        <StackPanel Orientation="Vertical">
+            <Button Grid.Column="1" BorderBrush="Gray" Background="White" Width="150" Height="300">
+                <Image Source="image\SanPham\sweater-1.jpg"></Image>
+            </Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1"
+                        Background="White" BorderThickness="0">
+                    <Image Source="image\SanPham\sweater-1.jpg" Width="30" Height="30"></Image>
+                </Button>
+                <Button Grid.Column="2" Background="White" BorderThickness="0">
+                    <Image Source="image\SanPham\sweater-1.jpg" Width="30" Height="30"></Image>
+                </Button>
+            </Grid>
+            <Button  Background="Transparent">
+                <TextBlock Height="30" FontSize="20"
                                    TextAlignment="Center"
-                                   Background="Transparent" Foreground="#DDE64B4B" FontFamily="Nirmala UI Semilight" ><Run Text="ten san "/><Run Text="pham"/></TextBlock>
-                    <TextBlock Grid.Row="1" Height="30" FontSize="20"
+                                   Foreground="#DDE64B4B" FontFamily="Nirmala UI Semilight" Text="ten san pham">
+                </TextBlock>
+            </Button>
+
+            <TextBlock Grid.Row="1" Height="30" FontSize="20"
                                    Text="gia" TextAlignment="Center"
-                                   Background="Transparent" Foreground="#DDE64B4B" FontFamily="Nirmala UI Semilight"></TextBlock>
-                </StackPanel>
-            </Button.Content>
-        </Button>
+                                   Background="Transparent" Foreground="#DDE64B4B" FontFamily="Nirmala UI Semilight">
+                
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
