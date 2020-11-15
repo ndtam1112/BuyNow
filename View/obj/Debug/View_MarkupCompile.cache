@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-D:\My App\View\obj\Debug\
+D:\New folder\BuyNow\View\obj\Debug\
 View
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\My App\View\App.xaml
 5-197077751
 8-554976
 9-608212750
 15-290646963
 Category.xaml;item.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;TheLoai.xaml;
+=======
+D:\New folder\BuyNow\View\App.xaml
+4-1634206975
+8-554976
+8-1580564554
+15-1709188791
+Category.xaml;item.xaml;MainWindow.xaml;TheLoai.xaml;
+>>>>>>> 3f9ed6c0aff9d955444579dbbbc5ed93e925e9ec
 
 True
 

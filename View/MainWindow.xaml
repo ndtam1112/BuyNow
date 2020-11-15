@@ -28,6 +28,7 @@
                         HorizontalAlignment="Right"
                         Margin="0,5,10,0"
                         BorderThickness="0"  
+<<<<<<< HEAD
                         >
                     <Button.Background>
                             <ImageBrush ImageSource="image\icon\close-window-2.png"/>
@@ -38,15 +39,29 @@
                 </StackPanel>
                 <StackPanel>
                 <Button Height="25" Width="25"
+=======
+                        x:Name="btnClose"
+                        Click="btnClose_Click">
+                    <Image Source="image\icon\close-window-2.png" ></Image>
+                </Button>
+                <Button Height="30" Width="30"
+>>>>>>> 3f9ed6c0aff9d955444579dbbbc5ed93e925e9ec
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         Margin="0,5,40,0"
                         BorderThickness="0"
+<<<<<<< HEAD
                         >
                     <!--Click="Minimize_Click"-->
                     <Button.Background>
                             <ImageBrush ImageSource="image\icon\macos-minimize-2.png"/>
                     </Button.Background>
+=======
+                        Background="Transparent"
+                        x:Name="btnMinimizeWindow"
+                    Click="btnMinimizedWindow_Click">
+                    <Image Source="image\icon\macos-minimize-2.png"></Image>
+>>>>>>> 3f9ed6c0aff9d955444579dbbbc5ed93e925e9ec
                 </Button>
                 </StackPanel>
                 <Border Width="400"
