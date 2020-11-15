@@ -3,6 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         WindowStyle="None"
@@ -27,15 +34,12 @@
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         Margin="0,5,10,0"
-                        BorderThickness="0"  
+                        BorderThickness="0"
                         x:Name="btnClose"
-                        Click="btnClose_Click"
-                        >
-                    <Button.Background>
-                            <ImageBrush ImageSource="image\icon\close-window-2.png"/>
-                    </Button.Background>
-                   
-
+                        Click="btnClose_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image\icon\close-window-2.png" />
+                        </Button.Background>
                     </Button>
                 </StackPanel>
                 <StackPanel>
@@ -45,27 +49,19 @@
                         HorizontalAlignment="Right"
                         Click="btnMinimizedWindow_Click"
                         Margin="0,5,40,0"
-                        BorderThickness="0"
-
-                        >
-                    <!--Click="Minimize_Click"-->
+                        BorderThickness="0">
                         <Button.Background>
-                            <ImageBrush ImageSource="image\icon\macos-minimize-2.png"/>
+                            <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                         </Button.Background>
-                       
-                       
-                    >
-              
-
-                </Button>
+                    </Button>
                 </StackPanel>
                 <Border Width="400"
-                Height="50"
-                Background="White"
-                CornerRadius="25"
-                VerticalAlignment="Bottom"
-                HorizontalAlignment="Center"
-                Margin="25,0,25,40">
+                        Height="50"
+                        Background="White"
+                        CornerRadius="25"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                        Margin="25,0,25,40">
                     <StackPanel Orientation="Vertical">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -85,16 +81,8 @@
                             BorderThickness="0"
                             VerticalAlignment="Center"
                         HorizontalAlignment="Center"
-                            Grid.Column="0"
-                                    >
-                                <!--Click="New_Click"-->
-                                <Image
-                            Source="image\icon\new-2.png"
-                                    
-                               >
-
-                                </Image>
-
+                            Grid.Column="0">
+                                <Image Source="image\icon\new-2.png"></Image>
                             </Button>
                             <Button Background="Transparent"
                             Height="50"
@@ -102,7 +90,6 @@
                             VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                             Grid.Column="1">
-                                <!--Click="Category_Click"-->
                                 <Image Source="image\icon\category.png"></Image>
                             </Button>
 
@@ -112,7 +99,6 @@
                             VerticalAlignment="Top"
                         HorizontalAlignment="Center"
                             Grid.Column="2">
-                                <!--Click="Home_Click"-->
                                 <Image Source="image\thumb\logo-1.png" />
                             </Button>
 
@@ -122,7 +108,6 @@
                             VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                             Grid.Column="3">
-                                <!--Click="Search_Click"-->
                                 <Image Source="image\icon\search.png" ></Image>
                             </Button>
 
@@ -132,7 +117,6 @@
                             VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                             Grid.Column="4">
-                                <!--Click="Account_Click"-->
                                 <Image Source="image\icon\account.png" ></Image>
                             </Button>
                         </Grid>

@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\My App\View\obj\Debug\
+D:\My App\View\obj\Release\
 View
 none
 false
-DEBUG;TRACE
+TRACE
 D:\My App\View\App.xaml
 6-1767712064
 8-554976
@@ -16,5 +16,5 @@ D:\My App\View\App.xaml
 15-290646963
 Category.xaml;item.xaml;Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;TheLoai.xaml;
 
-False
+True
 

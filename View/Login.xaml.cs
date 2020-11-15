@@ -15,28 +15,17 @@ using System.Windows.Shapes;
 namespace View
 {
     /// <summary>
-    /// Interaction logic for SanPhamChiTiet.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class SanPhamChiTiet : Window
+    public partial class Login : Window
     {
-        private SolidColorBrush color
-        {
-            get;set;
-        }
-
-        private String content { get; set; }
-        public SanPhamChiTiet()
+        public Login()
         {
             InitializeComponent();
-         
-            color = new SolidColorBrush(Colors.Red);
-            content = "Kho chiu";
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
-
-        
     }
 }
