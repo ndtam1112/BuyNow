@@ -22,25 +22,33 @@
         </Grid>
         <Border>
             <Grid>
-                <Button Height="30" Width="30"
+                <StackPanel>
+                    <Button Height="25" Width="25"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
-                        Background="Transparent"
-                        Margin="0,0,10,0"
+                        Margin="0,5,10,0"
                         BorderThickness="0"  
                         >
+                    <Button.Background>
+                            <ImageBrush ImageSource="image\icon\close-window-2.png"/>
+                    </Button.Background>
                     <!--Click="Close_Click"-->
-                    <Image Source="image\icon\close-window-2.png" ></Image>
-                </Button>
-                <Button Height="30" Width="30"
+
+                    </Button>
+                </StackPanel>
+                <StackPanel>
+                <Button Height="25" Width="25"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
-                        Margin="0,0,40,0"
+                        Margin="0,5,40,0"
                         BorderThickness="0"
-                        Background="Transparent">
+                        >
                     <!--Click="Minimize_Click"-->
-                    <Image Source="image\icon\macos-minimize-2.png"></Image>
+                    <Button.Background>
+                            <ImageBrush ImageSource="image\icon\macos-minimize-2.png"/>
+                    </Button.Background>
                 </Button>
+                </StackPanel>
                 <Border Width="400"
                 Height="50"
                 Background="White"
