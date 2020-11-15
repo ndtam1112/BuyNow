@@ -27,5 +27,13 @@ namespace View
         {
             DragMove();
         }
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+        private void btnMinimizedWindow_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).WindowState = WindowState.Minimized;
+        }
     }
 }

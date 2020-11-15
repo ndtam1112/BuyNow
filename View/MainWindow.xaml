@@ -28,8 +28,8 @@
                         Background="Transparent"
                         Margin="0,0,10,0"
                         BorderThickness="0"  
-                        >
-                    <!--Click="Close_Click"-->
+                        x:Name="btnClose"
+                        Click="btnClose_Click">
                     <Image Source="image\icon\close-window-2.png" ></Image>
                 </Button>
                 <Button Height="30" Width="30"
@@ -37,8 +37,9 @@
                         HorizontalAlignment="Right"
                         Margin="0,0,40,0"
                         BorderThickness="0"
-                        Background="Transparent">
-                    <!--Click="Minimize_Click"-->
+                        Background="Transparent"
+                        x:Name="btnMinimizeWindow"
+                    Click="btnMinimizedWindow_Click">
                     <Image Source="image\icon\macos-minimize-2.png"></Image>
                 </Button>
                 <Border Width="400"
