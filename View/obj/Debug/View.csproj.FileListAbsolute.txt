@@ -1,82 +1,31 @@
-D:\ShopNow\View\obj\Debug\View.csprojAssemblyReference.cache
-D:\ShopNow\View\obj\Debug\MainWindow.g.cs
-D:\ShopNow\View\obj\Debug\App.g.cs
-D:\ShopNow\View\obj\Debug\View_MarkupCompile.cache
-D:\ShopNow\View\obj\Debug\View_MarkupCompile.lref
-D:\ShopNow\View\obj\Debug\MainWindow.baml
-D:\ShopNow\View\obj\Debug\View.g.resources
-D:\ShopNow\View\obj\Debug\View.Properties.Resources.resources
-D:\ShopNow\View\obj\Debug\View.csproj.GenerateResource.cache
-D:\ShopNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-D:\ShopNow\View\bin\Debug\View.exe.config
-D:\ShopNow\View\bin\Debug\View.exe
-D:\ShopNow\View\bin\Debug\View.pdb
-D:\ShopNow\View\obj\Debug\View.exe
-D:\ShopNow\View\obj\Debug\View.pdb
-D:\ShopNow\View\obj\Debug\Category.g.cs
-D:\ShopNow\View\obj\Debug\Category.baml
-D:\ShopNow\View\obj\Debug\TheLoai.g.cs
-D:\ShopNow\View\obj\Debug\TheLoai.baml
 D:\My App\View\bin\Debug\View.exe.config
 D:\My App\View\bin\Debug\View.exe
 D:\My App\View\bin\Debug\View.pdb
-D:\My App\View\obj\Debug\Category.g.cs
-D:\My App\View\obj\Debug\MainWindow.g.cs
-D:\My App\View\obj\Debug\TheLoai.g.cs
-D:\My App\View\obj\Debug\App.g.cs
-D:\My App\View\obj\Debug\View_MarkupCompile.cache
-D:\My App\View\obj\Debug\View_MarkupCompile.lref
-D:\My App\View\obj\Debug\Category.baml
-D:\My App\View\obj\Debug\MainWindow.baml
-D:\My App\View\obj\Debug\TheLoai.baml
-D:\My App\View\obj\Debug\View.g.resources
-D:\My App\View\obj\Debug\View.Properties.Resources.resources
-D:\My App\View\obj\Debug\View.csproj.GenerateResource.cache
-D:\My App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-D:\My App\View\obj\Debug\View.exe
-D:\My App\View\obj\Debug\View.pdb
 D:\My App\View\bin\Debug\MaterialDesignColors.dll
 D:\My App\View\bin\Debug\MaterialDesignThemes.Wpf.dll
 D:\My App\View\bin\Debug\MaterialDesignColors.pdb
 D:\My App\View\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\My App\View\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\My App\View\obj\Debug\View_Content.g.cs
-D:\My App\View\obj\Debug\App.baml
-D:\My App\View\obj\Debug\View.csproj.CopyComplete
-D:\My App\View\obj\Debug\item.g.cs
-D:\My App\View\obj\Debug\item.baml
-<<<<<<< HEAD
-D:\My App\View\obj\Debug\SanPhamChiTiet.g.cs
-D:\My App\View\obj\Debug\SanPhamChiTiet.baml
 D:\My App\View\obj\Debug\View.csprojAssemblyReference.cache
-=======
-D:\New folder\BuyNow\View\bin\Debug\View.exe.config
-D:\New folder\BuyNow\View\bin\Debug\View.exe
-D:\New folder\BuyNow\View\bin\Debug\View.pdb
-D:\New folder\BuyNow\View\bin\Debug\MaterialDesignColors.dll
-D:\New folder\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\New folder\BuyNow\View\bin\Debug\MaterialDesignColors.pdb
-D:\New folder\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\New folder\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\New folder\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
-D:\New folder\BuyNow\View\obj\Debug\Category.g.cs
-D:\New folder\BuyNow\View\obj\Debug\item.g.cs
-D:\New folder\BuyNow\View\obj\Debug\MainWindow.g.cs
-D:\New folder\BuyNow\View\obj\Debug\TheLoai.g.cs
-D:\New folder\BuyNow\View\obj\Debug\App.g.cs
-D:\New folder\BuyNow\View\obj\Debug\View_Content.g.cs
-D:\New folder\BuyNow\View\obj\Debug\View_MarkupCompile.cache
-D:\New folder\BuyNow\View\obj\Debug\View_MarkupCompile.lref
-D:\New folder\BuyNow\View\obj\Debug\App.baml
-D:\New folder\BuyNow\View\obj\Debug\Category.baml
-D:\New folder\BuyNow\View\obj\Debug\item.baml
-D:\New folder\BuyNow\View\obj\Debug\MainWindow.baml
-D:\New folder\BuyNow\View\obj\Debug\TheLoai.baml
-D:\New folder\BuyNow\View\obj\Debug\View.g.resources
-D:\New folder\BuyNow\View\obj\Debug\View.Properties.Resources.resources
-D:\New folder\BuyNow\View\obj\Debug\View.csproj.GenerateResource.cache
-D:\New folder\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-D:\New folder\BuyNow\View\obj\Debug\View.csproj.CopyComplete
-D:\New folder\BuyNow\View\obj\Debug\View.exe
-D:\New folder\BuyNow\View\obj\Debug\View.pdb
->>>>>>> 3f9ed6c0aff9d955444579dbbbc5ed93e925e9ec
+D:\My App\View\obj\Debug\Category.g.cs
+D:\My App\View\obj\Debug\item.g.cs
+D:\My App\View\obj\Debug\MainWindow.g.cs
+D:\My App\View\obj\Debug\SanPhamChiTiet.g.cs
+D:\My App\View\obj\Debug\TheLoai.g.cs
+D:\My App\View\obj\Debug\App.g.cs
+D:\My App\View\obj\Debug\View_Content.g.cs
+D:\My App\View\obj\Debug\View_MarkupCompile.cache
+D:\My App\View\obj\Debug\View_MarkupCompile.lref
+D:\My App\View\obj\Debug\App.baml
+D:\My App\View\obj\Debug\Category.baml
+D:\My App\View\obj\Debug\item.baml
+D:\My App\View\obj\Debug\MainWindow.baml
+D:\My App\View\obj\Debug\SanPhamChiTiet.baml
+D:\My App\View\obj\Debug\TheLoai.baml
+D:\My App\View\obj\Debug\View.g.resources
+D:\My App\View\obj\Debug\View.Properties.Resources.resources
+D:\My App\View\obj\Debug\View.csproj.GenerateResource.cache
+D:\My App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\My App\View\obj\Debug\View.csproj.CopyComplete
+D:\My App\View\obj\Debug\View.exe
+D:\My App\View\obj\Debug\View.pdb
