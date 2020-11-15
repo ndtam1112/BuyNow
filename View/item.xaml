@@ -1,0 +1,26 @@
+﻿<Window x:Class="View.item"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="item" Height="230" Width="230"
+        ResizeMode="NoResize">
+    <Grid>
+        <Button Height="230" Width="230" Background="Transparent" BorderThickness="1" BorderBrush="Black" >
+            <Button.Content>
+                <StackPanel>
+                    <Image Source="image\SanPham\sweater-1.jpg" Height="160" ></Image>
+                    <TextBlock Height="30" FontSize="20" 
+                                   TextAlignment="Center"
+                                   Background="Transparent" Foreground="#DDE64B4B" FontFamily="Nirmala UI Semilight" ><Run Text="ten san "/><Run Text="pham"/></TextBlock>
+                    <TextBlock Grid.Row="1" Height="30" FontSize="20"
+                                   Text="gia" TextAlignment="Center"
+                                   Background="Transparent" Foreground="#DDE64B4B" FontFamily="Nirmala UI Semilight"></TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>

@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         WindowStyle="None"
@@ -12,30 +13,77 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="Category" Height="740" Width="450">
-    <Grid>
+    <Grid MouseDown="Window_MouseDown">
         <Border>
             <Grid>
                 <ScrollViewer VerticalScrollBarVisibility="Hidden">
                     <StackPanel Orientation="Vertical">
-                        <Button x:Name="TShirt" Height="450" Width="450">
-                            <Image Source="image\category\t-shrit.jpg">
-                            </Image>
+                        <Button x:Name="TShirt" Height="450" Width="450" 
+                                Background="Transparent"
+                                BorderThickness="0"
+                                materialDesign:ButtonAssist.CornerRadius="30,30,0,0"
+                                Padding="0"
+                                MouseDown="Window_MouseDown">
+                            <Button.Content>
+                                <Border Width="450" Height="450"  >
+                                    <StackPanel>
+                                        <Image Source="image\category\t-shirt.jpg" ></Image>
+                                    </StackPanel>
+                                </Border>
+                            </Button.Content>
                         </Button>
-                        <Button x:Name="Jacket" Height="450" Width="450">
-                            <Image Source="image\category\jacket.jpg">
-                            </Image>
+                        <Button x:Name="Jacket" Height="450" Width="450" 
+                                Background="Transparent"
+                                BorderThickness="0"                             
+                                Padding="0"
+                                MouseDown="Window_MouseDown">
+                            <Button.Content>
+                                <Border Width="450" Height="450"  >
+                                    <StackPanel>
+                                        <Image Source="image\category\jacket.jpg" ></Image>
+                                    </StackPanel>
+                                </Border>
+                            </Button.Content>
                         </Button>
-                        <Button x:Name="Sweater" Height="450" Width="450">
-                            <Image Source="image\category\sweater.jpg">
-                            </Image>
+                        <Button x:Name="Sweater" Height="450" Width="450" 
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Padding="0"
+                                MouseDown="Window_MouseDown">
+                            <Button.Content>
+                                <Border Width="450" Height="450"  >
+                                    <StackPanel>
+                                        <Image Source="image\category\sweater.jpg" ></Image>
+                                    </StackPanel>
+                                </Border>
+                            </Button.Content>
                         </Button>
-                        <Button x:Name="Short" Height="450" Width="450">
-                            <Image Source="image\category\short.jpg">
-                            </Image>
+                        <Button x:Name="Pants" Height="450" Width="450" 
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Padding="0"
+                                MouseDown="Window_MouseDown">
+                            <Button.Content>
+                                <Border Width="450" Height="450"  >
+                                    <StackPanel>
+                                        <Image Source="image\category\pants.jpg" ></Image>
+                                    </StackPanel>
+                                </Border>
+                            </Button.Content>
                         </Button>
-                        <Button x:Name="Pants" Height="450" Width="450">
-                            <Image Source="image\category\pants.jpg">
-                            </Image>
+                        <Button x:Name="Short" Height="450" Width="450" 
+                                Background="Transparent"
+                                BorderThickness="0"
+                                materialDesign:ButtonAssist.CornerRadius="0,0,30,30"
+                                Padding="0"
+                                MouseDown="Window_MouseDown">
+                            <Button.Content>
+                                <Border Width="450" Height="450"  >
+                                    <StackPanel>
+                                        <Image Source="image\category\short.jpg" ></Image>
+                                    </StackPanel>
+                                </Border>
+                            </Button.Content>
                         </Button>
                     </StackPanel>
                 </ScrollViewer>

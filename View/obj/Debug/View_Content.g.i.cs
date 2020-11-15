@@ -8,6 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/sanpham/sweater-1.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome.otf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.ttf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.eot")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.woff")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.woff2")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("content/font-awesome.css")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("content/font-awesome.min.css")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.svg")]
 
 
