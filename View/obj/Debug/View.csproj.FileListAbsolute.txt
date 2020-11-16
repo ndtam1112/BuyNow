@@ -30,4 +30,6 @@ D:\My App\View\obj\Debug\View.exe
 D:\My App\View\obj\Debug\View.pdb
 D:\My App\View\obj\Debug\Login.g.cs
 D:\My App\View\obj\Debug\Login.baml
+D:\My App\View\obj\Debug\SignUp.g.cs
+D:\My App\View\obj\Debug\SignUp.baml
 D:\My App\View\obj\Debug\View.csprojAssemblyReference.cache
