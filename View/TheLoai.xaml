@@ -62,14 +62,16 @@
                         <StackPanel Grid.Column="1">
                             <Button Height="25" Width="25"
                         VerticalAlignment="Top"
+                        x:Name="btnClose"
                         HorizontalAlignment="Right"
                         Margin="0,5,10,0"
-                        BorderThickness="0"  
+                        BorderThickness="0" 
+                        Click="btnClose_Click"
                         >
                                 <Button.Background>
                                     <ImageBrush ImageSource="image\icon\close-window-2.png"/>
                                 </Button.Background>
-                                <!--Click="Close_Click"-->
+                               
 
                             </Button>
                         </StackPanel>
@@ -78,9 +80,11 @@
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         Margin="0,5,40,0"
+                        x:Name="btnMinimize"
+                        Click="btnMinimized_Click"
                         BorderThickness="0"
                         >
-                                <!--Click="Minimize_Click"-->
+                               
                                 <Button.Background>
                                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png"/>
                                 </Button.Background>
@@ -140,10 +144,12 @@
                             Height="50"
                             BorderThickness="0"
                             VerticalAlignment="Top"
-                        HorizontalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            x:Name="btnHome"
+                            Click="btnHome_click"
                             Grid.Column="2">
 
-                        <!--Click="Home_Click"-->
+                       
 
                         <Image Source="image\thumb\logo-1.png" />
                     </Button>

@@ -31,9 +31,16 @@ namespace View
         {
             System.Windows.Application.Current.Shutdown();
         }
-        private void btnMinimizedWindow_Click(object sender, RoutedEventArgs e)
+        private void btnMinimized_Click(object sender, RoutedEventArgs e)
         {
             Window.GetWindow(this).WindowState = WindowState.Minimized;
+        }
+
+        private void btnCategory_Click(object sender, RoutedEventArgs e)
+        {
+            TheLoai tl = new TheLoai();
+            this.Visibility = Visibility.Hidden;
+            tl.Show();
         }
     }
 }

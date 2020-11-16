@@ -33,3 +33,37 @@ D:\My App\View\obj\Debug\Login.baml
 D:\My App\View\obj\Debug\SignUp.g.cs
 D:\My App\View\obj\Debug\SignUp.baml
 D:\My App\View\obj\Debug\View.csprojAssemblyReference.cache
+D:\ByNow\BuyNow\View\bin\Debug\View.exe.config
+D:\ByNow\BuyNow\View\bin\Debug\View.exe
+D:\ByNow\BuyNow\View\bin\Debug\View.pdb
+D:\ByNow\BuyNow\View\bin\Debug\MaterialDesignColors.dll
+D:\ByNow\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\ByNow\BuyNow\View\bin\Debug\MaterialDesignColors.pdb
+D:\ByNow\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\ByNow\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\ByNow\BuyNow\View\obj\Debug\Category.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\item.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\Login.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\MainWindow.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\SanPhamChiTiet.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\SignUp.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\TheLoai.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\App.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\View_Content.g.cs
+D:\ByNow\BuyNow\View\obj\Debug\View_MarkupCompile.cache
+D:\ByNow\BuyNow\View\obj\Debug\View_MarkupCompile.lref
+D:\ByNow\BuyNow\View\obj\Debug\App.baml
+D:\ByNow\BuyNow\View\obj\Debug\Category.baml
+D:\ByNow\BuyNow\View\obj\Debug\item.baml
+D:\ByNow\BuyNow\View\obj\Debug\Login.baml
+D:\ByNow\BuyNow\View\obj\Debug\MainWindow.baml
+D:\ByNow\BuyNow\View\obj\Debug\SanPhamChiTiet.baml
+D:\ByNow\BuyNow\View\obj\Debug\SignUp.baml
+D:\ByNow\BuyNow\View\obj\Debug\TheLoai.baml
+D:\ByNow\BuyNow\View\obj\Debug\View.g.resources
+D:\ByNow\BuyNow\View\obj\Debug\View.Properties.Resources.resources
+D:\ByNow\BuyNow\View\obj\Debug\View.csproj.GenerateResource.cache
+D:\ByNow\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\ByNow\BuyNow\View\obj\Debug\View.csproj.CopyComplete
+D:\ByNow\BuyNow\View\obj\Debug\View.exe
+D:\ByNow\BuyNow\View\obj\Debug\View.pdb
