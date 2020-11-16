@@ -67,3 +67,4 @@ D:\ByNow\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\ByNow\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\ByNow\BuyNow\View\obj\Debug\View.exe
 D:\ByNow\BuyNow\View\obj\Debug\View.pdb
+D:\ByNow\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache

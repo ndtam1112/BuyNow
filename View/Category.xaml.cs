@@ -27,5 +27,29 @@ namespace View
         {
             DragMove();
         }
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).WindowState = WindowState.Minimized;
+        }
+
+        private void TShirt_Click(object sender, RoutedEventArgs e)
+        {
+            TheLoai theloai = new TheLoai();
+            this.Visibility = Visibility.Hidden;
+            theloai.Show();
+        }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            mw.Show();
+        }
     }
 }

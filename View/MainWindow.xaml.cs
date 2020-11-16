@@ -38,9 +38,9 @@ namespace View
 
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
-            TheLoai tl = new TheLoai();
+            Category category = new Category();
             this.Visibility = Visibility.Hidden;
-            tl.Show();
+            category.Show();
         }
     }
 }

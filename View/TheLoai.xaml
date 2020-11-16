@@ -71,7 +71,7 @@
                                 <Button.Background>
                                     <ImageBrush ImageSource="image\icon\close-window-2.png"/>
                                 </Button.Background>
-                               
+
 
                             </Button>
                         </StackPanel>
@@ -84,7 +84,7 @@
                         Click="btnMinimized_Click"
                         BorderThickness="0"
                         >
-                               
+
                                 <Button.Background>
                                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png"/>
                                 </Button.Background>
@@ -143,13 +143,13 @@
                     <Button Background="Transparent"
                             Height="50"
                             BorderThickness="0"
-                            VerticalAlignment="Top"
+                            VerticalAlignment="Bottom"
                             HorizontalAlignment="Center"
                             x:Name="btnHome"
                             Click="btnHome_click"
-                            Grid.Column="2">
+                            Grid.Column="2" Margin="3,0">
 
-                       
+
 
                         <Image Source="image\thumb\logo-1.png" />
                     </Button>
