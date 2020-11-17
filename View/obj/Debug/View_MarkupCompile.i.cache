@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\ByNow\BuyNow\View\obj\Debug\
+D:\My App\BuyNow\View\obj\Debug\
 View
 none
 false
 DEBUG;TRACE
-D:\ByNow\BuyNow\View\App.xaml
-71784801626
-8-554976
-12-1919117341
-15-1647921906
-Category.xaml;item.xaml;Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;SignUp.xaml;TheLoai.xaml;
+D:\My App\BuyNow\View\App.xaml
+859904598
+9-1117068031
+131381030649
+15-487733473
+Account.xaml;Category.xaml;item.xaml;Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;SignUp.xaml;TheLoai.xaml;
 
 True
 

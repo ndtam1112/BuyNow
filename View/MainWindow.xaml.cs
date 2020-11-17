@@ -35,7 +35,6 @@ namespace View
         {
             Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
-
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
             Category category = new Category();

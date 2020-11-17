@@ -15,25 +15,17 @@ using System.Windows.Shapes;
 namespace View
 {
     /// <summary>
-    /// Interaction logic for SignUp.xaml
+    /// Interaction logic for Account.xaml
     /// </summary>
-    public partial class SignUp : Window
+    public partial class Account : Window
     {
-        public SignUp()
+        public Account()
         {
             InitializeComponent();
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
-        }
-        private void btnClose_Click(object sender, RoutedEventArgs e)
-        {
-            System.Windows.Application.Current.Shutdown();
-        }
-        private void btnMinimized_Click(object sender, RoutedEventArgs e)
-        {
-            Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
     }
 }

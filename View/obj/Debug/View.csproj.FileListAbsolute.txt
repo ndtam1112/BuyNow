@@ -68,3 +68,40 @@ D:\ByNow\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\ByNow\BuyNow\View\obj\Debug\View.exe
 D:\ByNow\BuyNow\View\obj\Debug\View.pdb
 D:\ByNow\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
+D:\My App\BuyNow\View\bin\Debug\View.exe.config
+D:\My App\BuyNow\View\bin\Debug\View.exe
+D:\My App\BuyNow\View\bin\Debug\View.pdb
+D:\My App\BuyNow\View\bin\Debug\MaterialDesignColors.dll
+D:\My App\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\My App\BuyNow\View\bin\Debug\MaterialDesignColors.pdb
+D:\My App\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\My App\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\My App\BuyNow\View\obj\Debug\Category.g.cs
+D:\My App\BuyNow\View\obj\Debug\item.g.cs
+D:\My App\BuyNow\View\obj\Debug\Login.g.cs
+D:\My App\BuyNow\View\obj\Debug\MainWindow.g.cs
+D:\My App\BuyNow\View\obj\Debug\SanPhamChiTiet.g.cs
+D:\My App\BuyNow\View\obj\Debug\SignUp.g.cs
+D:\My App\BuyNow\View\obj\Debug\TheLoai.g.cs
+D:\My App\BuyNow\View\obj\Debug\App.g.cs
+D:\My App\BuyNow\View\obj\Debug\View_Content.g.cs
+D:\My App\BuyNow\View\obj\Debug\View_MarkupCompile.cache
+D:\My App\BuyNow\View\obj\Debug\View_MarkupCompile.lref
+D:\My App\BuyNow\View\obj\Debug\App.baml
+D:\My App\BuyNow\View\obj\Debug\Category.baml
+D:\My App\BuyNow\View\obj\Debug\item.baml
+D:\My App\BuyNow\View\obj\Debug\Login.baml
+D:\My App\BuyNow\View\obj\Debug\MainWindow.baml
+D:\My App\BuyNow\View\obj\Debug\SanPhamChiTiet.baml
+D:\My App\BuyNow\View\obj\Debug\SignUp.baml
+D:\My App\BuyNow\View\obj\Debug\TheLoai.baml
+D:\My App\BuyNow\View\obj\Debug\View.g.resources
+D:\My App\BuyNow\View\obj\Debug\View.Properties.Resources.resources
+D:\My App\BuyNow\View\obj\Debug\View.csproj.GenerateResource.cache
+D:\My App\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\My App\BuyNow\View\obj\Debug\View.csproj.CopyComplete
+D:\My App\BuyNow\View\obj\Debug\View.exe
+D:\My App\BuyNow\View\obj\Debug\View.pdb
+D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
+D:\My App\BuyNow\View\obj\Debug\Account.g.cs
+D:\My App\BuyNow\View\obj\Debug\Account.baml
