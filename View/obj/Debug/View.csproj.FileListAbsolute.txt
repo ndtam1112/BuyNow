@@ -102,6 +102,6 @@ D:\My App\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\My App\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\My App\BuyNow\View\obj\Debug\View.exe
 D:\My App\BuyNow\View\obj\Debug\View.pdb
-D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
 D:\My App\BuyNow\View\obj\Debug\Account.g.cs
 D:\My App\BuyNow\View\obj\Debug\Account.baml
+D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
