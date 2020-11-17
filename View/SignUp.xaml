@@ -22,16 +22,9 @@
     <Grid>
         <Grid>
             <Border Height="740" Width="450" >
+                <MediaElement Source="image\thumb\sign-up-thumb-2.mp4"></MediaElement>
             </Border>
         </Grid>
-        <Button materialDesign:ButtonAssist.CornerRadius="120"
-                    Width="200" Height="200" Margin="195,0,0,0" Background="DodgerBlue"
-                    BorderThickness="0" Grid.Column="1">
-        </Button>
-        <Button materialDesign:ButtonAssist.CornerRadius="120"
-                    Width="200" Height="200" Margin="-60,-30,0,0" Background="Beige"
-                    BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top">
-        </Button>
         <StackPanel>
             <Button Height="25" Width="25"
                         VerticalAlignment="Top"

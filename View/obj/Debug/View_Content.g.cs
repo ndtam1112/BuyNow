@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/sign-up-thumb-2.mp4")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome.otf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.ttf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/fontawesome-webfont.eot")]

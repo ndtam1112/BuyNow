@@ -41,5 +41,21 @@ namespace View
             this.Visibility = Visibility.Hidden;
             category.Show();
         }
+        private void btnNew_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnMe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
