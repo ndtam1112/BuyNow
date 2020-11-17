@@ -30,12 +30,13 @@ namespace View
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Application.Current.Shutdown();
+            Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Window.GetWindow(this).WindowState = WindowState.Minimized;
+            System.Windows.Application.Current.Shutdown();
+
         }
 
         private void TShirt_Click(object sender, RoutedEventArgs e)

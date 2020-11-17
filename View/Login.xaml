@@ -45,7 +45,7 @@
                         Margin="0,5,40,0"
                         BorderThickness="0"
 					    x:Name="btnMinimize"
-					    Click="btnMinimized_Click">
+					    Click="btnMinimize_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                 </Button.Background>

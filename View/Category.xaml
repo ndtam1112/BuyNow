@@ -136,7 +136,7 @@
                         </Button.Background>
                     </Button>
                 </StackPanel>
-                <Border Width="400"
+                <Border Width="400" x:Name="bdButton"
                 Height="50"
                 Background="White"
                 CornerRadius="25"
