@@ -43,42 +43,59 @@
                     <Setter Property="BorderThickness" Value="0,0,0,1" />
                 </Style>
             </StackPanel.Resources>
-            
 
             <TextBlock x:Name="Ten_Nguoi_Dung" Text="Đình Tâm"
                        FontSize="80" FontWeight="UltraBold" Margin="20"></TextBlock>
             <TextBlock Text="My Account" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-            <TextBlock Text="Purchase History" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-
-            
-            <TextBlock Text="Change Password" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-            <StackPanel>
+            <StackPanel Margin="20">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition Width="150"></ColumnDefinition>
+                        <ColumnDefinition Width="350"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="Old Password:"></TextBlock>
-                    <TextBox Text="{Binding Username}" Grid.Column="1" ></TextBox>
+                    <TextBlock Text="Phone:"></TextBlock>
+                    <TextBox Text="{Binding Phone}" Grid.Column="1" ></TextBox>
+                    <TextBlock Text="Address:" Grid.Row="1"></TextBlock>
+                    <TextBox Padding="5" Grid.Row="1" Grid.Column="1"></TextBox>
+                    <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
+                    FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="2" 
+                            materialDesign:ButtonAssist.CornerRadius="20" BorderBrush="{StaticResource MaterialDesignFlatButtonClick}"/>
                 </Grid>
             </StackPanel>
-            <DockPanel>
-                
-            </DockPanel>
-            <DockPanel>
-                <TextBlock Text="Password:"></TextBlock>
-                <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
-                             PasswordChar="{Binding Password}" Margin="15,10,10,10"></PasswordBox>
-            </DockPanel>
-            <DockPanel>
-                <TextBlock Text="Confirm Password:"></TextBlock>
-                <TextBox Margin="22,10,10,10"></TextBox>
-            </DockPanel>
+            <TextBlock Text="Purchase History" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+            <TextBlock Text="Change Password" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+            <StackPanel Margin="20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"></ColumnDefinition>
+                        <ColumnDefinition Width="350"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Old Password:"></TextBlock>
+                    <TextBox Grid.Column="1" ></TextBox>
+                    <TextBlock Text="Password:" Grid.Row="1"></TextBlock>
+                    <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
+                             Padding="5" Grid.Row="1" Grid.Column="1"></PasswordBox>
+                    <TextBlock Text="Confirm Password:" Grid.Row="2"></TextBlock>
+                    <TextBox Padding="5" Grid.Row="2" Grid.Column="1"></TextBox>
+                    <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
+                    FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="3" 
+                            materialDesign:ButtonAssist.CornerRadius="20"/>
+                </Grid>
+            </StackPanel>
+            
         </StackPanel>
     </Grid>
 </Window>
