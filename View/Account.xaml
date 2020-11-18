@@ -19,83 +19,134 @@
         AllowsTransparency="True"
         Title="Account" Height="621" Width="1000">
     <Grid>
-        <Border CornerRadius="30">
-            <Border.Background>
-                <ImageBrush ImageSource="image\thumb\account-thumb.jpg"></ImageBrush>
-            </Border.Background>
-        </Border>
+        <Grid>
+            <Border CornerRadius="30">
+                <Border.Background>
+                    <ImageBrush ImageSource="image\thumb\account-thumb.jpg"></ImageBrush>
+                </Border.Background>
+            </Border>
+        </Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <StackPanel Margin="20">
+                <StackPanel.Resources>
+                    <Style TargetType="DockPanel">
+                        <Setter Property="Height" Value="60" />
+                        <Setter Property="Width" Value="480" />
+                        <Setter Property="HorizontalAlignment" Value="Left" />
+                    </Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="VerticalAlignment" Value="Center" />
+                        <Setter Property="FontSize" Value="15" />
+                    </Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="FontSize" Value="15" />
+                        <Setter Property="Padding" Value="15"/>
+                        <Setter Property="BorderBrush" Value="Gray" />
+                        <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        <Setter Property="Background" Value="Transparent" />
+                    </Style>
+                </StackPanel.Resources>
 
-        <StackPanel Margin="20">
-            <StackPanel.Resources>
-                <Style TargetType="DockPanel">
-                    <Setter Property="Height" Value="60" />
-                    <Setter Property="Width" Value="480" />
-                    <Setter Property="HorizontalAlignment" Value="Left" />
-                </Style>
-                <Style TargetType="TextBlock">
-                    <Setter Property="VerticalAlignment" Value="Center" />
-                    <Setter Property="FontSize" Value="15" />
-                </Style>
-                <Style TargetType="TextBox">
-                    <Setter Property="FontSize" Value="15" />
-                    <Setter Property="Padding" Value="5" />
-                    <Setter Property="BorderBrush" Value="Gray" />
-                    <Setter Property="BorderThickness" Value="0,0,0,1" />
-                </Style>
-            </StackPanel.Resources>
-
-            <TextBlock x:Name="Ten_Nguoi_Dung" Text="Đình Tâm"
+                <TextBlock x:Name="Ten_Nguoi_Dung" Text="Đình Tâm"
                        FontSize="80" FontWeight="UltraBold" Margin="20"></TextBlock>
-            <TextBlock Text="My Account" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-            <StackPanel Margin="20">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150"></ColumnDefinition>
-                        <ColumnDefinition Width="350"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="40"></RowDefinition>
-                        <RowDefinition Height="40"></RowDefinition>
-                        <RowDefinition Height="60"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Phone:"></TextBlock>
-                    <TextBox Text="{Binding Phone}" Grid.Column="1" ></TextBox>
-                    <TextBlock Text="Address:" Grid.Row="1"></TextBlock>
-                    <TextBox Padding="5" Grid.Row="1" Grid.Column="1"></TextBox>
-                    <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
-                    FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="2" 
-                            materialDesign:ButtonAssist.CornerRadius="20" BorderBrush="{StaticResource MaterialDesignFlatButtonClick}"/>
-                </Grid>
-            </StackPanel>
-            <TextBlock Text="Purchase History" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-            <TextBlock Text="Change Password" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-            <StackPanel Margin="20">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150"></ColumnDefinition>
-                        <ColumnDefinition Width="350"></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="40"></RowDefinition>
-                        <RowDefinition Height="40"></RowDefinition>
-                        <RowDefinition Height="40"></RowDefinition>
-                        <RowDefinition Height="60"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Old Password:"></TextBlock>
-                    <TextBox Grid.Column="1" ></TextBox>
-                    <TextBlock Text="Password:" Grid.Row="1"></TextBlock>
-                    <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
+                <TextBlock Text="My Account" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+                <StackPanel Margin="20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="350"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="70"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Phone:"></TextBlock>
+                        <TextBox Text="{Binding Phone}" Grid.Column="1" ></TextBox>
+                        <TextBlock Text="Address:" Grid.Row="1"></TextBlock>
+                        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+                        <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
+                    FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="2"
+                            materialDesign:ButtonAssist.CornerRadius="20" BorderBrush="{StaticResource MaterialDesignFlatButtonClick}" />
+                    </Grid>
+                </StackPanel>
+                <TextBlock Text="Purchase History" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+                <ScrollViewer Width="500" HorizontalAlignment="Left">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ListView>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <DataTemplate.Triggers>
+                                    </DataTemplate.Triggers>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </ScrollViewer>
+
+                <TextBlock Text="Change Password" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+                <StackPanel Margin="20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="350"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="70"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Old Password:"></TextBlock>
+                        <TextBox Grid.Column="1" ></TextBox>
+                        <TextBlock Text="Password:" Grid.Row="1"></TextBlock>
+                        <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
                              Padding="5" Grid.Row="1" Grid.Column="1"></PasswordBox>
-                    <TextBlock Text="Confirm Password:" Grid.Row="2"></TextBlock>
-                    <TextBox Padding="5" Grid.Row="2" Grid.Column="1"></TextBox>
-                    <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
-                    FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="3" 
-                            materialDesign:ButtonAssist.CornerRadius="20"/>
-                </Grid>
+                        <TextBlock Text="Confirm Password:" Grid.Row="2"></TextBlock>
+                        <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
+                             Padding="5" Grid.Row="2" Grid.Column="1"></PasswordBox>
+                        <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
+                    FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="3"
+                            materialDesign:ButtonAssist.CornerRadius="20" BorderBrush="{StaticResource MaterialDesignFlatButtonClick}" />
+                    </Grid>
+                </StackPanel>
             </StackPanel>
-            
+        </ScrollViewer>
+        <!--#region Basic Button-->
+        <StackPanel>
+            <Button Height="25" Width="25"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Margin="0,5,10,0"
+                    materialDesign:ButtonAssist.CornerRadius="20"
+                    BorderBrush="{StaticResource MaterialDesignFlatButtonClick}"
+                        x:Name="btnClose"
+                        Click="btnClose_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="image\icon\close-window-2.png" />
+                </Button.Background>
+            </Button>
         </StackPanel>
+        <StackPanel>
+            <Button Height="25" Width="25"
+                        x:Name="btnMinimize"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Click="btnMinimized_Click"
+                        Margin="0,5,40,0"
+                        materialDesign:ButtonAssist.CornerRadius="20"
+                    BorderBrush="{StaticResource MaterialDesignFlatButtonClick}">
+                <Button.Background>
+                    <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <!--#endregion-->
     </Grid>
 </Window>
