@@ -4,12 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.Foreground="{DynamicResource MaterialDesignLightForeground}"
         TextElement.FontWeight="Regular"
-        TextElement.FontSize="13"
+        TextElement.FontSize="30"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         WindowStyle="None"
@@ -20,6 +19,66 @@
         AllowsTransparency="True"
         Title="Account" Height="621" Width="1000">
     <Grid>
-        
+        <Border CornerRadius="30">
+            <Border.Background>
+                <ImageBrush ImageSource="image\thumb\account-thumb.jpg"></ImageBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel Margin="20">
+            <StackPanel.Resources>
+                <Style TargetType="DockPanel">
+                    <Setter Property="Height" Value="60" />
+                    <Setter Property="Width" Value="480" />
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                </Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                    <Setter Property="FontSize" Value="15" />
+                </Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="Padding" Value="5" />
+                    <Setter Property="BorderBrush" Value="Gray" />
+                    <Setter Property="BorderThickness" Value="0,0,0,1" />
+                </Style>
+            </StackPanel.Resources>
+            
+
+            <TextBlock x:Name="Ten_Nguoi_Dung" Text="Đình Tâm"
+                       FontSize="80" FontWeight="UltraBold" Margin="20"></TextBlock>
+            <TextBlock Text="My Account" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+            <TextBlock Text="Purchase History" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+
+            
+            <TextBlock Text="Change Password" FontSize="30" FontWeight="ExtraBold"></TextBlock>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Old Password:"></TextBlock>
+                    <TextBox Text="{Binding Username}" Grid.Column="1" ></TextBox>
+                </Grid>
+            </StackPanel>
+            <DockPanel>
+                
+            </DockPanel>
+            <DockPanel>
+                <TextBlock Text="Password:"></TextBlock>
+                <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
+                             PasswordChar="{Binding Password}" Margin="15,10,10,10"></PasswordBox>
+            </DockPanel>
+            <DockPanel>
+                <TextBlock Text="Confirm Password:"></TextBlock>
+                <TextBox Margin="22,10,10,10"></TextBox>
+            </DockPanel>
+        </StackPanel>
     </Grid>
 </Window>

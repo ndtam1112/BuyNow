@@ -22,7 +22,7 @@
     <Grid>
         <Grid>
             <Border>
-                <MediaElement Source="image\thumb\sign-up-thumb-2.mp4"></MediaElement>
+                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\sign-up-thumb-2.mp4"></MediaElement>
             </Border>
         </Grid>
         <StackPanel>
@@ -109,7 +109,8 @@
 				    Content="Sign Up" FontSize="20" Height="60" Width="145"
                     materialDesign:ButtonAssist.CornerRadius="0,30,30,0" Background="WhiteSmoke"
                     BorderThickness="2" Foreground="Red" BorderBrush="DarkGray"
-                    Margin="0,60,0,0" HorizontalAlignment="Left" FontFamily="Montserrat" FontWeight="Bold">
+                    Margin="0,60,0,0" HorizontalAlignment="Left" FontFamily="Montserrat" 
+                FontWeight="Bold" >
             </Button>
         </StackPanel>
     </Grid>

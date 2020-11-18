@@ -35,5 +35,15 @@ namespace View
         {
             Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
+
+        private void btnWantSignin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

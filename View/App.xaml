@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:View"
 
-             StartupUri="Login.xaml">
+             StartupUri="Account.xaml">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -12,6 +12,11 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="Style/Buttons.xaml"/>
+                <ResourceDictionary Source="Style/Colors.xaml"/>
+                <ResourceDictionary Source="Style/Windows.xaml"/>
+                <ResourceDictionary Source="Style/Texts.xaml"/>
+                <ResourceDictionary Source="Style/Fonts.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

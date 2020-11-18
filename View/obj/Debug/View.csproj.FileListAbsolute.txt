@@ -105,3 +105,8 @@ D:\My App\BuyNow\View\obj\Debug\View.pdb
 D:\My App\BuyNow\View\obj\Debug\Account.g.cs
 D:\My App\BuyNow\View\obj\Debug\Account.baml
 D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
+D:\My App\BuyNow\View\obj\Debug\Style\Texts.baml
+D:\My App\BuyNow\View\obj\Debug\Style\Colors.baml
+D:\My App\BuyNow\View\obj\Debug\Style\Windows.baml
+D:\My App\BuyNow\View\obj\Debug\Style\Buttons.baml
+D:\My App\BuyNow\View\obj\Debug\Style\Fonts.baml
