@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\My App\BuyNow\View\App.xaml
-131250747319
+141446803045
 9-1117068031
-131381030649
+14605725156
 15-487733473
-Account.xaml;Category.xaml;item.xaml;Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;SignUp.xaml;Style\Texts.xaml;Style\Colors.xaml;Style\Windows.xaml;Style\Buttons.xaml;Style\Fonts.xaml;TheLoai.xaml;
+Account.xaml;Category.xaml;GioHang.xaml;item.xaml;Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;SignUp.xaml;Style\Texts.xaml;Style\Colors.xaml;Style\Windows.xaml;Style\Buttons.xaml;Style\Fonts.xaml;TheLoai.xaml;
 
-True
+False
 

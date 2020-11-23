@@ -27,6 +27,13 @@ namespace View
         {
             DragMove();
         }
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #region Close, Minimize and 4 Button Mặc Định
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
@@ -35,16 +42,25 @@ namespace View
         {
             Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void btnHome_click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mw = new MainWindow();
+            Category category = new Category();
             this.Visibility = Visibility.Hidden;
-            mw.Show();
+            category.Show();
         }
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnMe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #endregion
+
     }
 }

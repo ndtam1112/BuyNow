@@ -148,5 +148,68 @@
             </Button>
         </StackPanel>
         <!--#endregion-->
+        <!--#region 4 Button Mặc định -->
+        <Border Width="400"
+                        Height="50"
+                        Background="White"
+                        CornerRadius="25"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                        Margin="25,0,25,40">
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Background="Transparent"
+                                Height="50"
+                                x:Name="btnCategory"
+                                BorderThickness="0"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Grid.Column="1"
+                                Click="btnCategory_Click" Margin="3,0">
+                        <Image Source="image\icon\category.png"></Image>
+                    </Button>
+                    <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+							    x:Name="btnHome"
+							    Click ="btnHome_Click">
+                        <Image Source="image\thumb\logo-1.png" Opacity="10"/>
+                    </Button>
+                    <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Grid.Column="2"
+								x:Name="btnSearch"
+								Click="btnSearch_Click">
+                        <Image Source="image\icon\search.png" ></Image>
+                    </Button>
+                    <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Grid.Column="3"
+								x:Name="btnMe"
+								Click="btnMe_Click">
+                        <Image Source="image\icon\account.png" ></Image>
+                    </Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+        <!--#endregion-->
     </Grid>
 </Window>

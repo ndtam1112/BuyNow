@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace View
 {
     /// <summary>
@@ -27,6 +28,7 @@ namespace View
         {
             DragMove();
         }
+        #region Close, Minimize and 4 Button Mặc Định
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
@@ -35,5 +37,24 @@ namespace View
         {
             Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
+        private void btnCategory_Click(object sender, RoutedEventArgs e)
+        {
+            Category category = new Category();
+            this.Visibility = Visibility.Hidden;
+            category.Show();
+        }
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnMe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

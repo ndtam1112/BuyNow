@@ -80,6 +80,9 @@
     <Compile Include="Category.xaml.cs">
       <DependentUpon>Category.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GioHang.xaml.cs">
+      <DependentUpon>GioHang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="item.xaml.cs">
       <DependentUpon>item.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,7 @@
     <Resource Include="image\icon\icon-ava.ico" />
     <Resource Include="icon-ava.ico" />
     <Resource Include="image\thumb\account-thumb.jpg" />
+    <Resource Include="image\thumb\san-pham-chi-tiet.jpg" />
     <Content Include="image\thumb\sign-up-thumb-2.mp4" />
     <Resource Include="image\category\bag.jpg" />
     <Resource Include="image\icon\right.png" />
@@ -220,6 +224,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Category.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GioHang.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

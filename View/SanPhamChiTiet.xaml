@@ -23,129 +23,92 @@
         <Grid>
             <Border CornerRadius="30">
                 <Border.Background>
-                    <ImageBrush ImageSource="image\thumb\thumb-4.jpg" />
+                    <ImageBrush ImageSource="image\thumb\san-pham-chi-tiet.jpg" />
                 </Border.Background>
             </Border>
         </Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Border Width="480" Height="480" BorderThickness="2" 
+        <StackPanel Margin="40,40,0,0" HorizontalAlignment="Left">
+            <Border Width="380" Height="380" BorderThickness="2"
                         BorderBrush="Black" Background="White">
-                    <Image Source="image\SanPham\sweater-1.jpg"></Image>
-                </Border>
-
-                <TextBlock Text="ten san pham" TextAlignment="Center"
-                       FontSize="80" FontFamily="Nirmala UI Semilight"
-                               Grid.Column="1"></TextBlock>
-                <TextBlock Text="gia" TextAlignment="Center"
-                       FontSize="30" FontFamily="Nirmala UI Semilight" Grid.Column="1"></TextBlock>
-                <TextBlock Text="Màu sắc" FontSize="30" Grid.Column="1"></TextBlock>
-                <StackPanel Orientation="Horizontal" Grid.Column="1">
-                    <Button Background="Red"></Button>
-                    <Button Margin="5,0,0,0"></Button>
-                </StackPanel>
-                <TextBlock Text="Size" TextAlignment="Left"
-                       FontSize="30" FontFamily="Nirmala UI Semilight" Grid.Column="1"></TextBlock>
-                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Grid.Column="1">
-                    <Button Background="Transparent" BorderThickness="1" BorderBrush="Gray">
-                        <TextBlock Text="S" Foreground="#DD040303" FontSize="20"
+                <Image Source="image\SanPham\sweater-1.jpg"></Image>
+            </Border>
+        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Column="1">
+                <StackPanel>
+                    <TextBlock Text="ten san pham" TextAlignment="Center"
+                       FontSize="80" FontFamily="Nirmala UI Semilight"></TextBlock>
+                    <TextBlock Text="gia" TextAlignment="Center"
+                       FontSize="30" FontFamily="Nirmala UI Semilight" ></TextBlock>
+                    <TextBlock Text="Màu sắc" FontSize="30"></TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1">
+                        <Button Background="Red"></Button>
+                        <Button Margin="5,0,0,0"></Button>
+                    </StackPanel>
+                    <TextBlock Text="Size" TextAlignment="Left"
+                       FontSize="30" FontFamily="Nirmala UI Semilight" ></TextBlock>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Button Background="Transparent" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock Text="S" Foreground="#DD040303" FontSize="20"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"></TextBlock>
-                    </Button>
-                    <Button Background="Transparent" Margin="5,0,0,0" BorderThickness="1" BorderBrush="Gray">
-                        <TextBlock Text="M" Foreground="#DD040303" FontSize="20"
+                        </Button>
+                        <Button Background="Transparent" Margin="5,0,0,0" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock Text="M" Foreground="#DD040303" FontSize="20"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"></TextBlock>
-                    </Button>
-                    <Button Background="Transparent" Margin="5,0,0,0" BorderThickness="1" BorderBrush="Gray">
-                        <TextBlock Text="L" Foreground="#DD040303" FontSize="20"
+                        </Button>
+                        <Button Background="Transparent" Margin="5,0,0,0" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock Text="L" Foreground="#DD040303" FontSize="20"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"></TextBlock>
-                    </Button>
-                    <Button Background="Transparent" Margin="5,0,0,0" BorderThickness="1" BorderBrush="Gray">
-                        <TextBlock Text="XL" Foreground="#DD040303" FontSize="20"
+                        </Button>
+                        <Button Background="Transparent" Margin="5,0,0,0" BorderThickness="1" BorderBrush="Gray">
+                            <TextBlock Text="XL" Foreground="#DD040303" FontSize="20"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"></TextBlock>
-                    </Button>
-                </StackPanel>
-                <StackPanel  Margin="0,10,0,0" Grid.Column="1"
+                        </Button>
+                    </StackPanel>
+                    <StackPanel  Margin="0,10,0,0"
                             Height="32" Orientation="Horizontal">
-                    <Button BorderBrush="Gray"
+                        <Button BorderBrush="Gray"
                             Height="32" Width="32">
-                        <Button.Background>
-                            <ImageBrush ImageSource="image\icon\minus.png"></ImageBrush>
-                        </Button.Background>
-                    </Button>
-                    <TextBlock Text="" Height="32" Width="70" ></TextBlock>
-                    <Button BorderBrush="Gray"
+                            <Button.Background>
+                                <ImageBrush ImageSource="image\icon\minus.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                        <TextBlock Text="" Height="32" Width="70" ></TextBlock>
+                        <Button BorderBrush="Gray"
                             Height="32" Width="32">
-                        <Button.Background>
-                            <ImageBrush ImageSource="image\icon\plus.png"></ImageBrush>
-                        </Button.Background>
-                    </Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Grid.Column="1">
-                    <Button Margin="15,10,15,10" Height="50" materialDesign:ButtonAssist.CornerRadius="7"
+                            <Button.Background>
+                                <ImageBrush ImageSource="image\icon\plus.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Grid.Column="1">
+                        <Button Margin="15,10,15,10" Height="50" materialDesign:ButtonAssist.CornerRadius="7"
                             Background="AliceBlue" BorderThickness="1" Foreground="Gray"  BorderBrush="Gray">
-                        <StackPanel Orientation="Horizontal">
-                            <Image Stretch="UniformToFill" Source="image\icon\buy.png"></Image>
-                            <TextBlock Text="Thêm Vào Giỏ Hàng"
+                            <StackPanel Orientation="Horizontal">
+                                <Image Stretch="UniformToFill" Source="image\icon\buy.png"></Image>
+                                <TextBlock Text="Thêm Vào Giỏ Hàng"
                                        VerticalAlignment="Center" HorizontalAlignment="Center"
                                        Margin="5,0,0,0" FontSize="20" FontFamily="Nirmala UI Semilight"></TextBlock>
-                        </StackPanel>
-                    </Button>
-                    <Button Margin="15,10,15,10" Height="50"
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="15,10,15,10" Height="50"
                             materialDesign:ButtonAssist.CornerRadius="7"
                             Background="Gray" BorderThickness="1" Foreground="AliceBlue"
                             BorderBrush="DarkGray">
-                        <TextBlock Text="Mua Ngay"
+                            <TextBlock Text="Mua Ngay"
                                    VerticalAlignment="Center" HorizontalAlignment="Center"
                                    Margin="5,0,0,0" FontSize="20" FontFamily="Nirmala UI Semilight"></TextBlock>
-                    </Button>
-                </StackPanel>
-                <Grid Margin="5,10,5,5" Grid.Column="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="image\icon\transit.png" Width="50"></Image>
-                        <TextBlock Text="Ship COD toàn quốc" Margin="5,0,0,0" FontSize="20"
-                                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   FontFamily="Nirmala UI Semilight"></TextBlock>
+                        </Button>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Column="1">
-                        <Image Source="image\icon\gift.png" Width="35"></Image>
-                        <TextBlock Text="Freeship đơn hàng từ 500.000" Margin="5,0,0,0" FontSize="20"
-                                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   FontFamily="Nirmala UI Semilight"></TextBlock>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,5,0,0">
-                        <Image Source="image\icon\like.png" Width="35"></Image>
-                        <TextBlock Text="Hoàn đổi đảm bảo" Margin="5,0,0,0" FontSize="20"
-                                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   FontFamily="Nirmala UI Semilight"></TextBlock>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="0,5,0,0">
-                        <Image Source="image\icon\calendar.png" Width="35"></Image>
-                        <TextBlock Text="Ship Hà Nội theo giờ hẹn" Margin="5,0,0,0" FontSize="20"
-                                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   FontFamily="Nirmala UI Semilight"></TextBlock>
-                    </StackPanel>
-                </Grid>
-                <TextBlock Grid.Column="1" Text="Ngại gì không mua thêm:" FontSize="20" Margin="0,10,0,0" FontFamily="Nirmala UI Semilight"></TextBlock>
-                <StackPanel Margin="0,5,0,0" Grid.Column="1">
-                    <Grid>
+                    <Grid Margin="5,10,5,5" Grid.Column="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
@@ -154,14 +117,52 @@
                             <RowDefinition></RowDefinition>
                             <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
-                        <Border Grid.Row="1" Width="200" Height="400" />
-                        <Border Grid.Row="1" Grid.Column="2"  Width="200" Height="400"></Border>
-                        <Border Grid.Row="0" Width="200" Height="400"></Border>
-                        <Border Grid.Row="0" Grid.Column="2"  Width="200" Height="400"></Border>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="image\icon\transit.png" Width="50"></Image>
+                            <TextBlock Text="Ship COD toàn quốc" Margin="5,0,0,0" FontSize="20"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   FontFamily="Nirmala UI Semilight"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Column="1">
+                            <Image Source="image\icon\gift.png" Width="35"></Image>
+                            <TextBlock Text="Freeship đơn hàng từ 500.000" Margin="5,0,0,0" FontSize="20"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   FontFamily="Nirmala UI Semilight"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,5,0,0">
+                            <Image Source="image\icon\like.png" Width="35"></Image>
+                            <TextBlock Text="Hoàn đổi đảm bảo" Margin="5,0,0,0" FontSize="20"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   FontFamily="Nirmala UI Semilight"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="0,5,0,0">
+                            <Image Source="image\icon\calendar.png" Width="35"></Image>
+                            <TextBlock Text="Ship Hà Nội theo giờ hẹn" Margin="5,0,0,0" FontSize="20"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   FontFamily="Nirmala UI Semilight"></TextBlock>
+                        </StackPanel>
                     </Grid>
+                    <TextBlock Grid.Column="1" Text="Ngại gì không mua thêm:" FontSize="20" Margin="0,10,0,0" FontFamily="Nirmala UI Semilight"></TextBlock>
+                    <StackPanel Margin="0,5,0,0" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="1" Width="200" Height="400" />
+                            <Border Grid.Row="1" Grid.Column="2"  Width="200" Height="400"></Border>
+                            <Border Grid.Row="0" Width="200" Height="400"></Border>
+                            <Border Grid.Row="0" Grid.Column="2"  Width="200" Height="400"></Border>
+                        </Grid>
+                    </StackPanel>
                 </StackPanel>
-            </Grid>
-        </ScrollViewer>
+            </ScrollViewer>
+        </Grid>
         <StackPanel>
             <Button Height="40" Width="40"
                         VerticalAlignment="Top"
@@ -173,37 +174,42 @@
                 </Button.Background>
             </Button>
         </StackPanel>
+        <!--#region Close And Minimize Button-->
         <StackPanel>
             <Button Height="25" Width="25"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         Margin="0,5,10,0"
-                        BorderThickness="0">
+                        BorderThickness="0"
+                        x:Name="btnClose"
+                        Click="btnClose_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\close-window-2.png" />
                 </Button.Background>
-                <!--Click="Close_Click"-->
             </Button>
         </StackPanel>
         <StackPanel>
             <Button Height="25" Width="25"
+                        x:Name="btnMinimize"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
+                        Click="btnMinimized_Click"
                         Margin="0,5,40,0"
                         BorderThickness="0">
-                <!--Click="Minimize_Click"-->
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
+        <!--#endregion-->
+        <!--#region 4 Button Mặc định -->
         <Border Width="400"
-                Height="50"
-                Background="White"
-                CornerRadius="25"
-                VerticalAlignment="Bottom"
-                HorizontalAlignment="Center"
-                Margin="25,0,25,40" Visibility="Hidden">
+                        Height="50"
+                        Background="White"
+                        CornerRadius="25"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                        Margin="25,0,25,40">
             <StackPanel Orientation="Vertical">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -215,61 +221,49 @@
                         </ColumnDefinition>
                         <ColumnDefinition>
                         </ColumnDefinition>
-                        <ColumnDefinition>
-                        </ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Button Background="Transparent"
-                            Height="50"
-                            BorderThickness="0"
-                            VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                            Grid.Column="0">
-                        <!--Click="New_Click"-->
-                        <Image
-                            Source="image\icon\new-2.png">
-                        </Image>
-                    </Button>
-                    <Button Background="Transparent"
-                            Height="50"
-                            BorderThickness="0"
-                            VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                            Grid.Column="1">
-                        <!--Click="Category_Click"-->
+                                Height="50"
+                                x:Name="btnCategory"
+                                BorderThickness="0"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Grid.Column="1"
+                                Click="btnCategory_Click" Margin="3,0">
                         <Image Source="image\icon\category.png"></Image>
                     </Button>
-
                     <Button Background="Transparent"
-                            Height="50"
-                            BorderThickness="0"
-                            VerticalAlignment="Top"
-                        HorizontalAlignment="Center"
-                            Grid.Column="2">
-                        <!--Click="Home_Click"-->
-                        <Image Source="image\thumb\logo-1.png" />
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+							    x:Name="btnHome"
+							    Click ="btnHome_Click">
+                        <Image Source="image\thumb\logo-1.png" Opacity="10" />
                     </Button>
-
                     <Button Background="Transparent"
-                            Height="50"
-                            BorderThickness="0"
-                            VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                            Grid.Column="3">
-                        <!--Click="Search_Click"-->
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Grid.Column="2"
+								x:Name="btnSearch"
+								Click="btnSearch_Click">
                         <Image Source="image\icon\search.png" ></Image>
                     </Button>
-
                     <Button Background="Transparent"
-                            Height="50"
-                            BorderThickness="0"
-                            VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                            Grid.Column="4">
-                        <!--Click="Account_Click"-->
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Grid.Column="3"
+								x:Name="btnMe"
+								Click="btnMe_Click">
                         <Image Source="image\icon\account.png" ></Image>
                     </Button>
                 </Grid>
             </StackPanel>
         </Border>
+        <!--#endregion-->
     </Grid>
 </Window>
