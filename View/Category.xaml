@@ -3,13 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        TextElement.FontWeight="Regular"
-        TextElement.FontSize="13"
-        TextOptions.TextFormattingMode="Ideal"
-        TextOptions.TextRenderingMode="Auto"
-        FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         WindowStyle="None"
@@ -19,6 +12,46 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="Category" Height="621" Width="1000">
+    <Window.Resources>
+        <Style x:Key="tshirt-style" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Border>
             <Grid>
@@ -36,22 +69,17 @@
                                 <RowDefinition></RowDefinition>
                             </Grid.RowDefinitions>
                             <Button x:Name="TShirt" Height="500" Width="500"
-                                Background="Transparent"
-                                materialDesign:ButtonAssist.CornerRadius="30,0,0,0"
                                 Padding="0" BorderThickness="0"
-                                Click="TShirt_Click">
-                                <Button.Content>
-                                    <Border>
-                                        <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="image\category\t-shirt.jpg" ></Image>
-                                        </StackPanel>
-                                    </Border>
-                                </Button.Content>
+                                Click="TShirt_Click" Style="{DynamicResource tshirt-style}"
+                                    >
+                                <Button.Background>
+                                    <ImageBrush ImageSource="image\category\t-shirt.jpg"/>
+                                </Button.Background>
                             </Button>
                             <Button x:Name="Jacket" Height="500" Width="500"
                                 Background="Transparent" BorderThickness="0" Padding="0"
                                     Grid.Column="1"
-                                materialDesign:ButtonAssist.CornerRadius="0,30,0,0">
+                               >
                                 <Button.Content>
                                     <Border>
                                         <StackPanel>
@@ -84,7 +112,7 @@
                             </Button>
                             <Button x:Name="Short" Height="500" Width="500"
                                 Background="Transparent" BorderThickness="0"
-                                materialDesign:ButtonAssist.CornerRadius="0,0,0,30"
+                               
                                 Padding="0" Grid.Row="2">
                                 <Button.Content>
                                     <Border>
@@ -96,7 +124,6 @@
                             </Button>
                             <Button x:Name="Bags" Height="500" Width="500"
                                 Background="Transparent" BorderThickness="0"
-                                materialDesign:ButtonAssist.CornerRadius="0,0,30,0"
                                 Padding="0" Grid.Row="2" Grid.Column="2">
                                 <Button.Content>
                                     <Border>
