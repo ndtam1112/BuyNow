@@ -18,21 +18,24 @@
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
-        Title="Login" Height="740" Width="450">
+        Title="Login" Height="621" Width="1000">
+
     <Grid>
+
         <Grid>
             <Border>
-                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\sign-up-thumb-2.mp4"></MediaElement>
+                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\Untitled-design-2.mp4"></MediaElement>
             </Border>
         </Grid>
+        <!--#region Close And Minimize Button-->
         <StackPanel>
             <Button Height="25" Width="25"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         Margin="0,5,10,0"
                         BorderThickness="0"
-					    x:Name="btnClose"
-                        Click="btnClose_Click">
+                        x:Name="btnClose"
+                        Click="btnClose_Click" Style="{DynamicResource close-window-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\close-window-2.png" />
                 </Button.Background>
@@ -40,22 +43,25 @@
         </StackPanel>
         <StackPanel>
             <Button Height="25" Width="25"
+                        x:Name="btnMinimize"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
+                        Click="btnMinimize_Click"
                         Margin="0,5,40,0"
-                        BorderThickness="0"
-					    x:Name="btnMinimize"
-					    Click="btnMinimize_Click">
+                        BorderThickness="0" Style="{DynamicResource macos-minimize-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
+        <!--#endregion-->
+
         <StackPanel Orientation="Vertical" Margin="0,10,10,10">
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical" Margin="40,60,40,40">
-                    <TextBlock Text="Welcome" FontSize="50" FontFamily="Ink Free" Foreground="White"></TextBlock>
-                    <TextBlock FontSize="50" Foreground="White"><Run FontFamily="Ink Free" Text="to" /><Run Text=" " /><Run FontFamily="Nirmala UI Semilight" Text="BuyNow." FontWeight="Bold" /></TextBlock>
+
+                    <TextBlock Text="Welcome" FontSize="50" FontFamily="{DynamicResource LatoThin}" Foreground="White"></TextBlock>
+                    <TextBlock Text="to ShopNow" FontSize="50" FontFamily="{DynamicResource LatoThin}" Foreground="White" ></TextBlock>
                 </StackPanel>
                 <StackPanel Margin="0,40,0,0">
                     <Image Source="image\icon\shopping_bag.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5">
@@ -70,47 +76,186 @@
                     </Image>
                 </StackPanel>
             </StackPanel>
-            <TextBlock Text="Sign In" FontSize="50" HorizontalAlignment="Center"
-                       Margin="0,0,0,5" FontWeight="Bold" FontFamily="Gabriola"
-                       Foreground="White"></TextBlock>
-            <Grid Margin="0,25,0,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10*"></ColumnDefinition>
-                    <ColumnDefinition Width="29*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="65"></RowDefinition>
-                    <RowDefinition Height="65"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
+            <!--#region Introview-->
+            <Grid>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb1" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb1"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0.0" To="1.0" Duration="0:0:3" />
+                                    <DoubleAnimation Storyboard.TargetName="tb1"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1.0" To="0.0" Duration="0:0:3" BeginTime="0:0:3" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                ShopName® Streetwear <LineBreak /> We are the Street Movement.
+                </TextBlock>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb2" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb2"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:3" BeginTime="0:0:5.5" />
+                                    <DoubleAnimation Storyboard.TargetName="tb2"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0" Duration="0:0:3" BeginTime="0:0:8.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                Chúng tôi là đội ngũ trẻ luôn tò mò vẽ tương lai bằng
+                </TextBlock>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb3" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb3"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:3" BeginTime="0:0:11.5" />
+                                    <DoubleAnimation Storyboard.TargetName="tb3"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0" Duration="0:0:3" BeginTime="0:0:14.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+               Khát vọng - Đam mê - Nhiệt huyết
+                </TextBlock>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb4" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb4"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:3" BeginTime="0:0:17.5" />
+                                    <DoubleAnimation Storyboard.TargetName="tb4"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0" Duration="0:0:3" BeginTime="0:0:20.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+               Join With Us
+                </TextBlock>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Grid1" Opacity="0">
+                    <Grid.Triggers>
+                        <EventTrigger RoutedEvent="Grid.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="Grid1"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:0.25" BeginTime="0:0:24" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Grid.Triggers>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"></ColumnDefinition>
+                        <ColumnDefinition Width="29*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="65"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
                     BorderBrush="Gray" BorderThickness="0,1,0,1" Grid.Row="0" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,70,0,0">
-                </Border>
-                <Image Source="image\icon\account.png" Height="40"
+                    </Border>
+                    <Image Source="image\icon\account.png" Height="40"
                    Grid.Row="0"></Image>
-                <TextBox Margin="5,0,0,0" Text="Username"  Width="200"
+                    <TextBox Margin="5,0,0,0" Text="Username"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="0" FontSize="20" BorderThickness="0"></TextBox>
-                <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
+                    <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
                     BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,0,70,0">
-                </Border>
-                <Image Source="image\icon\password.png" Height="40" Grid.Row="2"></Image>
-                <TextBox Margin="5,0,0,0" Text="Password"  Width="200"
+                    </Border>
+                    <Image Source="image\icon\password.png" Height="40" Grid.Row="2"></Image>
+                    <TextBox Margin="5,0,0,0" Text="Password"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="2" FontSize="20" BorderThickness="0"></TextBox>
-                <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
+                    <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
                     Width="65" Height="65" Margin="195,0,0,0" Background="DeepSkyBlue"
                     BorderThickness="0" Grid.Column="1">
-                    <Image Source="image\icon\right.png"></Image>
-                </Button>
+                        <Image Source="image\icon\right.png"></Image>
+                    </Button>
+                </Grid>
             </Grid>
-            <Button 
+            <!--#endregion-->
+            <!--#region Button Skip-->
+            <Button Width="100" Height="50" BorderThickness="0" Click="btSkip_Click" Background="Transparent">
+                <Button.Content>
+                    <DockPanel>
+                        <Image x:Name="skip1" Width="25">
+                            <Image.Source>image\icon\skip.ico</Image.Source>
+                            <Image.Triggers>
+                                <EventTrigger RoutedEvent="Image.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="skip1"
+                                                                Storyboard.TargetProperty="Opacity"
+                                                                From="1" To="0" Duration="0:0:0.5" AutoReverse="True"
+                                                                RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Image.Triggers>
+                        </Image>
+                        <Image x:Name="skip2" Width="25">
+                            <Image.Source>image\icon\skip.ico</Image.Source>
+                            <Image.Triggers>
+                                <EventTrigger RoutedEvent="Image.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="skip2"
+                                     Storyboard.TargetProperty="Opacity" BeginTime="0:0:0.3"
+                                     From="1" To="0" Duration="0:0:0.5" AutoReverse="True" RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Image.Triggers>
+                        </Image>
+                        <Image x:Name="skip3" Width="25">
+                            <Image.Source>icon\skip.ico</Image.Source>
+                            <Image.Triggers>
+                                <EventTrigger RoutedEvent="Image.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="skip3"
+                                     Storyboard.TargetProperty="Opacity" BeginTime="0:0:0.7"
+                                     From="1" To="0" Duration="0:0:0.5" AutoReverse="True" RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Image.Triggers>
+                        </Image>
+                    </DockPanel>
+                </Button.Content>
+            </Button>
+            <!--#endregion-->
+            <Button
 				    Content="Sign Up" FontSize="20" Height="60" Width="145"
                     materialDesign:ButtonAssist.CornerRadius="0,30,30,0" Background="WhiteSmoke"
                     BorderThickness="2" Foreground="Red" BorderBrush="DarkGray"
-                    Margin="0,60,0,0" HorizontalAlignment="Left" FontFamily="Montserrat" 
-                FontWeight="Bold" >
+                    Margin="0,60,0,0" HorizontalAlignment="Left" FontFamily="Montserrat"
+                FontWeight="Bold">
             </Button>
         </StackPanel>
     </Grid>

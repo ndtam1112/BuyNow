@@ -26,6 +26,8 @@
                 </Border.Background>
             </Border>
         </Grid>
+       
+       
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="20">
                 <StackPanel.Resources>
@@ -40,12 +42,13 @@
                     </Style>
                     <Style TargetType="TextBox">
                         <Setter Property="FontSize" Value="15" />
-                        <Setter Property="Padding" Value="15"/>
+                        <Setter Property="Padding" Value="15" />
                         <Setter Property="BorderBrush" Value="Gray" />
                         <Setter Property="BorderThickness" Value="0,0,0,1" />
                         <Setter Property="Background" Value="Transparent" />
                     </Style>
                 </StackPanel.Resources>
+                
 
                 <TextBlock x:Name="Ten_Nguoi_Dung" Text="Đình Tâm"
                        FontSize="80" FontWeight="UltraBold" Margin="20"></TextBlock>
@@ -127,7 +130,7 @@
                     materialDesign:ButtonAssist.CornerRadius="20"
                     BorderBrush="{StaticResource MaterialDesignFlatButtonClick}"
                         x:Name="btnClose"
-                        Click="btnClose_Click">
+                        Click="btnClose_Click" Style="{DynamicResource close-window-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\close-window-2.png" />
                 </Button.Background>
@@ -141,7 +144,7 @@
                         Click="btnMinimized_Click"
                         Margin="0,5,40,0"
                         materialDesign:ButtonAssist.CornerRadius="20"
-                    BorderBrush="{StaticResource MaterialDesignFlatButtonClick}">
+                    BorderBrush="{StaticResource MaterialDesignFlatButtonClick}" Style="{DynamicResource macos-minimize-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                 </Button.Background>
@@ -185,7 +188,7 @@
                                 HorizontalAlignment="Center"
 							    x:Name="btnHome"
 							    Click ="btnHome_Click">
-                        <Image Source="image\thumb\logo-1.png" Opacity="10"/>
+                        <Image Source="image\thumb\logo-1.png" Opacity="10" />
                     </Button>
                     <Button Background="Transparent"
                                 Height="50"

@@ -19,6 +19,7 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="SanPhamChiTiet" Height="621" Width="1000">
+   
     <Grid>
         <Grid>
             <Border CornerRadius="30">
@@ -39,7 +40,7 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Column="1">
-                <StackPanel>
+                <StackPanel Margin="10">
                     <TextBlock Text="ten san pham" TextAlignment="Center"
                        FontSize="80" FontFamily="Nirmala UI Semilight"></TextBlock>
                     <TextBlock Text="gia" TextAlignment="Center"
@@ -182,7 +183,7 @@
                         Margin="0,5,10,0"
                         BorderThickness="0"
                         x:Name="btnClose"
-                        Click="btnClose_Click">
+                        Click="btnClose_Click" Style="{DynamicResource close-window-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\close-window-2.png" />
                 </Button.Background>
@@ -195,7 +196,7 @@
                         HorizontalAlignment="Right"
                         Click="btnMinimized_Click"
                         Margin="0,5,40,0"
-                        BorderThickness="0">
+                        BorderThickness="0" Style="{DynamicResource macos-minimize-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                 </Button.Background>

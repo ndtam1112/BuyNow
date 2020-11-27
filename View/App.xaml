@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:View"
 
-             StartupUri="Account.xaml">
+             StartupUri="Login.xaml">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -18,6 +18,7 @@
                 <ResourceDictionary Source="Style/Texts.xaml"/>
                 <ResourceDictionary Source="Style/Fonts.xaml"/>
                 <ResourceDictionary Source="Style/ImageBrush.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

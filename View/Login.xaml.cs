@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -38,6 +39,16 @@ namespace View
             System.Windows.Application.Current.Shutdown();
         }
 
-       
+        private void btSkip_Click(object sender, RoutedEventArgs e)
+        {
+
+            tb1.Visibility = Visibility.Hidden;
+            tb2.Visibility = Visibility.Hidden;
+            Grid1.Visibility = Visibility.Visible;
+
+
+        }
+
+
     }
 }

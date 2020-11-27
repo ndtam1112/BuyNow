@@ -116,6 +116,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="image\icon\skip.ico" />
+    <Content Include="image\thumb\Untitled-design-2.mp4" />
+    <Content Include="image\thumb\Untitled-design.mp4" />
     <Resource Include="image\icon\shopping_bag.png" />
     <Resource Include="image\icon\icon-ava.ico" />
     <Resource Include="icon-ava.ico" />
