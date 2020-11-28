@@ -42,9 +42,7 @@ namespace View
         private void btSkip_Click(object sender, RoutedEventArgs e)
         {
 
-            tb1.Visibility = Visibility.Hidden;
-            tb2.Visibility = Visibility.Hidden;
-            Grid1.Visibility = Visibility.Visible;
+            
 
 
         }

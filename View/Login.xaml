@@ -19,6 +19,7 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="Login" Height="621" Width="1000">
+   
 
     <Grid>
 
@@ -76,7 +77,7 @@
                     </Image>
                 </StackPanel>
             </StackPanel>
-            <!--#region Introview-->
+            <!--#region Introduce-->
             <Grid>
                 <TextBlock  FontSize="40" HorizontalAlignment="Center"
                         FontWeight="Bold" FontFamily="Gabriola"
@@ -98,8 +99,8 @@
                 ShopName® Streetwear <LineBreak /> We are the Street Movement.
                 </TextBlock>
                 <TextBlock  FontSize="40" HorizontalAlignment="Center"
-                        FontWeight="Bold" FontFamily="Gabriola"
-                       Foreground="White" Opacity="0" x:Name="tb2" TextAlignment="Center">
+                        FontWeight="Bold" FontFamily="/View;component/fonts/#iCiel Cadena"
+                       Foreground="White" Opacity="1" x:Name="tb2" TextAlignment="Center">
                     <TextBlock.Triggers>
                         <EventTrigger RoutedEvent="TextBlock.Loaded">
                             <BeginStoryboard>
@@ -114,7 +115,7 @@
                             </BeginStoryboard>
                         </EventTrigger>
                     </TextBlock.Triggers>
-                Chúng tôi là đội ngũ trẻ luôn tò mò vẽ tương lai bằng
+                Chúng tôi là đội ngũ trẻ <LineBreak/> luôn tò mò vẽ tương lai bằng
                 </TextBlock>
                 <TextBlock  FontSize="40" HorizontalAlignment="Center"
                         FontWeight="Bold" FontFamily="Gabriola"
@@ -259,4 +260,5 @@
             </Button>
         </StackPanel>
     </Grid>
+   
 </Window>
