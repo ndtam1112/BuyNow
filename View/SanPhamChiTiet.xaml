@@ -31,7 +31,7 @@
         <StackPanel Margin="40,40,0,0" HorizontalAlignment="Left">
             <Border Width="380" Height="380" BorderThickness="2"
                         BorderBrush="Black" Background="White">
-                <Image Source="image\SanPham\sweater-1.jpg"></Image>
+                <Image Source="image\SanPham\TShirt\FlatIcon-Bear-Tee-Black.png"></Image>
             </Border>
         </StackPanel>
         <Grid>
