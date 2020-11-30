@@ -15,8 +15,8 @@
     
 
     <Grid>
-        <Border>
-            <Grid>
+        <Border CornerRadius="20" Background="White">
+            <Grid Width="980" Height="600">
                 <ScrollViewer VerticalScrollBarVisibility="Hidden">
                     <StackPanel Orientation="Vertical">
                         <Grid>
@@ -30,13 +30,11 @@
                                 <RowDefinition></RowDefinition>
                                 <RowDefinition></RowDefinition>
                             </Grid.RowDefinitions>
-                            <Button x:Name="TShirt" Height="500" Width="500"
-                                Padding="0" BorderThickness="0"
+                            <Button x:Name="TShirt" Height="500" Width="500" WindowChrome.IsHitTestVisibleInChrome="True"
+                                
                                 Click="TShirt_Click" Style="{DynamicResource tshirt-style}"
                                     >
-                                <Button.Background>
-                                    <ImageBrush ImageSource="image\category\t-shirt.jpg"/>
-                                </Button.Background>
+                                <Image Source="image\category\t-shirt.jpg"/>
                             </Button>
                             <Button x:Name="Jacket" Height="500" Width="500"
                                 Background="Transparent" BorderThickness="0" Padding="0"

@@ -83,6 +83,9 @@
     <Compile Include="GioHang.xaml.cs">
       <DependentUpon>GioHang.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="item.xaml.cs">
       <DependentUpon>item.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,52 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Resource Include="image\icon\skip.ico" />
+    <Resource Include="image\SanPham\Bags\Backpack-911-Black-2.png" />
+    <Resource Include="image\SanPham\Bags\Backpack-911-Black.png" />
+    <Resource Include="image\SanPham\Bags\Backpack-911-White-2.png" />
+    <Resource Include="image\SanPham\Bags\Backpack-911-White.png" />
+    <Resource Include="image\SanPham\Jacket\Casual-Reflection-Jacket-Black-2.png" />
+    <Resource Include="image\SanPham\Jacket\Casual-Reflection-Jacket-Black.png" />
+    <Resource Include="image\SanPham\Jacket\Casual-Reflection-Jacket-White-2.png" />
+    <Resource Include="image\SanPham\Jacket\Casual-Reflection-Jacket-White.png" />
+    <Resource Include="image\SanPham\Jacket\Donut-Jacket-Beige-2.png" />
+    <Resource Include="image\SanPham\Jacket\Donut-Jacket-Beige.png" />
+    <Resource Include="image\SanPham\Jacket\Donut-Jacket-Mint-2.png" />
+    <Resource Include="image\SanPham\Jacket\Donut-Jacket-Mint.png" />
+    <Resource Include="image\SanPham\Pants\Jean-Slim-Fit-Dark-Blue-2.png" />
+    <Resource Include="image\SanPham\Pants\Jean-Slim-Fit-Dark-Blue.png" />
+    <Resource Include="image\SanPham\Pants\Pants-911-Black-2.png" />
+    <Resource Include="image\SanPham\Pants\Pants-911-Black.png" />
+    <Resource Include="image\SanPham\Pants\Pants-911-Grey-2.png" />
+    <Resource Include="image\SanPham\Pants\Pants-911-Grey.png" />
+    <Resource Include="image\SanPham\Pants\Pants-911-White-2.png" />
+    <Resource Include="image\SanPham\Pants\Pants-911-White.png" />
+    <Resource Include="image\SanPham\Short\Casual-Reflection-Short-Black-2.png" />
+    <Resource Include="image\SanPham\Short\Casual-Reflection-Short-Black.png" />
+    <Resource Include="image\SanPham\Short\Casual-Reflection-Short-White-2.png" />
+    <Resource Include="image\SanPham\Short\Casual-Reflection-Short-White.png" />
+    <Resource Include="image\SanPham\Short\Tobekind-02-Short-Pant-Black-2.png" />
+    <Resource Include="image\SanPham\Short\Tobekind-02-Short-Pant-Black.png" />
+    <Resource Include="image\SanPham\Short\Tobekind-02-Short-Pant-White-2.png" />
+    <Resource Include="image\SanPham\Short\Tobekind-02-Short-Pant-White.png" />
+    <Resource Include="image\SanPham\Sweater\Be-Happy-Longsleeve-Purple-2.png" />
+    <Resource Include="image\SanPham\Sweater\Be-Happy-Longsleeve-Purple.png" />
+    <Resource Include="image\SanPham\Sweater\Crayon-Sweater-White-2.png" />
+    <Resource Include="image\SanPham\Sweater\Crayon-Sweater-White.png" />
+    <Resource Include="image\SanPham\Sweater\Donut-Worry-Sweater-Beige-2.png" />
+    <Resource Include="image\SanPham\Sweater\Donut-Worry-Sweater-Beige.png" />
+    <Resource Include="image\SanPham\Sweater\OuttaSpace-Girl-Sweater-White-2.png" />
+    <Resource Include="image\SanPham\Sweater\OuttaSpace-Girl-Sweater-White.png" />
+    <Resource Include="image\SanPham\TShirt\FlatIcon-Bear-Polo-Beige-2.png" />
+    <Resource Include="image\SanPham\TShirt\FlatIcon-Bear-Polo-Beige.png" />
+    <Resource Include="image\SanPham\TShirt\FlatIcon-Bear-Tee-Black-2.png" />
+    <Resource Include="image\SanPham\TShirt\FlatIcon-Bear-Tee-Black.png" />
+    <Resource Include="image\SanPham\TShirt\FlatIcon-Bear-Tee-White-2.png" />
+    <Resource Include="image\SanPham\TShirt\FlatIcon-Bear-Tee-White.png" />
+    <Resource Include="image\SanPham\TShirt\SunShine-Tee-White-2.png" />
+    <Resource Include="image\SanPham\TShirt\SunShine-Tee-White.png" />
+    <Resource Include="image\thumb\admin-background.jpg" />
+    <Resource Include="image\thumb\main-background.jpg" />
     <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
     <Resource Include="image\icon\shopping_bag.png" />
@@ -234,6 +283,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="item.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -310,9 +363,6 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="image\SanPham\sweater-1.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

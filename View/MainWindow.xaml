@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        
 
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
@@ -14,18 +13,20 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="Main" Height="621" Width="1000">
-    
-
 
     <Grid>
+        <Border CornerRadius="20">
+            <Border.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="image\thumb\main-background.jpg" />
+            </Border.Background>
+        </Border>
         <Grid>
-            <Border CornerRadius="30">
-                <Border.Background>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="image\thumb\thumb-1.jpg" />
-                </Border.Background>
-            </Border>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="41"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
         </Grid>
-        
+
         <!--#region Close And Minimize Button-->
         <StackPanel>
             <Button Height="25" Width="25"
@@ -47,37 +48,35 @@
                         HorizontalAlignment="Right"
                         Click="btnMinimized_Click"
                         Margin="0,5,40,0"
-                        BorderThickness="0" Style="{DynamicResource macos-minimize-style}"  >
+                        BorderThickness="0" Style="{DynamicResource macos-minimize-style}">
                 <Button.Background>
                     <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
         <!--#endregion-->
-        <Border>
-            <Grid>
-               
-                <!--#region 4 Button Mặc định -->
-                <Border Width="400"
+
+        <!--#region 4 Button Mặc định -->
+        <Border Width="400"
                         Height="50"
                         Background="White"
                         CornerRadius="25"
                         VerticalAlignment="Bottom"
                         HorizontalAlignment="Center"
                         Margin="25,0,25,40">
-                    <StackPanel Orientation="Vertical">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition>
-                                </ColumnDefinition>
-                                <ColumnDefinition>
-                                </ColumnDefinition>
-                                <ColumnDefinition>
-                                </ColumnDefinition>
-                                <ColumnDefinition>
-                                </ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Button Background="Transparent"
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Background="Transparent"
                                 Height="50"
                                 x:Name="btnCategory"
                                 BorderThickness="0"
@@ -85,18 +84,18 @@
                                 HorizontalAlignment="Center"
                                 Grid.Column="1"
                                 Click="btnCategory_Click" Margin="3,0">
-                                <Image Source="image\icon\category.png"></Image>
-                            </Button>
-                            <Button Background="Transparent"
+                        <Image Source="image\icon\category.png"></Image>
+                    </Button>
+                    <Button Background="Transparent"
                                 Height="50"
                                 BorderThickness="0"
                                 VerticalAlignment="Top"
                                 HorizontalAlignment="Center"
 							    x:Name="btnHome"
 							    Click ="btnHome_Click">
-                                <Image Source="image\thumb\logo-1.png" Opacity="10"/>
-                            </Button>
-                            <Button Background="Transparent"
+                        <Image Source="image\thumb\logo-1.png" Opacity="10" />
+                    </Button>
+                    <Button Background="Transparent"
                                 Height="50"
                                 BorderThickness="0"
                                 VerticalAlignment="Center"
@@ -104,9 +103,9 @@
                                 Grid.Column="2"
 								x:Name="btnSearch"
 								Click="btnSearch_Click">
-                                <Image Source="image\icon\search.png" ></Image>
-                            </Button>
-                            <Button Background="Transparent"
+                        <Image Source="image\icon\search.png" ></Image>
+                    </Button>
+                    <Button Background="Transparent"
                                 Height="50"
                                 BorderThickness="0"
                                 VerticalAlignment="Center"
@@ -114,13 +113,11 @@
                                 Grid.Column="3"
 								x:Name="btnMe"
 								Click="btnMe_Click">
-                                <Image Source="image\icon\account.png" ></Image>
-                            </Button>
-                        </Grid>
-                    </StackPanel>
-                </Border>
-                <!--#endregion-->
-            </Grid>
+                        <Image Source="image\icon\account.png" ></Image>
+                    </Button>
+                </Grid>
+            </StackPanel>
         </Border>
+        <!--#endregion-->
     </Grid>
 </Window>

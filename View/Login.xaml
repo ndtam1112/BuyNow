@@ -234,7 +234,7 @@
                             </Image.Triggers>
                         </Image>
                         <Image x:Name="skip3" Width="25">
-                            <Image.Source>icon\skip.ico</Image.Source>
+                            <Image.Source>image\icon\skip.ico</Image.Source>
                             <Image.Triggers>
                                 <EventTrigger RoutedEvent="Image.Loaded">
                                     <BeginStoryboard>
