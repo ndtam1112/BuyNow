@@ -115,3 +115,5 @@ D:\My App\BuyNow\View\obj\Debug\Style\ImageBrush.baml
 D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
 D:\My App\BuyNow\View\obj\Debug\Home.g.cs
 D:\My App\BuyNow\View\obj\Debug\Home.baml
+D:\My App\BuyNow\View\obj\Debug\PopUp.g.cs
+D:\My App\BuyNow\View\obj\Debug\PopUp.baml

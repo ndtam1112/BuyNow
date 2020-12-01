@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         WindowStyle="None"
@@ -25,9 +25,44 @@
                 <RowDefinition Height="41"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-        </Grid>
+            <Border BorderThickness="0 0 0 1" BorderBrush="Gray">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="2" BlurRadius="4"/>
+                </Border.Effect>
+                <Grid>
+                    <Button Height="25" Width="25"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,10,0"
+                        BorderThickness="0"
+                        x:Name="btnClose"
+                        Click="btnClose_Click" Style="{DynamicResource xbox-menu-style}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="image\icon\xbox_menu.ico" />
+                        </Button.Background>
+                    </Button>
+                        <Button Background="LightGreen" Width="90" Height="25"
+                        VerticalAlignment="Center" materialDesign:ButtonAssist.CornerRadius="15"
+                                BorderThickness="0"
+                        HorizontalAlignment="Right"
+                                Margin="0,0,40,0"
+                        x:Name="btnCart"
+                        Click="btnCart_Click" >
+                        <DockPanel>
+                            <Image Source="image\icon\shopping_cart.ico" Height="14" Width="13"/>
+                            <TextBlock Margin="3 0 0 0" Text="CART" Foreground="White" FontSize="8" VerticalAlignment="Center"/>
+                            <Border Margin="7 0 0 0" Width="15" Height="15" CornerRadius="10" Background="Black">
+                                <TextBlock FontSize="10" HorizontalAlignment="Center" Text="2"></TextBlock>
+                            </Border>
+                        </DockPanel>
+                        </Button>
+                </Grid>
 
-        <!--#region Close And Minimize Button-->
+            </Border>
+        </Grid>
+        
+
+        <!--#region Close And Minimize Button--><!--
         <StackPanel>
             <Button Height="25" Width="25"
                         VerticalAlignment="Top"
@@ -54,7 +89,7 @@
                 </Button.Background>
             </Button>
         </StackPanel>
-        <!--#endregion-->
+        --><!--#endregion-->
 
         <!--#region 4 Button Mặc định -->
         <Border Width="400"

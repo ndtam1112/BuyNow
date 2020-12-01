@@ -22,11 +22,9 @@ namespace View
         public Home()
         {
             InitializeComponent();
+            
         }
-        private void SlideShows()
-        {
-
-        }
+       
        
     }
 }

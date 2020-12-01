@@ -12,10 +12,12 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         Title="Home" Height="621" Width="1000">
+   
 
     <Grid>
         <Image x:Name="thumb1" Source="D:\My App\BuyNow\View\image\thumb\thumb-1.jpg" Stretch="UniformToFill">
             
+
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Image.Loaded">
                     <BeginStoryboard>
@@ -31,7 +33,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image x:Name="thumb3" Source="D:\My App\BuyNow\View\image\thumb\thumb-3.jpg" Opacity="0" Stretch="UniformToFill">
+        <Image x:Name="thumb3" Source="D:\My App\BuyNow\View\image\thumb\thumb-3.jpg" Visibility="Hidden" Stretch="UniformToFill">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Image.Loaded">
                     <BeginStoryboard>
@@ -47,7 +49,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image x:Name="thumb2" Source="D:\My App\BuyNow\View\image\thumb\thumb-2.jpg" Opacity="0" Stretch="UniformToFill">
+        <Image x:Name="thumb2" Source="D:\My App\BuyNow\View\image\thumb\thumb-2.jpg" Visibility="Hidden" Stretch="UniformToFill">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Image.Loaded">
                     <BeginStoryboard>

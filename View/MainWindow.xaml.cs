@@ -54,6 +54,10 @@ namespace View
         {
 
         }
+        private void btnCart_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
         #endregion
     }
 }
