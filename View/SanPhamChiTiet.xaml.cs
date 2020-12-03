@@ -42,9 +42,7 @@ namespace View
         }
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
-            Category category = new Category();
-            this.Visibility = Visibility.Hidden;
-            category.Show();
+           
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
