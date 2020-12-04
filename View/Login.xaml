@@ -25,7 +25,7 @@
 
         <Grid>
             <Border>
-                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\Untitled-design-2.mp4"></MediaElement>
+                <MediaElement Source="image\thumb\Untitled-design-2.mp4"></MediaElement>
             </Border>
         </Grid>
         <!--#region Close And Minimize Button-->

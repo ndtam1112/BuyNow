@@ -7,10 +7,10 @@
         <ResourceDictionary Source="Color.xaml"/>
         <ResourceDictionary Source="Fonts.xaml"/>
     </ResourceDictionary.MergedDictionaries>
-    
-    <ImageBrush x:Key="macos-minimize" ImageSource="image\icon\macos-minimize.png" />
-    <ImageBrush x:Key="close-window" ImageSource="image\icon\close-window.png" />
-    <ImageBrush x:Key="xbox-menu" ImageSource="image\icon\xbox_menu_1.ico" />
+
+    <ImageBrush x:Key="macos-minimize" ImageSource="pack://application:,,,/image/icon/macos-minimize.png" />
+    <ImageBrush x:Key="close-window" ImageSource="pack://application:,,,/image/icon/close-window.png" />
+    <ImageBrush x:Key="xbox-menu" ImageSource="pack://application:,,,/image/icon/xbox_menu_1.ico" />
 
     <!--#region Button Macos Minimize Style-->
     <Style x:Key="macos-minimize-style" TargetType="{x:Type Button}">
