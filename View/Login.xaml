@@ -25,6 +25,7 @@
 
         <Grid>
             <Border>
+
                 <MediaElement Source="..\image\thumb\Untitled-design-2.mp4"></MediaElement>
             </Border>
         </Grid>

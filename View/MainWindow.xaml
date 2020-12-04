@@ -36,11 +36,14 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
+
+                    
+
 
                     <!-- Tên shop và logo -->
                     <DockPanel>
@@ -50,7 +53,7 @@
                     </DockPanel>
 
                     <!-- Thanh tìm kiếm -->
-                    <Border Margin="5" Width="250" Padding="3" Grid.Column="2" 
+                    <Border Margin="5" Width="250" Padding="3" Grid.Column="1" 
                             CornerRadius="20" Background="Gray">
                         <DockPanel>
                             <TextBox  Text="Search something" FontSize="10" BorderThickness="0"/>
@@ -59,8 +62,7 @@
                         </DockPanel>
                     </Border>
 
-
-                    <Grid Grid.Column="1">
+                    <Grid Grid.Column="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
