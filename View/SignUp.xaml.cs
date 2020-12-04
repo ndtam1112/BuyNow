@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using View.Database;
 
 namespace View
 {
@@ -19,6 +20,8 @@ namespace View
     /// </summary>
     public partial class SignUp : Window
     {
+        public object Userdatabase { get; private set; }
+
         public SignUp()
         {
             InitializeComponent();
@@ -43,7 +46,18 @@ namespace View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            string phone = phoneSignUp.Text.Trim();
+            string password = passWordSignUp.Password.Trim();
 
+            if(Accountdatabase.insert(phone,password,0))
+            {
+                MessageBox.Show("Register Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Register Failure");
+
+            }
         }
     }
 }

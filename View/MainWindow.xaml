@@ -54,7 +54,7 @@
                             CornerRadius="20" Background="Gray">
                         <DockPanel>
                             <TextBox  Text="Search something" FontSize="10" BorderThickness="0"/>
-                            <Image Source="D:\My App\BuyNow\View\image\icon\search.png"
+                            <Image Source="image\icon\search.png"
                                    HorizontalAlignment="Right"/>
                         </DockPanel>
                     </Border>
@@ -139,11 +139,15 @@
 
             <TextBlock Text="Một chữ gì đó hiệu ứng hiện lên rồi lại tắt đi" Grid.Row="1" Margin="5" HorizontalAlignment="Center"/>
 
-            <Border CornerRadius="20" Grid.Row="2" Height="488" Width="980" 
+            <Border 
+                CornerRadius="20" Grid.Row="2" Height="488" Width="980" 
                     Margin="0 5 0 5" BorderBrush="Gray" BorderThickness="1">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="1"/>
                 </Border.Effect>
+                <Grid   x:Name="HomeLayout">
+                    
+                </Grid>
 
             </Border>
             
@@ -155,15 +159,15 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <DockPanel Grid.Column="0" HorizontalAlignment="Center">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\facebook.ico"/>
+                    <Image Source="image\icon\facebook.ico"/>
                     <TextBlock Margin="5 0 0 0" Text="https://www.facebook.com/ShopName" VerticalAlignment="Center"/>
                 </DockPanel>
                 <DockPanel Grid.Column="1" HorizontalAlignment="Center">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\instagram.ico"/>
+                    <Image Source="image\icon\instagram.ico"/>
                     <TextBlock Margin="5 0 0 0" Text="https://www.instagram.com/ShopName" VerticalAlignment="Center"/>
                 </DockPanel>
                 <DockPanel Grid.Column="2" HorizontalAlignment="Center">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\website.ico"/>
+                    <Image Source="image\icon\website.ico"/>
                     <TextBlock Margin="5 0 0 0" Text="https://www.shopname.com" VerticalAlignment="Center"/>
                 </DockPanel>
             </Grid>

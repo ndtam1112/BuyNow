@@ -26,7 +26,7 @@
                                 Background="Transparent" BorderThickness="0" Padding="0"
                                
                                     >
-                                <Image Source="D:\My App\BuyNow\View\image\category\t-shirt.jpg"/>
+                                <Image Source="..\image\category\t-shirt.jpg"/>
                             </Button>
                             <Button x:Name="Jacket" Height="500" Width="500"
                                 Background="Transparent" BorderThickness="0" Padding="0"
@@ -35,7 +35,7 @@
                                 <Button.Content>
                                     <Border>
                                         <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="D:\My App\BuyNow\View\image\category\jacket.jpg" ></Image>
+                                            <Image Stretch="UniformToFill" Source="..\image\category\jacket.jpg" ></Image>
                                         </StackPanel>
                                     </Border>
                                 </Button.Content>
@@ -46,7 +46,7 @@
                                 <Button.Content>
                                     <Border>
                                         <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="D:\My App\BuyNow\View\image\category\sweater.jpg" ></Image>
+                                            <Image Stretch="UniformToFill" Source="..\image\category\sweater.jpg" ></Image>
                                         </StackPanel>
                                     </Border>
                                 </Button.Content>
@@ -57,7 +57,7 @@
                                 <Button.Content>
                                     <Border>
                                         <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="D:\My App\BuyNow\View\image\category\pants.jpg" ></Image>
+                                            <Image Stretch="UniformToFill" Source="..\image\category\pants.jpg" ></Image>
                                         </StackPanel>
                                     </Border>
                                 </Button.Content>
@@ -69,7 +69,7 @@
                                 <Button.Content>
                                     <Border>
                                         <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="D:\My App\BuyNow\View\image\category\short.jpg" ></Image>
+                                            <Image Stretch="UniformToFill" Source="..\image\category\short.jpg" ></Image>
                                         </StackPanel>
                                     </Border>
                                 </Button.Content>
@@ -80,7 +80,7 @@
                                 <Button.Content>
                                     <Border>
                                         <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="D:\My App\BuyNow\View\image\category\bag.jpg" ></Image>
+                                            <Image Stretch="UniformToFill" Source="..\image\category\bag.jpg" ></Image>
                                         </StackPanel>
                                     </Border>
                                 </Button.Content>

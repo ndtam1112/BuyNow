@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using View.User_Control;
 
 namespace View
 {
@@ -42,7 +43,8 @@ namespace View
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-
+            HomeLayout.Children.Clear();
+            HomeLayout.Children.Add(new Home());
         }
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using View.Database;
 
 namespace View.User_Control
 {
@@ -23,6 +24,11 @@ namespace View.User_Control
         public Account()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Connection.OpenConnection();
         }
     }
 }

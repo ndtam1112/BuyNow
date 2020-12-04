@@ -11,7 +11,7 @@
         <Grid>
             <Border CornerRadius="30">
                 <Border.Background>
-                    <ImageBrush ImageSource="D:\My App\BuyNow\View\image\thumb\account-thumb.jpg"></ImageBrush>
+                    <ImageBrush ImageSource="..\image\thumb\account-thumb.jpg"></ImageBrush>
                 </Border.Background>
             </Border>
         </Grid>
@@ -59,6 +59,7 @@
                         <TextBlock Text="Address:" Grid.Row="1"></TextBlock>
                         <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
                         <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
+                                Click="Button_Click"
                     FontFamily="{StaticResource LatoThin}" Content="Save" Grid.Row="2"
                             materialDesign:ButtonAssist.CornerRadius="20" BorderBrush="{StaticResource MaterialDesignFlatButtonClick}" />
                     </Grid>
