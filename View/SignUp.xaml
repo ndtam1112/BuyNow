@@ -22,7 +22,7 @@
     <Grid>
         <Grid>
             <Border>
-                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\sign-up-thumb-2.mp4"></MediaElement>
+                <MediaElement Source="image\thumb\sign-up-thumb-2.mp4"></MediaElement>
             </Border>
         </Grid>
         <StackPanel>

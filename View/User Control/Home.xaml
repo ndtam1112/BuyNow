@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="488" d:DesignWidth="980">
     <Grid>
-        <Image x:Name="thumb1" Source="D:\My App\BuyNow\View\image\thumb\thumb-1.jpg" Stretch="UniformToFill">
+        <Image x:Name="thumb1" Source="image\thumb\thumb-1.jpg" Stretch="UniformToFill">
 
 
             <Image.Triggers>
@@ -25,7 +25,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image x:Name="thumb3" Source="D:\My App\BuyNow\View\image\thumb\thumb-3.jpg" Opacity="0" Stretch="UniformToFill">
+        <Image x:Name="thumb3" Source="image\thumb\thumb-3.jpg" Opacity="0" Stretch="UniformToFill">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Image.Loaded">
                     <BeginStoryboard>
@@ -41,7 +41,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image x:Name="thumb2" Source="D:\My App\BuyNow\View\image\thumb\thumb-2.jpg" Opacity="0" Stretch="UniformToFill">
+        <Image x:Name="thumb2" Source="image\thumb\thumb-2.jpg" Opacity="0" Stretch="UniformToFill">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Image.Loaded">
                     <BeginStoryboard>

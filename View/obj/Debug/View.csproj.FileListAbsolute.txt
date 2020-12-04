@@ -109,3 +109,4 @@ D:\My App\BuyNow\View\obj\Debug\User Control\Account.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\Category.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\Account.baml
 D:\My App\BuyNow\View\obj\Debug\User Control\Category.baml
+D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
