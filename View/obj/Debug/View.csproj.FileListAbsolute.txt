@@ -39,3 +39,4 @@ D:\MyApp\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\MyApp\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\MyApp\BuyNow\View\obj\Debug\View.exe
 D:\MyApp\BuyNow\View\obj\Debug\View.pdb
+D:\MyApp\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
