@@ -83,14 +83,6 @@ namespace View {
         #line default
         #line hidden
         
-        
-        #line 152 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid HomeLayout;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -173,9 +165,6 @@ namespace View {
             
             #line default
             #line hidden
-            return;
-            case 7:
-            this.HomeLayout = ((System.Windows.Controls.Grid)(target));
             return;
             }
             this._contentLoaded = true;

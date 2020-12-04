@@ -52,7 +52,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 33 "..\..\..\User Control\Category.xaml"
+        #line 32 "..\..\..\User Control\Category.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Jacket;
         
@@ -60,7 +60,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 47 "..\..\..\User Control\Category.xaml"
+        #line 44 "..\..\..\User Control\Category.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Sweater;
         
@@ -68,7 +68,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 60 "..\..\..\User Control\Category.xaml"
+        #line 55 "..\..\..\User Control\Category.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Pants;
         
@@ -76,7 +76,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 71 "..\..\..\User Control\Category.xaml"
+        #line 66 "..\..\..\User Control\Category.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Short;
         
@@ -84,7 +84,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 83 "..\..\..\User Control\Category.xaml"
+        #line 78 "..\..\..\User Control\Category.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Bags;
         

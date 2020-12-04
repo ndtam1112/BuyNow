@@ -44,7 +44,7 @@ namespace View {
     public partial class Login : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 39 "..\..\Login.xaml"
+        #line 38 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnClose;
         
@@ -52,7 +52,7 @@ namespace View {
         #line hidden
         
         
-        #line 49 "..\..\Login.xaml"
+        #line 47 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnMinimize;
         
@@ -60,7 +60,7 @@ namespace View {
         #line hidden
         
         
-        #line 86 "..\..\Login.xaml"
+        #line 84 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock tb1;
         
@@ -68,7 +68,7 @@ namespace View {
         #line hidden
         
         
-        #line 105 "..\..\Login.xaml"
+        #line 103 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock tb2;
         
@@ -76,7 +76,7 @@ namespace View {
         #line hidden
         
         
-        #line 124 "..\..\Login.xaml"
+        #line 122 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock tb3;
         
@@ -84,7 +84,7 @@ namespace View {
         #line hidden
         
         
-        #line 143 "..\..\Login.xaml"
+        #line 141 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock tb4;
         
@@ -92,7 +92,7 @@ namespace View {
         #line hidden
         
         
-        #line 160 "..\..\Login.xaml"
+        #line 158 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Grid Grid1;
         
@@ -100,7 +100,7 @@ namespace View {
         #line hidden
         
         
-        #line 209 "..\..\Login.xaml"
+        #line 207 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image skip1;
         
@@ -108,7 +108,7 @@ namespace View {
         #line hidden
         
         
-        #line 224 "..\..\Login.xaml"
+        #line 222 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image skip2;
         
@@ -116,7 +116,7 @@ namespace View {
         #line hidden
         
         
-        #line 238 "..\..\Login.xaml"
+        #line 236 "..\..\Login.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image skip3;
         
@@ -164,7 +164,7 @@ namespace View {
             case 2:
             this.btnClose = ((System.Windows.Controls.Button)(target));
             
-            #line 40 "..\..\Login.xaml"
+            #line 39 "..\..\Login.xaml"
             this.btnClose.Click += new System.Windows.RoutedEventHandler(this.btnClose_Click);
             
             #line default
@@ -173,7 +173,7 @@ namespace View {
             case 3:
             this.btnMinimize = ((System.Windows.Controls.Button)(target));
             
-            #line 52 "..\..\Login.xaml"
+            #line 50 "..\..\Login.xaml"
             this.btnMinimize.Click += new System.Windows.RoutedEventHandler(this.btnMinimize_Click);
             
             #line default
@@ -196,7 +196,7 @@ namespace View {
             return;
             case 9:
             
-            #line 206 "..\..\Login.xaml"
+            #line 204 "..\..\Login.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btSkip_Click);
             
             #line default

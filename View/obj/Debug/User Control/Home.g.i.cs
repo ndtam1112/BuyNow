@@ -49,7 +49,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 27 "..\..\..\User Control\Home.xaml"
+        #line 28 "..\..\..\User Control\Home.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image thumb3;
         
@@ -57,7 +57,7 @@ namespace View.User_Control {
         #line hidden
         
         
-        #line 45 "..\..\..\User Control\Home.xaml"
+        #line 44 "..\..\..\User Control\Home.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image thumb2;
         

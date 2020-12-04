@@ -60,23 +60,7 @@ namespace View {
         #line hidden
         
         
-        #line 93 "..\..\SignUp.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox phoneSignUp;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 112 "..\..\SignUp.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.PasswordBox passWordSignUp;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 118 "..\..\SignUp.xaml"
+        #line 115 "..\..\SignUp.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnLoginGo;
         
@@ -84,7 +68,7 @@ namespace View {
         #line hidden
         
         
-        #line 127 "..\..\SignUp.xaml"
+        #line 124 "..\..\SignUp.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnWantSignin;
         
@@ -148,24 +132,18 @@ namespace View {
             #line hidden
             return;
             case 4:
-            this.phoneSignUp = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 5:
-            this.passWordSignUp = ((System.Windows.Controls.PasswordBox)(target));
-            return;
-            case 6:
             this.btnLoginGo = ((System.Windows.Controls.Button)(target));
             
-            #line 118 "..\..\SignUp.xaml"
+            #line 115 "..\..\SignUp.xaml"
             this.btnLoginGo.Click += new System.Windows.RoutedEventHandler(this.btnLogin_Click);
             
             #line default
             #line hidden
             return;
-            case 7:
+            case 5:
             this.btnWantSignin = ((System.Windows.Controls.Button)(target));
             
-            #line 127 "..\..\SignUp.xaml"
+            #line 124 "..\..\SignUp.xaml"
             this.btnWantSignin.Click += new System.Windows.RoutedEventHandler(this.btnWantSignin_Click);
             
             #line default

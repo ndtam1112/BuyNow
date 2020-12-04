@@ -84,14 +84,6 @@ namespace View.User_Control {
             case 1:
             this.Ten_Nguoi_Dung = ((System.Windows.Controls.TextBlock)(target));
             return;
-            case 2:
-            
-            #line 62 "..\..\..\User Control\Account.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
-            
-            #line default
-            #line hidden
-            return;
             }
             this._contentLoaded = true;
         }
