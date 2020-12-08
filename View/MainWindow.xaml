@@ -132,9 +132,6 @@
                             </DockPanel>
                         </Button>
 
-                    
-                    
-
                 </Grid>
 
 
@@ -178,8 +175,6 @@
             <!--#endregion-->
 
         </Grid>
-
-
 
     </Grid>
 </Window>

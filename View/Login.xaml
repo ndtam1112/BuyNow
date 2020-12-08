@@ -183,7 +183,8 @@
                     </Border>
                     <Image Source="image\icon\account.png" Height="40"
                    Grid.Row="0"></Image>
-                    <TextBox Margin="5,0,0,0" Text="Username"  Width="200"
+                    <TextBox x:Name="tbPhone"
+                             Margin="5,0,0,0" Text="Phone"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="0" FontSize="20" BorderThickness="0"></TextBox>
                     <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
@@ -191,12 +192,12 @@
                     VerticalAlignment="Bottom" CornerRadius="0,0,70,0">
                     </Border>
                     <Image Source="image\icon\password.png" Height="40" Grid.Row="2"></Image>
-                    <TextBox Margin="5,0,0,0" Text="Password"  Width="200"
+                    <PasswordBox Margin="5,0,0,0" x:Name="pbPassword"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
-                     Grid.Column="1" Grid.Row="2" FontSize="20" BorderThickness="0"></TextBox>
-                    <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
+                     Grid.Column="1" Grid.Row="2" FontSize="20" BorderThickness="0"></PasswordBox>
+                    <Button x:Name="btnLogin" Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
                     Width="65" Height="65" Margin="195,0,0,0" Background="DeepSkyBlue"
-                    BorderThickness="0" Grid.Column="1">
+                    BorderThickness="0" Grid.Column="1" Click="btnLogin_Click">
                         <Image Source="image\icon\right.png"></Image>
                     </Button>
                 </Grid>
@@ -254,6 +255,7 @@
             </Button>
             <!--#endregion-->
             <Button
+                    x:Name="btnSignUp" Click="btnSignUp_Click"
 				    Content="Sign Up" FontSize="20" Height="60" Width="145"
                     materialDesign:ButtonAssist.CornerRadius="0,30,30,0" Background="WhiteSmoke"
                     BorderThickness="2" Foreground="Red" BorderBrush="DarkGray"

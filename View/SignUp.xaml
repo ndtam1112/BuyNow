@@ -115,7 +115,7 @@
                 <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
                     Width="65" Height="65" Margin="195,0,0,0" Background="DeepSkyBlue"
                     BorderThickness="0" Grid.Column="1" 
-					x:Name="btnLoginGo" Click="btnLogin_Click">
+					x:Name="btnSignUp" Click="btnSignUp_Click">
                     <Image Source="image\icon\done.png"></Image>
                 </Button>
             </Grid>
