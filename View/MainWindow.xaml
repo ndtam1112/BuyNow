@@ -13,27 +13,70 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="Main" Height="621" Width="1000">
+    <Window.Resources>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+    </Window.Resources>
 
-    <Grid>
-        <Border CornerRadius="20" Background="White"/>
 
-
+    <Grid >
+        <Border CornerRadius="20" Background="White">
+            <Grid x:Name="HomeLayout">
+                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\Untitled-design.mp4"/>
+            </Grid>
+        </Border>
 
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="61"/>
-                <RowDefinition Height="26"/>
-                <RowDefinition Height="498"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="560"/>
             </Grid.RowDefinitions>
 
             <!--#region Thanh Bar trên -->
-            <Border BorderThickness="1" BorderBrush="Gray" 
-                    CornerRadius="20" Margin="0 5 0 5" Width="980">
-                <Border.Effect>
-                    <DropShadowEffect ShadowDepth="1" BlurRadius="2" Opacity="2"/>
-                </Border.Effect>
-                <Grid>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+							    x:Name="btnHome"
+							    Click ="btnHome_Click"  Margin="3,0">
+                    <Image Source="image\icon\home.png" />
+                </Button>
+
+                <Button Background="Transparent"
+                                Height="50"
+                                x:Name="btnCategory"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                
+                                Click="btnCategory_Click" Margin="3,0">
+                    <Image Source="image\icon\category.png"></Image>
+                </Button>
+
+                <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+								x:Name="btnMe"
+								Click="btnMe_Click" Margin="3,0">
+                    <Image Source="image\icon\account.png" ></Image>
+                </Button>
+
+                <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+								x:Name="btnSearch"
+								Click="btnSearch_Click" Margin="3,0">
+                    <Image Source="image\icon\search.png" ></Image>
+                </Button>
+            </StackPanel>
+
+            <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
@@ -42,19 +85,18 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
 
-                    
-
 
                     <!-- Tên shop và logo -->
                     <DockPanel>
                         <Image Source="image\thumb\logo-2.png" Margin="8" Width="43"/>
-                        <TextBlock Text="ShopName®" FontSize="25" Margin="5 0 0 0"/>
+                        <TextBlock Text="ShopName®" FontSize="25" Margin="5 0 0 0" Style="{DynamicResource TextBlockStyle}"/>
 
                     </DockPanel>
 
-                    <!-- Thanh tìm kiếm -->
-                    <Border Margin="5" Width="250" Padding="3" Grid.Column="1" 
-                            CornerRadius="20" Background="Gray">
+                   
+
+                    <Border Margin="5" Width="250" Padding="10 0 0 0" Grid.Column="2" 
+                            CornerRadius="20" Background="Gray" Visibility="Hidden">
                         <DockPanel>
                             <TextBox  Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"
                                      Tag="Email"
@@ -64,117 +106,82 @@
                         </DockPanel>
                     </Border>
 
-                    <Grid Grid.Column="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <Button Background="Transparent"
-                                Height="50"
-                                BorderThickness="0"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
-							    x:Name="btnHome"
-							    Click ="btnHome_Click">
-                            <Image Source="image\icon\home.png" Opacity="10" />
-                        </Button>
-                        <Button Background="Transparent"
-                                Height="50"
-                                x:Name="btnCategory"
-                                BorderThickness="0"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
-                                
-                                Grid.Column="1"
-                                Click="btnCategory_Click" Margin="3,0">
-                            <Image Source="image\icon\category.png"></Image>
-                        </Button>
-                        
-                        <Button Background="Transparent"
-                                Height="50"
-                                BorderThickness="0"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
-                                Grid.Column="3"
-								x:Name="btnMe"
-								Click="btnMe_Click">
-                            <Image Source="image\icon\account.png" ></Image>
-                        </Button>
-                    </Grid>
-
                     <!-- Biểu tượng giỏ hàng và menu Button -->
-                    <Button Height="25" Width="25"
-                        VerticalAlignment="Center"
+                    
+                <materialDesign:PopupBox
+                    Style="{StaticResource MaterialDesignMultiFloatingActionAccentPopupBox}"
+                    PlacementMode="BottomAndAlignRightEdges" Grid.Column="4" Height="40" Width="40"
+                     Background="Transparent" Margin="5">
+                    <materialDesign:PopupBox.ToggleContent>
+                        <Image Source="image\icon\xbox_menu.ico"/>
+                    </materialDesign:PopupBox.ToggleContent>
+                    
+
+                    <StackPanel>
+                        <Button Height="25" Width="25"
+                        VerticalAlignment="Top"
                         HorizontalAlignment="Right"
-                        Margin="0,0,10,0"
-                        BorderThickness="0"  Grid.Column="4"
+                        BorderThickness="0"
+                            Margin="3"
+                        x:Name="btnSignOut"
+                        Click="btnSignOut_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="image\icon\sign-out.ico" />
+                            </Button.Background>
+                        </Button>
+
+                        <Button Height="25" Width="25"
+                        x:Name="btnMinimize"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                            Margin="3"
+                        Click="btnMinimized_Click"
+                        BorderThickness="0" Style="{DynamicResource macos-minimize-style}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
+                            </Button.Background>
+                        </Button>
+
+                        <Button Height="25" Width="25"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        BorderThickness="0"
+                            Margin="3"
                         x:Name="btnClose"
-                        Click="btnClose_Click" Style="{DynamicResource xbox-menu-style}">
-                        <Button.Background>
-                            <ImageBrush ImageSource="image\icon\xbox_menu.ico" />
-                        </Button.Background>
-                    </Button>
+                        Click="btnClose_Click" Style="{DynamicResource close-window-style}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="image\icon\close-window-2.png" />
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </materialDesign:PopupBox>
                    
-                        <Button Width="90" Height="25"
+                        <Button Width="30" Height="30"
                         VerticalAlignment="Center" Margin="5" 
                                 BorderThickness="0" Grid.Column="3"
-                        HorizontalAlignment="Center" Background="DarkSeaGreen"
-                        x:Name="btnCart" materialDesign:ButtonAssist.CornerRadius="10"
-                        Click="btnCart_Click" >
-                            <DockPanel>
-                                <Image Source="image\icon\shopping_cart.ico" Height="14" Width="13"/>
-                                <TextBlock Margin="3 0 0 0" Text="CART" Foreground="White" 
-                                           FontSize="8" VerticalAlignment="Center"/>
-                                <Border Margin="7 0 0 0" Width="15" Height="15" CornerRadius="10" Background="Black">
-                                    <TextBlock FontSize="10" HorizontalAlignment="Center" Text="2"></TextBlock>
-                                </Border>
-                            </DockPanel>
+                        HorizontalAlignment="Center" Background="Transparent"
+                        x:Name="btnCart"
+                        Click="btnCart_Click" Padding="0">
+                                <Image Source="image\icon\shopping-cart.ico"/>
                         </Button>
+<<<<<<< HEAD
 
-                </Grid>
-
-
-            </Border>
-            <!--#endregion-->
-
-            <TextBlock Text="Một chữ gì đó hiệu ứng hiện lên rồi lại tắt đi" Grid.Row="1" Margin="5" HorizontalAlignment="Center"/>
-
-            <Border 
-                CornerRadius="20" Grid.Row="2" Height="488" Width="980" 
-                    Margin="0 5 0 5" BorderBrush="Gray" BorderThickness="1">
-                <Border.Effect>
-                    <DropShadowEffect ShadowDepth="1"/>
-                </Border.Effect>
-                <Grid   x:Name="HomeLayout">
+=======
                     
+>>>>>>> 111fa475d5e095a95faf4d0ada04adcb428caa3f
                 </Grid>
 
-            </Border>
-            
-            <!--#region Social -->
-            <Grid Grid.Row="3" Height="26" Margin="5">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <DockPanel Grid.Column="0" HorizontalAlignment="Center">
-                    <Image Source="image\icon\facebook.ico"/>
-                    <TextBlock Margin="5 0 0 0" Text="https://www.facebook.com/ShopName" VerticalAlignment="Center"/>
-                </DockPanel>
-                <DockPanel Grid.Column="1" HorizontalAlignment="Center">
-                    <Image Source="image\icon\instagram.ico"/>
-                    <TextBlock Margin="5 0 0 0" Text="https://www.instagram.com/ShopName" VerticalAlignment="Center"/>
-                </DockPanel>
-                <DockPanel Grid.Column="2" HorizontalAlignment="Center">
-                    <Image Source="image\icon\website.ico"/>
-                    <TextBlock Margin="5 0 0 0" Text="https://www.shopname.com" VerticalAlignment="Center"/>
-                </DockPanel>
-            </Grid>
             <!--#endregion-->
+
+            <Grid Grid.Row="1" Margin="8">
+                <Grid ></Grid>
+            </Grid>
 
         </Grid>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 111fa475d5e095a95faf4d0ada04adcb428caa3f
 
     </Grid>
 </Window>
