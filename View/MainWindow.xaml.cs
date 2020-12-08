@@ -46,10 +46,7 @@ namespace View
             HomeLayout.Children.Clear();
             HomeLayout.Children.Add(new Home());
         }
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
         private void btnMe_Click(object sender, RoutedEventArgs e)
         {
 
@@ -58,6 +55,18 @@ namespace View
         {
 
         }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSignOut_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
         #endregion
+
+
     }
 }

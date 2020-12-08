@@ -64,6 +64,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>packages\WpfAnimatedGif.2.0.0\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -166,15 +169,20 @@
     <Resource Include="image\icon\sign-out.ico" />
     <Resource Include="image\icon\xbox_menu.ico" />
     <Resource Include="image\icon\xbox_menu_1.ico" />
-    <Resource Include="image\icon\shopping_cart.ico" />
     <Resource Include="image\thumb\logo-2.png" />
     <Resource Include="image\icon\home.png" />
     <Resource Include="image\icon\website.ico" />
     <Resource Include="image\icon\facebook.ico" />
     <Resource Include="image\icon\instagram.ico" />
+    <Resource Include="image\icon\shopping-cart.ico" />
+    <Resource Include="image\SanPham\TShirt\Tropical-Peach.jpg" />
+    <Resource Include="image\SanPham\Jacket\Spotlight.jpg" />
+    <Resource Include="image\SanPham\Sweater\reflection-2020.jpg" />
+    <Resource Include="image\icon\twitter.ico" />
+    <Resource Include="image\icon\scroll.gif" />
+    <Resource Include="image\icon\cancel.ico" />
     <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
-    <Resource Include="image\icon\shopping_bag.png" />
     <Resource Include="image\icon\icon-ava.ico" />
     <Resource Include="icon-ava.ico" />
     <Resource Include="image\thumb\account-thumb.jpg" />

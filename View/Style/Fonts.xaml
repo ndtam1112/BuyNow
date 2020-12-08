@@ -10,6 +10,14 @@
     <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
         <Setter Property="FontFamily" Value="{StaticResource LatoThin}"/>
         <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForeLightBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="TextBlockStyle">
+        <Setter Property="FontFamily" Value="{StaticResource LatoThin}"/>
+        <Setter Property="FontSize" Value="15"/>
         <Setter Property="Foreground" Value="{DynamicResource ForegroundDimGrayBrush}"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -45,7 +53,7 @@
                                    Padding="{TemplateBinding Padding}"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
-                                   Foreground="{StaticResource BackgroundGrayBrush}"
+                                   Foreground="{StaticResource BackgroundLightBrush}"
                                    >
                             <TextBlock.Style>
                                 <Style TargetType="{x:Type TextBlock}">
