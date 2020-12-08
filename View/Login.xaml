@@ -19,14 +19,12 @@
         MouseDown="Window_MouseDown"
         AllowsTransparency="True"
         Title="Login" Height="621" Width="1000">
-   
-
     <Grid>
 
         <Grid>
             <Border>
 
-                <MediaElement Source="..\image\thumb\Untitled-design-2.mp4"></MediaElement>
+                <MediaElement Source="pack://application:,,,/image\thumb\Untitled-design-2.mp4"></MediaElement>
             </Border>
         </Grid>
         <!--#region Close And Minimize Button-->
@@ -40,7 +38,7 @@
                         Click="btnClose_Click" 
                     Style="{DynamicResource close-window-style}">
                 <Button.Background>
-                    <ImageBrush ImageSource="image\icon\close-window-2.png" />
+                    <ImageBrush ImageSource="pack://application:,,,/image\icon\close-window-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
@@ -53,7 +51,7 @@
                         Margin="0,5,40,0"
                         BorderThickness="0" Style="{DynamicResource macos-minimize-style}">
                 <Button.Background>
-                    <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
+                    <ImageBrush ImageSource="pack://application:,,,/image\icon\macos-minimize-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
@@ -65,18 +63,6 @@
 
                     <TextBlock Text="Welcome" FontSize="50" FontFamily="{DynamicResource LatoThin}" Foreground="White"></TextBlock>
                     <TextBlock Text="to ShopNow" FontSize="50" FontFamily="{DynamicResource LatoThin}" Foreground="White" ></TextBlock>
-                </StackPanel>
-                <StackPanel Margin="0,40,0,0">
-                    <Image Source="image\icon\shopping_bag.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5">
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform />
-                                <SkewTransform />
-                                <RotateTransform Angle="-26.565" />
-                                <TranslateTransform />
-                            </TransformGroup>
-                        </Image.RenderTransform>
-                    </Image>
                 </StackPanel>
             </StackPanel>
             <!--#region Introduce-->
@@ -181,23 +167,24 @@
                     BorderBrush="Gray" BorderThickness="0,1,0,1" Grid.Row="0" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,70,0,0">
                     </Border>
-                    <Image Source="image\icon\account.png" Height="40"
+                    <Image Source="pack://application:,,,/image\icon\account.png" Height="40"
                    Grid.Row="0"></Image>
-                    <TextBox Margin="5,0,0,0" Text="Username"  Width="200"
+                    <TextBox x:Name="tbPhone"
+                             Margin="5,0,0,0" Text="Phone"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="0" FontSize="20" BorderThickness="0"></TextBox>
                     <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
                     BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,0,70,0">
                     </Border>
-                    <Image Source="image\icon\password.png" Height="40" Grid.Row="2"></Image>
-                    <TextBox Margin="5,0,0,0" Text="Password"  Width="200"
+                    <Image Source="pack://application:,,,/image\icon\password.png" Height="40" Grid.Row="2"></Image>
+                    <PasswordBox Margin="5,0,0,0" x:Name="pbPassword"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
-                     Grid.Column="1" Grid.Row="2" FontSize="20" BorderThickness="0"></TextBox>
-                    <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
+                     Grid.Column="1" Grid.Row="2" FontSize="20" BorderThickness="0"></PasswordBox>
+                    <Button x:Name="btnLogin" Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
                     Width="65" Height="65" Margin="195,0,0,0" Background="DeepSkyBlue"
-                    BorderThickness="0" Grid.Column="1">
-                        <Image Source="image\icon\right.png"></Image>
+                    BorderThickness="0" Grid.Column="1" Click="btnLogin_Click">
+                        <Image Source="pack://application:,,,/image\icon\right.png"></Image>
                     </Button>
                 </Grid>
             </Grid>
@@ -207,7 +194,7 @@
                 <Button.Content>
                     <DockPanel>
                         <Image x:Name="skip1" Width="25">
-                            <Image.Source>image\icon\skip.ico</Image.Source>
+                            <Image.Source>pack://application:,,,/image\icon\skip.ico</Image.Source>
                             <Image.Triggers>
                                 <EventTrigger RoutedEvent="Image.Loaded">
                                     <BeginStoryboard>
@@ -222,7 +209,7 @@
                             </Image.Triggers>
                         </Image>
                         <Image x:Name="skip2" Width="25">
-                            <Image.Source>image\icon\skip.ico</Image.Source>
+                            <Image.Source>pack://application:,,,/image\icon\skip.ico</Image.Source>
                             <Image.Triggers>
                                 <EventTrigger RoutedEvent="Image.Loaded">
                                     <BeginStoryboard>
@@ -236,7 +223,7 @@
                             </Image.Triggers>
                         </Image>
                         <Image x:Name="skip3" Width="25">
-                            <Image.Source>image\icon\skip.ico</Image.Source>
+                            <Image.Source>pack://application:,,,/image\icon\skip.ico</Image.Source>
                             <Image.Triggers>
                                 <EventTrigger RoutedEvent="Image.Loaded">
                                     <BeginStoryboard>
@@ -254,6 +241,7 @@
             </Button>
             <!--#endregion-->
             <Button
+                    x:Name="btnSignUp" Click="btnSignUp_Click"
 				    Content="Sign Up" FontSize="20" Height="60" Width="145"
                     materialDesign:ButtonAssist.CornerRadius="0,30,30,0" Background="WhiteSmoke"
                     BorderThickness="2" Foreground="Red" BorderBrush="DarkGray"

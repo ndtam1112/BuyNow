@@ -78,6 +78,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Classess\Account.cs" />
+    <Compile Include="Classess\BUYER.cs" />
+    <Compile Include="Classess\History.cs" />
+    <Compile Include="Classess\Product.cs" />
     <Compile Include="Database\Connection.cs" />
     <Compile Include="Database\Accountdatabase.cs" />
     <Compile Include="Login.xaml.cs">

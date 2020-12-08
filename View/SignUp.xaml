@@ -22,7 +22,7 @@
         <Grid>
 
             <Border>
-                <MediaElement Source="image\thumb\sign-up-thumb-2.mp4"></MediaElement>
+                <MediaElement Source="pack://application:,,,/image\thumb\sign-up-thumb-2.mp4"></MediaElement>
             </Border>
         </Grid>
         <StackPanel>
@@ -34,7 +34,7 @@
 					    x:Name="btnClose"
                         Click="btnClose_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="image\icon\close-window-2.png" />
+                    <ImageBrush ImageSource="pack://application:,,,/image\icon\close-window-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
@@ -47,7 +47,7 @@
 					    x:Name="btnMinimize"
 					    Click="btnMinimized_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
+                    <ImageBrush ImageSource="pack://application:,,,/image\icon\macos-minimize-2.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
@@ -56,18 +56,6 @@
                 <StackPanel Orientation="Vertical" Margin="40,60,40,40">
                     <TextBlock Text="Welcome" FontSize="50" FontFamily="Ink Free" Foreground="White"></TextBlock>
                     <TextBlock FontSize="50" Foreground="White"><Run FontFamily="Ink Free" Text="to" /><Run Text=" " /><Run FontFamily="Nirmala UI Semilight" Text="BuyNow." FontWeight="Bold" /></TextBlock>
-                </StackPanel>
-                <StackPanel Margin="0,40,0,0">
-                    <Image Source="image\icon\shopping_bag.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5">
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform />
-                                <SkewTransform />
-                                <RotateTransform Angle="-26.565" />
-                                <TranslateTransform />
-                            </TransformGroup>
-                        </Image.RenderTransform>
-                    </Image>
                 </StackPanel>
             </StackPanel>
             <TextBlock Text="Sign Up" FontSize="50" HorizontalAlignment="Center"
@@ -106,7 +94,7 @@
                     BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,0,70,0">
                 </Border>
-                <Image Source="image\icon\password.png" Height="40" Grid.Row="2"></Image>
+                <Image Source="pack://application:,,,/image\icon\password.png" Height="40" Grid.Row="2"></Image>
                 <PasswordBox Margin="5,0,0,0" 
                              Width="200"
                          x:Name="passWordSignUp"
@@ -115,8 +103,8 @@
                 <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
                     Width="65" Height="65" Margin="195,0,0,0" Background="DeepSkyBlue"
                     BorderThickness="0" Grid.Column="1" 
-					x:Name="btnLoginGo" Click="btnLogin_Click">
-                    <Image Source="image\icon\done.png"></Image>
+					x:Name="btnSignUp" Click="btnSignUp_Click">
+                    <Image Source="pack://application:,,,/image\icon\done.png"></Image>
                 </Button>
             </Grid>
             <Button 

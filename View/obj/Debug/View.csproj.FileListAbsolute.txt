@@ -1,54 +1,14 @@
-D:\MyApp\BuyNow\View\obj\Debug\Login.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\MainWindow.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\PopUp.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\SanPhamChiTiet.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\SignUp.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\User Control\Home.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\App.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\View_Content.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\View_MarkupCompile.cache
-D:\MyApp\BuyNow\View\obj\Debug\View_MarkupCompile.lref
-D:\MyApp\BuyNow\View\obj\Debug\User Control\Category.g.cs
-D:\MyApp\BuyNow\View\bin\Debug\View.exe.config
-D:\MyApp\BuyNow\View\bin\Debug\View.exe
-D:\MyApp\BuyNow\View\bin\Debug\View.pdb
-D:\MyApp\BuyNow\View\bin\Debug\MaterialDesignColors.dll
-D:\MyApp\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\MyApp\BuyNow\View\bin\Debug\MaterialDesignColors.pdb
-D:\MyApp\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\MyApp\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\MyApp\BuyNow\View\obj\Debug\User Control\Account.g.cs
-D:\MyApp\BuyNow\View\obj\Debug\App.baml
-D:\MyApp\BuyNow\View\obj\Debug\Login.baml
-D:\MyApp\BuyNow\View\obj\Debug\MainWindow.baml
-D:\MyApp\BuyNow\View\obj\Debug\PopUp.baml
-D:\MyApp\BuyNow\View\obj\Debug\SanPhamChiTiet.baml
-D:\MyApp\BuyNow\View\obj\Debug\SignUp.baml
-D:\MyApp\BuyNow\View\obj\Debug\Style\Buttons.baml
-D:\MyApp\BuyNow\View\obj\Debug\Style\Color.baml
-D:\MyApp\BuyNow\View\obj\Debug\Style\Fonts.baml
-D:\MyApp\BuyNow\View\obj\Debug\Style\Texts.baml
-D:\MyApp\BuyNow\View\obj\Debug\Style\Window.baml
-D:\MyApp\BuyNow\View\obj\Debug\User Control\Account.baml
-D:\MyApp\BuyNow\View\obj\Debug\User Control\Category.baml
-D:\MyApp\BuyNow\View\obj\Debug\User Control\Home.baml
-D:\MyApp\BuyNow\View\obj\Debug\View.g.resources
-D:\MyApp\BuyNow\View\obj\Debug\View.Properties.Resources.resources
-D:\MyApp\BuyNow\View\obj\Debug\View.csproj.GenerateResource.cache
-D:\MyApp\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-D:\MyApp\BuyNow\View\obj\Debug\View.csproj.CopyComplete
-D:\MyApp\BuyNow\View\obj\Debug\View.exe
-D:\MyApp\BuyNow\View\obj\Debug\View.pdb
-D:\MyApp\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
 D:\My App\BuyNow\View\bin\Debug\View.exe.config
 D:\My App\BuyNow\View\bin\Debug\View.exe
 D:\My App\BuyNow\View\bin\Debug\View.pdb
 D:\My App\BuyNow\View\bin\Debug\MaterialDesignColors.dll
 D:\My App\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\My App\BuyNow\View\bin\Debug\WpfAnimatedGif.dll
 D:\My App\BuyNow\View\bin\Debug\MaterialDesignColors.pdb
 D:\My App\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\My App\BuyNow\View\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
+D:\My App\BuyNow\View\bin\Debug\WpfAnimatedGif.pdb
+D:\My App\BuyNow\View\bin\Debug\WpfAnimatedGif.xml
 D:\My App\BuyNow\View\obj\Debug\Login.g.cs
 D:\My App\BuyNow\View\obj\Debug\MainWindow.g.cs
 D:\My App\BuyNow\View\obj\Debug\PopUp.g.cs
@@ -82,6 +42,3 @@ D:\My App\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\My App\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\My App\BuyNow\View\obj\Debug\View.exe
 D:\My App\BuyNow\View\obj\Debug\View.pdb
-D:\My App\BuyNow\View\bin\Debug\WpfAnimatedGif.dll
-D:\My App\BuyNow\View\bin\Debug\WpfAnimatedGif.pdb
-D:\My App\BuyNow\View\bin\Debug\WpfAnimatedGif.xml

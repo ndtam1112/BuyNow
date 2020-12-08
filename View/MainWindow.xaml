@@ -17,18 +17,17 @@
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
     </Window.Resources>
 
-
-    <Grid >
-        <Border CornerRadius="20" Background="White">
+    <Grid>
+        <Border CornerRadius="20">
             <Grid x:Name="HomeLayout">
-                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\Untitled-design.mp4"/>
+                <MediaElement Source="pack://application:,,,/image\thumb\Untitled-design.mp4" />
             </Grid>
         </Border>
 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="61"/>
-                <RowDefinition Height="560"/>
+                <RowDefinition Height="61" />
+                <RowDefinition Height="560" />
             </Grid.RowDefinitions>
 
             <!--#region Thanh Bar trên -->
@@ -41,7 +40,7 @@
                                 HorizontalAlignment="Center"
 							    x:Name="btnHome"
 							    Click ="btnHome_Click"  Margin="3,0">
-                    <Image Source="image\icon\home.png" />
+                    <Image Source="pack://application:,,,/image\icon\home.png" />
                 </Button>
 
                 <Button Background="Transparent"
@@ -50,9 +49,9 @@
                                 BorderThickness="0"
                                 VerticalAlignment="Center"
                                 HorizontalAlignment="Center"
-                                
+
                                 Click="btnCategory_Click" Margin="3,0">
-                    <Image Source="image\icon\category.png"></Image>
+                    <Image Source="pack://application:,,,/image\icon\category.png"></Image>
                 </Button>
 
                 <Button Background="Transparent"
@@ -62,7 +61,7 @@
                                 HorizontalAlignment="Center"
 								x:Name="btnMe"
 								Click="btnMe_Click" Margin="3,0">
-                    <Image Source="image\icon\account.png" ></Image>
+                    <Image Source="pack://application:,,,/image\icon\account.png" ></Image>
                 </Button>
 
                 <Button Background="Transparent"
@@ -72,50 +71,44 @@
                                 HorizontalAlignment="Center"
 								x:Name="btnSearch"
 								Click="btnSearch_Click" Margin="3,0">
-                    <Image Source="image\icon\search.png" ></Image>
+                    <Image Source="pack://application:,,,/image\icon\search.png" ></Image>
                 </Button>
             </StackPanel>
 
             <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
 
+                <!-- Tên shop và logo -->
+                <DockPanel>
+                    <Image Source="pack://application:,,,/image\thumb\logo-2.png" Margin="8" Width="43" />
+                    <TextBlock Text="ShopName®" FontSize="25" Margin="5 0 0 0" Style="{DynamicResource TextBlockStyle}" />
+                </DockPanel>
 
-                    <!-- Tên shop và logo -->
-                    <DockPanel>
-                        <Image Source="image\thumb\logo-2.png" Margin="8" Width="43"/>
-                        <TextBlock Text="ShopName®" FontSize="25" Margin="5 0 0 0" Style="{DynamicResource TextBlockStyle}"/>
-
-                    </DockPanel>
-
-                   
-
-                    <Border Margin="5" Width="250" Padding="10 0 0 0" Grid.Column="2" 
+                <Border Margin="5" Width="250" Padding="10 0 0 0" Grid.Column="2"
                             CornerRadius="20" Background="Gray" Visibility="Hidden">
-                        <DockPanel>
-                            <TextBox  Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"
-                                     Tag="Email"
-                                    />
-                            <Image Source="image\icon\search.png"
-                                   HorizontalAlignment="Right"/>
-                        </DockPanel>
-                    </Border>
+                    <DockPanel>
+                        <TextBox  Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"
+                                     Tag="Email" />
+                        <Image Source="pack://application:,,,/image\icon\search.png"
+                                   HorizontalAlignment="Right" />
+                    </DockPanel>
+                </Border>
 
-                    <!-- Biểu tượng giỏ hàng và menu Button -->
-                    
+                <!-- Biểu tượng giỏ hàng và menu Button -->
+
                 <materialDesign:PopupBox
                     Style="{StaticResource MaterialDesignMultiFloatingActionAccentPopupBox}"
                     PlacementMode="BottomAndAlignRightEdges" Grid.Column="4" Height="40" Width="40"
                      Background="Transparent" Margin="5">
                     <materialDesign:PopupBox.ToggleContent>
-                        <Image Source="image\icon\xbox_menu.ico"/>
+                        <Image Source="pack://application:,,,/image\icon\xbox_menu.ico" />
                     </materialDesign:PopupBox.ToggleContent>
-                    
 
                     <StackPanel>
                         <Button Height="25" Width="25"
@@ -126,7 +119,7 @@
                         x:Name="btnSignOut"
                         Click="btnSignOut_Click">
                             <Button.Background>
-                                <ImageBrush ImageSource="image\icon\sign-out.ico" />
+                                <ImageBrush ImageSource="pack://application:,,,/image\icon\sign-out.ico" />
                             </Button.Background>
                         </Button>
 
@@ -138,7 +131,7 @@
                         Click="btnMinimized_Click"
                         BorderThickness="0" Style="{DynamicResource macos-minimize-style}">
                             <Button.Background>
-                                <ImageBrush ImageSource="image\icon\macos-minimize-2.png" />
+                                <ImageBrush ImageSource="pack://application:,,,/image\icon\macos-minimize-2.png" />
                             </Button.Background>
                         </Button>
 
@@ -150,31 +143,25 @@
                         x:Name="btnClose"
                         Click="btnClose_Click" Style="{DynamicResource close-window-style}">
                             <Button.Background>
-                                <ImageBrush ImageSource="image\icon\close-window-2.png" />
+                                <ImageBrush ImageSource="pack://application:,,,/image\icon\close-window-2.png" />
                             </Button.Background>
                         </Button>
                     </StackPanel>
                 </materialDesign:PopupBox>
-                   
-                        <Button Width="30" Height="30"
-                        VerticalAlignment="Center" Margin="5" 
+
+                <Button Width="30" Height="30"
+                        VerticalAlignment="Center" Margin="5"
                                 BorderThickness="0" Grid.Column="3"
                         HorizontalAlignment="Center" Background="Transparent"
                         x:Name="btnCart"
                         Click="btnCart_Click" Padding="0">
-                                <Image Source="image\icon\shopping-cart.ico"/>
-                        </Button>
-                    
-                </Grid>
+                    <Image Source="pack://application:,,,/image\icon\shopping-cart.ico" />
+                </Button>
+               
+            </Grid>
 
             <!--#endregion-->
 
-            <Grid Grid.Row="1" Margin="8">
-                <Grid ></Grid>
-            </Grid>
-
         </Grid>
-        
-
     </Grid>
 </Window>

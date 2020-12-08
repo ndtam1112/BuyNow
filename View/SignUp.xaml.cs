@@ -44,18 +44,16 @@ namespace View
 
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            string phone = phoneSignUp.Text.Trim();
-            string password = passWordSignUp.Password.Trim();
-
-            if(Accountdatabase.insert(phone,password,0))
+            if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
             {
-                MessageBox.Show("Register Successfully");
+
+                MessageBox.Show("hi");
             }
             else
             {
-                MessageBox.Show("Register Failure");
+                MessageBox.Show("");
 
             }
         }
