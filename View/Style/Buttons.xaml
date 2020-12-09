@@ -10,7 +10,7 @@
 
 
     <ImageBrush x:Key="macos-minimize" ImageSource="pack://application:,,,/image\icon\macos-minimize.png" />
-    <ImageBrush x:Key="close-window" ImageSource="D:\My App\BuyNow\View\image\icon\cancel.ico" />
+    <ImageBrush x:Key="close-window" ImageSource="..\image\icon\cancel.ico" />
     <ImageBrush x:Key="xbox-menu" ImageSource="pack://application:,,,/image\icon\xbox_menu_1.ico" />
     
 
