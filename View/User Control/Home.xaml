@@ -19,7 +19,7 @@
             <Grid Height="621">
                 <Border CornerRadius="20" Opacity="0"  x:Name="thumb1">
                     <Border.Background>
-                        <ImageBrush ImageSource="pack://application:,,,/image\thumb\thumb-2.jpg" Stretch="UniformToFill">
+                        <ImageBrush ImageSource="..\image\thumb\thumb-2.jpg" Stretch="UniformToFill">
                         </ImageBrush>
                     </Border.Background>
                     <Border.Triggers>
@@ -40,7 +40,7 @@
 
                 <Border CornerRadius="20" Opacity="0" x:Name="thumb3">
                     <Border.Background>
-                        <ImageBrush ImageSource="pack://application:,,,/image\thumb\thumb-3.jpg" Stretch="UniformToFill">
+                        <ImageBrush ImageSource="..\image\thumb\thumb-3.jpg" Stretch="UniformToFill">
                         </ImageBrush>
                     </Border.Background>
                     <Border.Triggers>
@@ -60,7 +60,7 @@
                 </Border>
                 <Border CornerRadius="20" Opacity="0" x:Name="thumb2">
                     <Border.Background>
-                        <ImageBrush ImageSource="pack://application:,,,/image\thumb\thumb-1.jpg" Stretch="UniformToFill">
+                        <ImageBrush ImageSource="..\image\thumb\thumb-1.jpg" Stretch="UniformToFill">
                         </ImageBrush>
                     </Border.Background>
                     <Border.Triggers>
@@ -77,7 +77,7 @@
                 </Border>
 
                 <Image gif:ImageBehavior.RepeatBehavior="Forever" x:Name="scroll" Opacity="0"
-                        gif:ImageBehavior.AnimatedSource="D:\My App\BuyNow\View\image\icon\scroll.gif"
+                        gif:ImageBehavior.AnimatedSource="..\image\icon\scroll.gif"
                        Width="80" VerticalAlignment="Bottom" Margin="0 0 0 60">
                     <Image.Triggers>
                         <EventTrigger RoutedEvent="Image.Loaded">
@@ -116,14 +116,14 @@
                     <Button Padding="0" BorderThickness="0" Margin="0 0 5 0"
                         Grid.RowSpan="2" Height="600">
                         <Button.Background>
-                            <ImageBrush ImageSource="pack://application:,,,/image\SanPham\Sweater\reflection-2020.jpg"
+                            <ImageBrush ImageSource="..\image\SanPham\Sweater\reflection-2020.jpg"
                                         Stretch="UniformToFill" />
                         </Button.Background>
                     </Button>
                     <Button Padding="0" BorderThickness="0"
                         Height="275" Margin="5 0 0 5" Grid.Column="1">
                         <Button.Background>
-                            <ImageBrush ImageSource="pack://application:,,,/image\SanPham\TShirt\Tropical-Peach.jpg"
+                            <ImageBrush ImageSource="..\image\SanPham\TShirt\Tropical-Peach.jpg"
                                         Stretch="UniformToFill" />
                         </Button.Background>
                     </Button>
@@ -131,7 +131,7 @@
                             Padding="0" BorderThickness="0"
                             Height="275">
                         <Button.Background>
-                            <ImageBrush ImageSource="pack://application:,,,/image\SanPham\Jacket\Spotlight.jpg"
+                            <ImageBrush ImageSource="..\image\SanPham\Jacket\Spotlight.jpg"
                                         Stretch="UniformToFill" />
                         </Button.Background>
                     </Button>
@@ -141,22 +141,22 @@
             <DockPanel Margin="10" HorizontalAlignment="Center">
                 <Button Margin="10" BorderThickness="0 " ToolTip="Facebook">
                     <Button.Background>
-                        <ImageBrush ImageSource="D:\My App\BuyNow\View\image\icon\facebook.ico" />
+                        <ImageBrush ImageSource="..\image\icon\facebook.ico" />
                     </Button.Background>
                 </Button>
                 <Button Margin="10" BorderThickness="0 " ToolTip="Instagram">
                     <Button.Background>
-                        <ImageBrush ImageSource="D:\My App\BuyNow\View\image\icon\instagram.ico" />
+                        <ImageBrush ImageSource="..\image\icon\instagram.ico" />
                     </Button.Background>
                 </Button>
                 <Button Margin="10" BorderThickness="0 " ToolTip="Twitter">
                     <Button.Background>
-                        <ImageBrush ImageSource="D:\My App\BuyNow\View\image\icon\twitter.ico" />
+                        <ImageBrush ImageSource="..\image\icon\twitter.ico" />
                     </Button.Background>
                 </Button>
                 <Button Margin="10" BorderThickness="0 " ToolTip="Website">
                     <Button.Background>
-                        <ImageBrush ImageSource="D:\My App\BuyNow\View\image\icon\website.ico" />
+                        <ImageBrush ImageSource="..\image\icon\website.ico" />
                     </Button.Background>
                 </Button>
             </DockPanel>

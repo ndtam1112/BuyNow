@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="View.User_Control.List_Product"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:View.User_Control"
+             mc:Ignorable="d"
+             d:DesignHeight="621" d:DesignWidth="1000">
+    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+        <StackPanel>
+        <Grid>
+            <Border CornerRadius="20" Height="621" Width="1000">
+                <Border.Background>
+                        <ImageBrush ImageSource="..\image\category\jacket.jpg" Stretch="UniformToFill"/>
+                </Border.Background>
+                <Border.Effect>
+                    <BlurEffect Radius="15" KernelType="Gaussian"/>
+                </Border.Effect>
+            </Border>
+            <TextBlock Text="#Jacket" Style="{DynamicResource TextBlockStyle}" FontSize="60"/>
+        </Grid>
+        
+        <ListView Margin="10" Height="500" Name="lvDataBinding">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel Orientation="Horizontal">
+                        
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
+    </ScrollViewer>
+</UserControl>

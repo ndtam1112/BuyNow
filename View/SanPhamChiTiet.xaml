@@ -42,14 +42,14 @@
         <Grid>
             <Border CornerRadius="30">
                 <Border.Background>
-                    <ImageBrush ImageSource="pack://application:,,,/image\thumb\san-pham-chi-tiet.jpg" />
+                    <ImageBrush ImageSource="image\thumb\san-pham-chi-tiet.jpg" />
                 </Border.Background>
             </Border>
         </Grid>
         <StackPanel Margin="40,40,0,0" HorizontalAlignment="Left">
             <Border Width="380" Height="380" BorderThickness="2"
                         BorderBrush="Black" Background="White">
-                <Image Source="pack://application:,,,/image\SanPham\TShirt\FlatIcon-Bear-Tee-Black.png"></Image>
+                <Image Source="image\SanPham\TShirt\FlatIcon-Bear-Tee-Black.png"></Image>
             </Border>
         </StackPanel>
         <Grid>
@@ -82,14 +82,14 @@
                         <Button BorderBrush="Gray"
                             Height="32" Width="32">
                             <Button.Background>
-                                <ImageBrush ImageSource="pack://application:,,,/image\icon\minus.png"></ImageBrush>
+                                <ImageBrush ImageSource="image\icon\minus.png"></ImageBrush>
                             </Button.Background>
                         </Button>
                         <TextBlock Text="" Height="32" Width="70" ></TextBlock>
                         <Button BorderBrush="Gray"
                             Height="32" Width="32">
                             <Button.Background>
-                                <ImageBrush ImageSource="pack://application:,,,/image\icon\plus.png"></ImageBrush>
+                                <ImageBrush ImageSource="image\icon\plus.png"></ImageBrush>
                             </Button.Background>
                         </Button>
                     </StackPanel>
@@ -97,7 +97,7 @@
                         <Button Margin="15,10,15,10" Height="50" materialDesign:ButtonAssist.CornerRadius="7"
                             Background="AliceBlue" BorderThickness="1" Foreground="Gray"  BorderBrush="Gray">
                             <StackPanel Orientation="Horizontal">
-                                <Image Stretch="UniformToFill" Source="pack://application:,,,/image\icon\buy.png"></Image>
+                                <Image Stretch="UniformToFill" Source="image\icon\buy.png"></Image>
                                 <TextBlock Text="Thêm Vào Giỏ Hàng"
                                        VerticalAlignment="Center" HorizontalAlignment="Center"
                                        Margin="5,0,0,0" FontSize="20" FontFamily="Nirmala UI Semilight"></TextBlock>
@@ -123,7 +123,7 @@
                              Margin="10,5,10,0"
                             BorderThickness="0">
                 <Button.Background>
-                    <ImageBrush ImageSource="pack://application:,,,/image\icon\back.png"></ImageBrush>
+                    <ImageBrush ImageSource="image\icon\back.png"></ImageBrush>
                 </Button.Background>
             </Button>
         </StackPanel>

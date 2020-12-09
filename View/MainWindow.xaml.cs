@@ -39,7 +39,9 @@ namespace View
         }
         private void btnCategory_Click(object sender, RoutedEventArgs e)
         {
-           
+            HomeLayout.Children.Clear();
+            HomeLayout.Children.Add(new Category());
+
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {

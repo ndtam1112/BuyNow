@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d" 
              d:DesignHeight="488" d:DesignWidth="980">
-    <Grid>
+    <Grid x:Name="CategoryLayout">
         <Border CornerRadius="20" Background="White">
             <Grid Width="980" Height="600">
                 <ScrollViewer VerticalScrollBarVisibility="Hidden">
@@ -32,7 +32,7 @@
                             
                             <Button x:Name="Jacket" Height="500" Width="500"
                                 Background="Transparent" BorderThickness="0" Padding="0"
-                                    Grid.Column="1">
+                                    Grid.Column="1" Click="Jacket_Click">
                                 
                                 <Button.Content>
                                     <Border>

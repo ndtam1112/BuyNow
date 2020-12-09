@@ -24,5 +24,11 @@ namespace View.User_Control
         {
             InitializeComponent();
         }
+
+        private void Jacket_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryLayout.Children.Clear();
+            CategoryLayout.Children.Add(new List_Product());
+        }
     }
 }

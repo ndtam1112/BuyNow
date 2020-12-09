@@ -89,9 +89,6 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PopUp.xaml.cs">
-      <DependentUpon>PopUp.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SanPhamChiTiet.xaml.cs">
       <DependentUpon>SanPhamChiTiet.xaml</DependentUpon>
     </Compile>
@@ -106,6 +103,9 @@
     </Compile>
     <Compile Include="User Control\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\List_Product.xaml.cs">
+      <DependentUpon>List_Product.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -296,10 +296,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PopUp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="SanPhamChiTiet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -337,6 +333,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="User Control\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Control\List_Product.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

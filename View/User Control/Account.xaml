@@ -11,7 +11,7 @@
         <Grid>
             <Border CornerRadius="30">
                 <Border.Background>
-                    <ImageBrush ImageSource="pack://application:,,,/image\thumb\account-thumb.jpg"></ImageBrush>
+                    <ImageBrush ImageSource="..\image\thumb\account-thumb.jpg"></ImageBrush>
                 </Border.Background>
             </Border>
         </Grid>
