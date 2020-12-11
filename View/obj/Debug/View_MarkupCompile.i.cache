@@ -12,7 +12,11 @@ DEBUG;TRACE
 D:\My App\BuyNow\View\App.xaml
 16-188792694
 111340627281
+<<<<<<< HEAD
 24146046861
+=======
+241469900405
+>>>>>>> ca745ac67f8ccd8e97e6f4d84a2307c28d6d3145
 16-1826298898
 Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;SignUp.xaml;Style\Buttons.xaml;Style\Color.xaml;Style\Fonts.xaml;Style\Texts.xaml;Style\Window.xaml;Tessssttttttt.xaml;User Control\Account.xaml;User Control\Category.xaml;User Control\Home.xaml;User Control\ItemProduct.xaml;User Control\ItemCart.xaml;User Control\List_Product.xaml;
 
