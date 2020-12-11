@@ -18,9 +18,29 @@
     </Window.Resources>
 
     <Grid>
-        <Border CornerRadius="20">
-            <Grid x:Name="HomeLayout">
-                <MediaElement Source="image\thumb\Untitled-design.mp4" />
+        <Border x:Name="border" BorderThickness="1" BorderBrush="#FF000000" CornerRadius="20" Padding="1"
+        HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Border Name="mask" Background="White" CornerRadius="{Binding ElementName=border, Path=CornerRadius}"/>
+                <Grid  x:Name="HomeLayout">
+                    <Grid.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=mask}"/>
+                    </Grid.OpacityMask>
+                    <MediaElement x:Name="movieLoader" HorizontalAlignment="Left" Height="621" LoadedBehavior="Play"
+                          VerticalAlignment="Top" Width="1000" >
+                        <MediaElement.Triggers>
+                            <EventTrigger RoutedEvent="MediaElement.Loaded">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <MediaTimeline Source="D:\My App\BuyNow\View\image\thumb\Untitled-design.mp4" Storyboard.TargetName="movieLoader" RepeatBehavior="Forever" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </MediaElement.Triggers>
+                    </MediaElement>
+                </Grid>
             </Grid>
         </Border>
 
@@ -115,7 +135,7 @@
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         BorderThickness="0"
-                            Margin="3"
+                            Margin="3" Style="{DynamicResource MaterialDesignFlatAccentBgButton}"
                         x:Name="btnSignOut"
                         Click="btnSignOut_Click">
                             <Button.Background>
@@ -149,13 +169,27 @@
                     </StackPanel>
                 </materialDesign:PopupBox>
 
-                <Button Width="30" Height="30"
+                <Button Width="70" Height="30"
                         VerticalAlignment="Center" Margin="5"
                                 BorderThickness="0" Grid.Column="3"
                         HorizontalAlignment="Center" Background="Transparent"
                         x:Name="btnCart"
                         Click="btnCart_Click" Padding="0">
-                    <Image Source="image\icon\shopping-cart.ico" />
+                    <DockPanel LastChildFill="True">
+                        <TextBlock Text="0" Margin="0 0 3 0"/>
+                        <Border BorderThickness="0 0 1 0" BorderBrush="White" RenderTransformOrigin="0.5,0.5">
+                            <Border.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="26.565"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Border.RenderTransform>
+                        </Border>
+                        <TextBlock Margin="3 0 3 0" Text="0"/>
+                        <TextBlock Text="VND"/>
+                    </DockPanel>
                 </Button>
                
             </Grid>

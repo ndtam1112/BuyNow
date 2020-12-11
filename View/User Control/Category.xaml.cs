@@ -30,5 +30,66 @@ namespace View.User_Control
             CategoryLayout.Children.Clear();
             CategoryLayout.Children.Add(new List_Product());
         }
+
+        private void TShirt_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            tShirt.Opacity = 1;
+        }
+
+        private void TShirt_MouseLeave(object sender, MouseEventArgs e)
+        {
+            tShirt.Opacity = 0;
+
+        }
+
+        private void Jacket_MouseLeave(object sender, MouseEventArgs e)
+        {
+            jacket.Opacity = 0;
+        }
+
+        private void Jacket_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            jacket.Opacity = 1;
+        }
+
+        private void Sweater_MouseLeave(object sender, MouseEventArgs e)
+        {
+            sweater.Opacity = 0;
+        }
+
+        private void Sweater_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            sweater.Opacity = 1;
+        }
+
+        private void Pants_MouseLeave(object sender, MouseEventArgs e)
+        {
+            pants.Opacity = 0;
+        }
+
+        private void Pants_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            pants.Opacity = 1;
+        }
+
+        private void Short_MouseLeave(object sender, MouseEventArgs e)
+        {
+            @short.Opacity = 0;
+        }
+
+        private void Short_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            @short.Opacity = 1;
+        }
+
+        private void Bags_MouseLeave(object sender, MouseEventArgs e)
+        {
+            bag.Opacity = 0;
+        }
+
+        private void Bags_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            bag.Opacity = 1;
+        }
     }
 }

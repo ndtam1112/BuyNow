@@ -178,8 +178,6 @@
     <Resource Include="image\thumb\admin-background.jpg" />
     <Resource Include="image\thumb\main-background.jpg" />
     <Resource Include="image\icon\sign-out.ico" />
-    <Resource Include="image\icon\xbox_menu.ico" />
-    <Resource Include="image\icon\xbox_menu_1.ico" />
     <Resource Include="image\thumb\logo-2.png" />
     <Resource Include="image\icon\home.png" />
     <Resource Include="image\icon\website.ico" />
@@ -192,6 +190,9 @@
     <Resource Include="image\icon\twitter.ico" />
     <Resource Include="image\icon\scroll.gif" />
     <Resource Include="image\icon\cancel.ico" />
+    <Resource Include="image\icon\add.ico" />
+    <Resource Include="image\icon\buy.ico" />
+    <Resource Include="image\icon\xbox_menu.ico" />
     <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
     <Resource Include="image\icon\icon-ava.ico" />

@@ -8,7 +8,7 @@
 
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d"
-             d:DesignHeight="621" d:DesignWidth="900">
+             d:DesignHeight="621" d:DesignWidth="1000">
 
     <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
 
@@ -16,8 +16,51 @@
 
             <!-- Thumb -->
 
-            <Grid Height="621">
-                <Border CornerRadius="20" Opacity="0"  x:Name="thumb1">
+            <Grid Height="621" Width="1000">
+                <!--<Border Height="621" Width="1000">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="{x:Null}" />
+                            <Setter Property="BorderThickness" Value="0" />
+                            <Style.Triggers>
+                                <Trigger Property="Border.IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Black" />
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <BlurEffect Radius="20" KernelType="Gaussian" />
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <Image Source="..\image\thumb\thumb-2.jpg">
+                    </Image>
+                </Border>-->
+                
+                
+                <!--<Image Source="..\image\thumb\thumb-2.jpg"  x:Name="thumb1">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <BlurEffect Radius="0" KernelType="Gaussian"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <BlurEffect Radius="20" KernelType="Gaussian"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                          </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>-->
+
+                <Border CornerRadius="20" Opacity="0" x:Name="thumb1">
                     <Border.Background>
                         <ImageBrush ImageSource="..\image\thumb\thumb-2.jpg" Stretch="UniformToFill">
                         </ImageBrush>
@@ -28,10 +71,10 @@
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="thumb1"
                                      Storyboard.TargetProperty="Opacity"
-                                     From="0.0" To="1.0" Duration="0:0:3" />
+                                     From="0.0" To="1.0" Duration="0:0:6" />
                                     <DoubleAnimation Storyboard.TargetName="thumb1"
                                      Storyboard.TargetProperty="Opacity"
-                                     From="1.0" To="0.0" Duration="0:0:3" BeginTime="0:0:3" />
+                                     From="1.0" To="0.0" Duration="0:0:6" BeginTime="0:0:10" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
@@ -49,10 +92,10 @@
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="thumb3"
                                      Storyboard.TargetProperty="Opacity"
-                                     From="0.0" To="1.0" Duration="0:0:3" BeginTime="0:0:6" />
+                                     From="0.0" To="1.0" Duration="0:0:6" BeginTime="0:0:15" />
                                     <DoubleAnimation Storyboard.TargetName="thumb3"
                                      Storyboard.TargetProperty="Opacity"
-                                     From="1.0" To="0.0" Duration="0:0:3" BeginTime="0:0:9" />
+                                     From="1.0" To="0.0" Duration="0:0:6" BeginTime="0:0:26" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
@@ -69,7 +112,7 @@
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="thumb2"
                                      Storyboard.TargetProperty="Opacity"
-                                     From="0.0" To="1.0" Duration="0:0:3" BeginTime="0:0:12" />
+                                     From="0.0" To="1.0" Duration="0:0:6" BeginTime="0:0:31" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
@@ -85,7 +128,7 @@
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="scroll"
                                      Storyboard.TargetProperty="Opacity"
-                                     From="0.0" To="1.0" Duration="0:0:3" BeginTime="0:0:13" />
+                                     From="0.0" To="1.0" Duration="0:0:3" BeginTime="0:0:31" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
@@ -139,22 +182,42 @@
             </Grid>
 
             <DockPanel Margin="10" HorizontalAlignment="Center">
-                <Button Margin="10" BorderThickness="0 " ToolTip="Facebook">
+                <Button Margin="10" BorderThickness="0 ">
+                    <Button.ToolTip>
+                        <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
+                                           Text="Facebook">
+                        </TextBlock>
+                    </Button.ToolTip>
                     <Button.Background>
                         <ImageBrush ImageSource="..\image\icon\facebook.ico" />
                     </Button.Background>
                 </Button>
-                <Button Margin="10" BorderThickness="0 " ToolTip="Instagram">
+                <Button Margin="10" BorderThickness="0 ">
+                    <Button.ToolTip>
+                        <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
+                                           Text="Instagram">
+                        </TextBlock>
+                    </Button.ToolTip>
                     <Button.Background>
                         <ImageBrush ImageSource="..\image\icon\instagram.ico" />
                     </Button.Background>
                 </Button>
-                <Button Margin="10" BorderThickness="0 " ToolTip="Twitter">
+                <Button Margin="10" BorderThickness="0 ">
+                    <Button.ToolTip>
+                        <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
+                                           Text="Twitter">
+                        </TextBlock>
+                    </Button.ToolTip>
                     <Button.Background>
                         <ImageBrush ImageSource="..\image\icon\twitter.ico" />
                     </Button.Background>
                 </Button>
-                <Button Margin="10" BorderThickness="0 " ToolTip="Website">
+                <Button Margin="10" BorderThickness="0 ">
+                    <Button.ToolTip>
+                        <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
+                                           Text="Website">
+                        </TextBlock>
+                    </Button.ToolTip>
                     <Button.Background>
                         <ImageBrush ImageSource="..\image\icon\website.ico" />
                     </Button.Background>

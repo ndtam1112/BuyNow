@@ -3,93 +3,109 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d" 
-             d:DesignHeight="488" d:DesignWidth="980">
+             d:DesignHeight="621" d:DesignWidth="1000">
+    <UserControl.Resources>
+        <Style x:Key="BaseBorder" TargetType="Border">
+                <Setter Property="Background" Value="{x:Null}"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Style.Triggers>
+                    <Trigger Property="Border.IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="Black"/>
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <BlurEffect Radius="10" KernelType="Gaussian"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
     <Grid x:Name="CategoryLayout">
-        <Border CornerRadius="20" Background="White">
-            <Grid Width="980" Height="600">
+        <Border CornerRadius="20">
+            <Grid>
                 <ScrollViewer VerticalScrollBarVisibility="Hidden">
                     <StackPanel Orientation="Vertical">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition></ColumnDefinition>
-                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
-                                <RowDefinition></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
-                            <Button x:Name="TShirt" Height="500" Width="500"
-                                Background="Transparent" BorderThickness="0" Padding="0" 
-                                    >
-                                <Image Source="..\image\category\t-shirt.jpg"/>
 
-                            </Button>
-                            
-                            <Button x:Name="Jacket" Height="500" Width="500"
-                                Background="Transparent" BorderThickness="0" Padding="0"
-                                    Grid.Column="1" Click="Jacket_Click">
+                            <Button x:Name="TShirt" Height="500" Width="500" BorderThickness="0" Padding="0"  
+                                MouseLeave="TShirt_MouseLeave" PreviewMouseMove="TShirt_PreviewMouseMove" Background="Transparent">
+                                <Grid>
+                                    <Border Style="{DynamicResource BaseBorder}">
+                                        <Image Source="..\image\category\t-shirt.jpg"/>
+                                    </Border>
+                                    <TextBlock x:Name="tShirt" Text="T-Shirts" Opacity="0" Style="{DynamicResource NameProductCartStyle}"/>
+                                </Grid>
                                 
-                                <Button.Content>
-                                    <Border>
-                                        <StackPanel>
-
-                                            <Image Stretch="UniformToFill" Source="..\image\category\jacket.jpg" ></Image>
-
-                                        </StackPanel>
-                                    </Border>
-                                </Button.Content>
                             </Button>
-                            <Button x:Name="Sweater" Height="500" Width="500"
-                                Background="Transparent" BorderThickness="0" Padding="0"
+
+                            <Button x:Name="Jacket" Height="500" Width="500" Background="Transparent"
+                                BorderThickness="0" Padding="0" MouseLeave="Jacket_MouseLeave" PreviewMouseMove="Jacket_PreviewMouseMove"
+                                    Grid.Column="1" Click="Jacket_Click">
+                                <Grid>
+                                    <Border Style="{DynamicResource BaseBorder}">
+                                        <Image Stretch="UniformToFill" Source="..\image\category\jacket.jpg" ></Image>
+                                    </Border>
+                                    <TextBlock x:Name="jacket" Text="Jackets" Opacity="0" Style="{DynamicResource NameProductCartStyle}"/>
+                                </Grid>
+                            </Button>
+
+                            <Button x:Name="Sweater" Height="500" Width="500" Background="Transparent"
+                                 BorderThickness="0" Padding="0" MouseLeave="Sweater_MouseLeave" PreviewMouseMove="Sweater_PreviewMouseMove"
                                 Grid.Row="1">
-                                <Button.Content>
-                                    <Border>
-                                        <StackPanel>
-
-                                            <Image Stretch="UniformToFill" Source="..\image\category\sweater.jpg" ></Image>
-
-                                        </StackPanel>
+                                <Grid>
+                                    <Border Style="{DynamicResource BaseBorder}">
+                                        <Image Stretch="UniformToFill" Source="..\image\category\sweater.jpg" ></Image>
                                     </Border>
-                                </Button.Content>
+                                    <TextBlock x:Name="sweater" Text="Sweaters" Opacity="0" Style="{DynamicResource NameProductCartStyle}"/>
+                                </Grid>
                             </Button>
-                            <Button x:Name="Pants" Height="500" Width="500"
-                                Background="Transparent" BorderThickness="0" Padding="0"
+
+                            <Button x:Name="Pants" Height="500" Width="500" Background="Transparent"
+                                 BorderThickness="0" Padding="0" MouseLeave="Pants_MouseLeave" PreviewMouseMove="Pants_PreviewMouseMove"
                                 Grid.Column="1" Grid.Row="1">
-                                <Button.Content>
-                                    <Border>
-                                        <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="..\image\category\pants.jpg" ></Image>
-                                        </StackPanel>
+                                <Grid>
+                                    <Border Style="{DynamicResource BaseBorder}">
+                                        <Image Stretch="UniformToFill" Source="..\image\category\pants.jpg" ></Image>
                                     </Border>
-                                </Button.Content>
+                                    <TextBlock x:Name="pants" Text="Pants" Opacity="0" Style="{DynamicResource NameProductCartStyle}"/>
+                                </Grid>
                             </Button>
-                            <Button x:Name="Short" Height="500" Width="500"
-                                Background="Transparent" BorderThickness="0"
-                               
+
+                            <Button x:Name="Short" Height="500" Width="500" Background="Transparent"
+                                BorderThickness="0" MouseLeave="Short_MouseLeave" PreviewMouseMove="Short_PreviewMouseMove"
                                 Padding="0" Grid.Row="2">
-                                <Button.Content>
-                                    <Border>
-                                        <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="..\image\category\short.jpg" ></Image>
-                                        </StackPanel>
+                                <Grid>
+                                    <Border Style="{DynamicResource BaseBorder}">
+                                        <Image Stretch="UniformToFill" Source="..\image\category\short.jpg" ></Image>
                                     </Border>
-                                </Button.Content>
+                                    <TextBlock x:Name="short" Text="Shorts" Opacity="0" Style="{DynamicResource NameProductCartStyle}"/>
+
+                                </Grid>
                             </Button>
-                            <Button x:Name="Bags" Height="500" Width="500"
-                                Background="Transparent" BorderThickness="0"
+
+                            <Button x:Name="Bags" Height="500" Width="500" Background="Transparent"
+                                BorderThickness="0" MouseLeave="Bags_MouseLeave" PreviewMouseMove="Bags_PreviewMouseMove"
                                 Padding="0" Grid.Row="2" Grid.Column="2">
-                                <Button.Content>
-                                    <Border>
-                                        <StackPanel>
-                                            <Image Stretch="UniformToFill" Source="..\image\category\bag.jpg" ></Image>
-                                        </StackPanel>
+                                <Grid>
+                                    <Border Style="{DynamicResource BaseBorder}">
+                                        <Image Stretch="UniformToFill" Source="..\image\category\bag.jpg" ></Image>
                                     </Border>
-                                </Button.Content>
+                                    <TextBlock x:Name="bag" Text="Bags" Opacity="0" Style="{DynamicResource NameProductCartStyle}"/>
+
+                                </Grid>
                             </Button>
                         </Grid>
                     </StackPanel>
