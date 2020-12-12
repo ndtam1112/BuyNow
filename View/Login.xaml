@@ -24,7 +24,7 @@
         <Grid>
             <Border>
 
-                <MediaElement Source="image\thumb\sign-up-thumb-2.mp4"></MediaElement>
+                <MediaElement Source="image\thumb\login-thumb.mp4"></MediaElement>
             </Border>
         </Grid>
         <!--#region Close And Minimize Button-->
@@ -86,9 +86,9 @@
                     </TextBlock.Triggers>
                 ShopName® Streetwear <LineBreak /> We are the Street Movement.
                 </TextBlock>
-                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                <TextBlock  FontSize="40" HorizontalAlignment="Center" 
                         FontWeight="Bold" FontFamily="/View;component/fonts/#iCiel Cadena"
-                       Foreground="White" Opacity="1" x:Name="tb2" TextAlignment="Center">
+                       Foreground="White" Opacity="0" x:Name="tb2" TextAlignment="Center">
                     <TextBlock.Triggers>
                         <EventTrigger RoutedEvent="TextBlock.Loaded">
                             <BeginStoryboard>
@@ -103,7 +103,7 @@
                             </BeginStoryboard>
                         </EventTrigger>
                     </TextBlock.Triggers>
-                Chúng tôi là đội ngũ trẻ <LineBreak/> luôn tò mò vẽ tương lai bằng
+                Introduce your brand
                 </TextBlock>
                 <TextBlock  FontSize="40" HorizontalAlignment="Center"
                         FontWeight="Bold" FontFamily="Gabriola"
@@ -122,7 +122,7 @@
                             </BeginStoryboard>
                         </EventTrigger>
                     </TextBlock.Triggers>
-               Khát vọng - Đam mê - Nhiệt huyết
+               Short - Attractive - Unique
                 </TextBlock>
                 <TextBlock  FontSize="40" HorizontalAlignment="Center"
                         FontWeight="Bold" FontFamily="Gabriola"
@@ -169,10 +169,10 @@
                     </Border>
                     <Image Source="image\icon\account.png" Height="40"
                    Grid.Row="0"></Image>
-                    <TextBox x:Name="tbPhone"
-                             Margin="5,0,0,0" Text="Phone"  Width="200"
+                    <TextBox x:Name="tbPhone" Style="{DynamicResource BaseTextBoxStyle}"
+                             Tag="Phone"  Width="200" 
                              VerticalAlignment="Center" HorizontalAlignment="Left"
-                     Grid.Column="1" Grid.Row="0" FontSize="20" BorderThickness="0"></TextBox>
+                     Grid.Column="1" Grid.Row="0"></TextBox>
                     <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
                     BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,0,70,0">

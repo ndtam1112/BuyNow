@@ -193,6 +193,8 @@
     <Resource Include="image\icon\add.ico" />
     <Resource Include="image\icon\buy.ico" />
     <Resource Include="image\icon\xbox_menu.ico" />
+    <Resource Include="image\icon\next.gif" />
+    <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
     <Resource Include="image\icon\icon-ava.ico" />
