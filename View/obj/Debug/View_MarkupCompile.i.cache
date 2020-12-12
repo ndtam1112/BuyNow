@@ -10,9 +10,23 @@ none
 false
 DEBUG;TRACE
 D:\My App\BuyNow\View\App.xaml
+<<<<<<< HEAD
 15-1508380725
 121731682597
 232085692150
+=======
+16-188792694
+111340627281
+<<<<<<< HEAD
+20-315813161
+=======
+<<<<<<< HEAD
+24146046861
+=======
+241469900405
+>>>>>>> ca745ac67f8ccd8e97e6f4d84a2307c28d6d3145
+>>>>>>> ead7162684cb0ee7e4fcb133879f564cad1a5ce7
+>>>>>>> 0038574fda43e34f92bd851345b4354d7f913aa3
 16-1826298898
 Login.xaml;MainWindow.xaml;SanPhamChiTiet.xaml;SignUp.xaml;Style\Buttons.xaml;Style\Color.xaml;Style\Fonts.xaml;Style\Texts.xaml;Style\Window.xaml;User Control\Account.xaml;User Control\Category.xaml;User Control\Home.xaml;User Control\ItemProduct.xaml;User Control\ItemCart.xaml;User Control\List_Product.xaml;
 
