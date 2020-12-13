@@ -71,7 +71,7 @@
                                 HorizontalAlignment="Center"
 
                                 Click="btnCategory_Click" Margin="3,0">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\category.ico"></Image>
+                    <Image Source="image\icon\category.ico"></Image>
                 </Button>
 
                 <Button Background="Transparent"
@@ -81,7 +81,7 @@
                                 HorizontalAlignment="Center"
 								x:Name="btnMe"
 								Click="btnMe_Click" Margin="3,0">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\account.ico" ></Image>
+                    <Image Source="image\icon\account.ico" ></Image>
                 </Button>
 
                 <Button Background="Transparent"
@@ -91,7 +91,7 @@
                                 HorizontalAlignment="Center"
 								x:Name="btnSearch"
 								Click="btnSearch_Click" Margin="3,0">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\search.ico" ></Image>
+                    <Image Source="image\icon\search.ico" ></Image>
                 </Button>
             </StackPanel>
 
@@ -153,7 +153,7 @@
                         x:Name="btnClose"
                         Click="btnClose_Click" Style="{DynamicResource close-window-style}">
                             <Button.Background>
-                                <ImageBrush ImageSource="D:\My App\BuyNow\View\image\icon\close-window-2.png" />
+                                <ImageBrush ImageSource="image\icon\close-window-2.png" />
                             </Button.Background>
                         </Button>
                     </StackPanel>

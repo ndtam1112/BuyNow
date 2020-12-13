@@ -8,15 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/account.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/back.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/category.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/close-window-2.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/done.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/home.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/search.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/phone.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/password.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/logo-2.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/login-thumb.mp4")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/untitled-design-2.mp4")]
