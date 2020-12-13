@@ -77,7 +77,7 @@
                 </Border>
                 <Image Source="image\icon\phone.png" Height="40"
                    HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
-                <TextBox Margin="5,0,0,0" Text="Phone"  Width="200"
+                <TextBox Margin="5,0,0,0" Tag="Phone"  Width="200"
                          x:Name="phoneSignUp"
                      VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" FontSize="20" BorderThickness="0"></TextBox>
@@ -87,7 +87,7 @@
                 </Border>
                 <Image Source="image\icon\account.png" Height="40"
                    Grid.Row="1"></Image>
-                <TextBox Margin="5,0,0,0" Text="Username"  Width="200"
+                <TextBox Margin="5,0,0,0" Tag="Username"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="1" FontSize="20" BorderThickness="0"></TextBox>
                 <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"

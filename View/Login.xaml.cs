@@ -43,23 +43,28 @@ namespace View
 
         private void btSkip_Click(object sender, RoutedEventArgs e)
         {
-           
+            Grid1.Opacity = 1;
+            
+            tb1.Opacity = 0;
+            tb2.Opacity = 0;
+            tb3.Opacity = 0;
+            tb4.Opacity = 0;
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Account account = new Account(tbPhone.Text.Trim(), pbPassword.Password.Trim(),0);
-            if (Accountdatabase.CheckAccount(account.Phone, account.Password))
-            {
-                MainWindow m = new MainWindow();
-                Window.GetWindow(this).Hide();
-                m.Show();
-                MessageBox.Show("dang nhap...");
-            }
-            else
-            {
-                MessageBox.Show("Error join app");
-            }
+            // account = new Account(tbPhone.Text.Trim(), pbPassword.Password.Trim(),0);
+            //if (Accountdatabase.CheckAccount(account.Phone, account.Password))
+            //{
+            //    MainWindow m = new MainWindow();
+            //    Window.GetWindow(this).Hide();
+            //    m.Show();
+            //    MessageBox.Show("dang nhap...");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Error join app");
+            //}
         }
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
