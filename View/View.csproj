@@ -174,13 +174,9 @@
     <Resource Include="image\SanPham\TShirt\SunShine-Tee-White.png" />
     <Resource Include="image\thumb\admin-background.jpg" />
     <Resource Include="image\thumb\main-background.jpg" />
-    <Resource Include="image\icon\sign-out.ico" />
-    <Resource Include="image\thumb\logo-2.png" />
-    <Resource Include="image\icon\home.png" />
     <Resource Include="image\icon\website.ico" />
     <Resource Include="image\icon\facebook.ico" />
     <Resource Include="image\icon\instagram.ico" />
-    <Resource Include="image\icon\shopping-cart.ico" />
     <Resource Include="image\SanPham\TShirt\Tropical-Peach.jpg" />
     <Resource Include="image\SanPham\Jacket\Spotlight.jpg" />
     <Resource Include="image\SanPham\Sweater\reflection-2020.jpg" />
@@ -190,7 +186,18 @@
     <Resource Include="image\icon\add.ico" />
     <Resource Include="image\icon\buy.ico" />
     <Resource Include="image\icon\xbox_menu.ico" />
-    <Resource Include="image\icon\next.gif" />
+    <Content Include="image\icon\account.ico" />
+    <Content Include="image\icon\back.ico" />
+    <Content Include="image\icon\category.ico" />
+    <Content Include="image\icon\close-window-2.png" />
+    <Content Include="image\icon\done.png" />
+    <Content Include="image\icon\home.ico" />
+    <Resource Include="image\icon\confirm-password.ico" />
+    <Resource Include="image\icon\sign-out.ico" />
+    <Content Include="image\icon\search.ico" />
+    <Content Include="image\icon\phone.ico" />
+    <Content Include="image\icon\password.ico" />
+    <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
@@ -201,26 +208,10 @@
     <Content Include="image\thumb\sign-up-thumb-2.mp4" />
     <Resource Include="image\category\bag.jpg" />
     <Resource Include="image\icon\right.png" />
-    <Resource Include="image\icon\phone.png" />
-    <Resource Include="image\icon\done.png" />
-    <Resource Include="image\icon\email.png" />
-    <Resource Include="image\icon\password.png" />
-    <Resource Include="image\icon\calendar.png" />
-    <Resource Include="image\icon\gift.png" />
-    <Resource Include="image\icon\like.png" />
-    <Resource Include="image\icon\transit.png" />
     <Resource Include="image\icon\minus.png" />
     <Resource Include="image\icon\plus.png" />
-    <Resource Include="image\icon\buy.png" />
-    <Resource Include="image\icon\account.png" />
-    <Resource Include="image\icon\search.png" />
-    <Resource Include="image\icon\category.png" />
-    <Resource Include="image\icon\new-2.png" />
     <Resource Include="image\icon\macos-minimize.png" />
     <Resource Include="image\icon\macos-minimize-2.png" />
-    <Resource Include="image\icon\close-window.png" />
-    <Resource Include="image\icon\close-window-2.png" />
-    <Resource Include="image\icon\back.png" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -358,17 +349,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="image\icon\add-to-shopping.png" />
-    <Resource Include="image\icon\favourite-2.png" />
-    <Resource Include="image\icon\favourite.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="image\thumb\thumb-1.jpg" />
     <Resource Include="image\thumb\thumb-2.jpg" />
     <Resource Include="image\thumb\thumb-3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="image\thumb\logo-1.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\category\jacket.jpg" />

@@ -170,7 +170,7 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Image Margin="20 0 0 0" Source="image\icon\account.png" Height="40"></Image>
+                            <Image Margin="20 0 0 0" Source="image\icon\phone.ico" Height="40"></Image>
                             <TextBox x:Name="tbPhone" Style="{DynamicResource BaseTextBoxStyle}"
                              Width="280" Height="40" Margin="10 5 0 0"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
@@ -187,7 +187,7 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Image Margin="20 0 0 0" Source="image\icon\password.png" Height="40"></Image>
+                            <Image Margin="20 0 0 0" Source="image\icon\password.ico" Height="40"></Image>
                             <PasswordBox  Height="40" Margin="10 5 0 0" x:Name="pbPassword" Width="280"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                       FontSize="20" BorderThickness="0" Grid.Column="1" Tag="Password">
