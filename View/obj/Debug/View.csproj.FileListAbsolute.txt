@@ -16,6 +16,8 @@ D:\My App\BuyNow\View\obj\Debug\SignUp.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\Account.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\Category.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\Home.g.cs
+D:\My App\BuyNow\View\obj\Debug\User Control\ItemProduct.g.cs
+D:\My App\BuyNow\View\obj\Debug\User Control\ItemCart.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\List_Product.g.cs
 D:\My App\BuyNow\View\obj\Debug\App.g.cs
 D:\My App\BuyNow\View\obj\Debug\View_Content.g.cs
@@ -34,6 +36,8 @@ D:\My App\BuyNow\View\obj\Debug\Style\Window.baml
 D:\My App\BuyNow\View\obj\Debug\User Control\Account.baml
 D:\My App\BuyNow\View\obj\Debug\User Control\Category.baml
 D:\My App\BuyNow\View\obj\Debug\User Control\Home.baml
+D:\My App\BuyNow\View\obj\Debug\User Control\ItemProduct.baml
+D:\My App\BuyNow\View\obj\Debug\User Control\ItemCart.baml
 D:\My App\BuyNow\View\obj\Debug\User Control\List_Product.baml
 D:\My App\BuyNow\View\obj\Debug\View.g.resources
 D:\My App\BuyNow\View\obj\Debug\View.Properties.Resources.resources
@@ -42,8 +46,4 @@ D:\My App\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\My App\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\My App\BuyNow\View\obj\Debug\View.exe
 D:\My App\BuyNow\View\obj\Debug\View.pdb
-D:\My App\BuyNow\View\obj\Debug\User Control\ItemProduct.g.cs
-D:\My App\BuyNow\View\obj\Debug\User Control\ItemCart.g.cs
-D:\My App\BuyNow\View\obj\Debug\User Control\ItemProduct.baml
-D:\My App\BuyNow\View\obj\Debug\User Control\ItemCart.baml
 D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache

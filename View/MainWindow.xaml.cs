@@ -20,13 +20,11 @@ namespace View
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private string PhoneNumber;
+        public MainWindow(string phone)
         {
+            this.PhoneNumber = phone;
             InitializeComponent();
-        }
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
         }
         #region Close, Minimize and 4 Button Mặc Định
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -51,7 +49,10 @@ namespace View
         
         private void btnMe_Click(object sender, RoutedEventArgs e)
         {
-
+            HomeLayout.Children.Clear();
+            HomeLayout.Width = 980;
+            HomeLayout.Height = 488;
+            HomeLayout.Children.Add(new Account(PhoneNumber));
         }
         private void btnCart_Click(object sender, RoutedEventArgs e)
         {

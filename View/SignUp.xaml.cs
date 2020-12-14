@@ -41,14 +41,16 @@ namespace View
 
         private void btnWantSignin_Click(object sender, RoutedEventArgs e)
         {
-
+            Login l = new Login();
+            l.Show();
+            this.Hide();
         }
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
             if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
             {
-
+                if(Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "",""))
                 MessageBox.Show("hi");
             }
             else

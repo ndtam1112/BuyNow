@@ -162,7 +162,7 @@
                              Margin="10,70,10,0"
                             BorderThickness="0">
                 <Button.Background>
-                    <ImageBrush ImageSource="image\icon\back.png"></ImageBrush>
+                    <ImageBrush ImageSource="image\icon\back.ico"></ImageBrush>
                 </Button.Background>
             </Button>
         </StackPanel>

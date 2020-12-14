@@ -75,9 +75,9 @@
                 CornerRadius="0,70,0,0" BorderBrush="Gray" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom">
                 </Border>
-                <Image Source="image\icon\phone.png" Height="40"
+                <Image Source="image\icon\phone.ico" Height="40"
                    HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
-                <TextBox Margin="5,0,0,0" Text="Phone"  Width="200"
+                <TextBox Margin="5,0,0,0" Tag="Phone"  Width="200"
                          x:Name="phoneSignUp"
                      VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" FontSize="20" BorderThickness="0"></TextBox>
@@ -85,16 +85,16 @@
                     BorderBrush="Gray" BorderThickness="0,1,0,1" Grid.Row="1" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom">
                 </Border>
-                <Image Source="image\icon\account.png" Height="40"
+                <Image Source="image\icon\account.ico" Height="40"
                    Grid.Row="1"></Image>
-                <TextBox Margin="5,0,0,0" Text="Username"  Width="200"
+                <TextBox Margin="5,0,0,0" Tag="Username"  Width="200"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="1" FontSize="20" BorderThickness="0"></TextBox>
                 <Border Background="WhiteSmoke" Width="380" Height="65" HorizontalAlignment="Left"
                     BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="0,0,70,0">
                 </Border>
-                <Image Source="image\icon\password.png" Height="40" Grid.Row="2"></Image>
+                <Image Source="image\icon\password.ico" Height="40" Grid.Row="2"></Image>
                 <PasswordBox Margin="5,0,0,0" 
                              Width="200"
                          x:Name="passWordSignUp"

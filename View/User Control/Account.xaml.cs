@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using View.Classess;
 using View.Database;
 
 namespace View.User_Control
@@ -21,14 +22,58 @@ namespace View.User_Control
     /// </summary>
     public partial class Account : UserControl
     {
-        public Account()
+
+
+        public string phone
         {
-            InitializeComponent();
+            get { return (string)GetValue(phoneProperty); }
+            set { SetValue(phoneProperty, value); }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        // Using a DependencyProperty as the backing store for phone.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty phoneProperty =
+            DependencyProperty.Register("phone", typeof(string), typeof(Account));
+
+
+
+        public string name
         {
-            Connection.OpenConnection();
+            get { return (string)GetValue(nameProperty); }
+            set { SetValue(nameProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for name.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty nameProperty =
+            DependencyProperty.Register("name", typeof(string), typeof(Account));
+
+
+
+        public string address
+        {
+            get { return (string)GetValue(addressProperty); }
+            set { SetValue(addressProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for address.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty addressProperty =
+            DependencyProperty.Register("address", typeof(string), typeof(Account));
+
+
+        private string PhoneNumber;
+        public Account(string phone)
+        {
+            this.PhoneNumber = phone;
+            InitializeComponent();
+            InitProfile();
+        }
+
+        private void InitProfile()
+        {
+            Client c = Clientdatabase.GetProfileClient(PhoneNumber);
+            name = c.Name_client;
+            phone = c.Phone_number;
+            address = c.Address_client;
+
         }
     }
 }

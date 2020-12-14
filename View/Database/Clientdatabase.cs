@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using View.Classess;
+
 
 namespace View.Database
 {
@@ -41,19 +43,19 @@ namespace View.Database
 
         }
 
-        public static bool InsertToClient(string phone, string name, string adress)
+        public static bool InsertToClient(string phone, string name, string Address)
         {
             try
             {
-                string sqlQuery = "insert into client Values(@_name_client,@_adress_client,@_phone_number);";
+                string sqlQuery = "insert into tb_client Values(@Name_Client,@Phone,@Address);";
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;
 
                 Connection.cmd.Parameters.Clear();
                 Connection.cmd.Parameters.AddWithValue("@Name_Client", name);
-                Connection.cmd.Parameters.AddWithValue("@Adress_Client", adress);
                 Connection.cmd.Parameters.AddWithValue("@Phone", phone);
+                Connection.cmd.Parameters.AddWithValue("@Address", Address);
 
                 Connection.cmd.ExecuteScalar();
 
@@ -70,6 +72,47 @@ namespace View.Database
             {
                 Connection.CloseConnection();
             }
+
+        }
+        public static Client GetProfileClient(string phone)
+        {
+            Client c = new Client();
+            try
+            {
+                string sqlQuery = "select * from tb_client where _phone_number=@phone;";
+                Connection.OpenConnection();
+                Connection.cmd.CommandType = System.Data.CommandType.Text;
+                Connection.cmd.CommandText = sqlQuery;
+
+                Connection.cmd.Parameters.Clear();
+                Connection.cmd.Parameters.AddWithValue("@phone", phone);
+
+                Connection.rd = Connection.cmd.ExecuteReader();
+
+                while (Connection.rd.Read())
+                {
+                    c.Phone_number = Connection.rd.GetString(1);
+                    c.Name_client = Connection.rd.GetString(0);
+                    c.Address_client = Connection.rd.GetString(2);
+                }
+                return c;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("getprofile error: " + e.Message);
+                return c;
+
+            }
+            finally
+            {
+                Connection.CloseConnection();
+
+            }
+
+        }
+
+        public static UpdateClient(string phone)
+        {
 
         }
 

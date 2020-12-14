@@ -27,7 +27,7 @@ namespace View
         public string Phone_number { get; private set; }
         public string Password { get; private set; }
 
-        public Login(string v, string v1)
+        public Login()
         {
             InitializeComponent();
         }
@@ -48,18 +48,22 @@ namespace View
 
         private void btSkip_Click(object sender, RoutedEventArgs e)
         {
-           
+            Grid1.Opacity = 1;
+            
+            tb1.Opacity = 0;
+            tb2.Opacity = 0;
+            tb3.Opacity = 0;
+            tb4.Opacity = 0;
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Login login = new Login(tbPhone.Text.Trim(), pbPassword.Password.Trim());
-            if (Accountdatabase.CheckAccount(login.Phone_number, login.Password))
+            LoginUser lu = new LoginUser(tbPhone.Text.Trim(), pbPassword.Password.Trim());
+            if (Accountdatabase.CheckAccount(lu.Phone_number, lu.Password))
             {
-                MainWindow m = new MainWindow();
+                MainWindow m = new MainWindow(lu.Phone_number);
                 Window.GetWindow(this).Hide();
                 m.Show();
-                MessageBox.Show("dang nhap...");
             }
             else
             {

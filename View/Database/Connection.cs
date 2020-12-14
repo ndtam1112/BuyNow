@@ -10,7 +10,7 @@ namespace View.Database
 {
     public class Connection
     {
-        public static string connection = "Data Source=LAPTOP-UJCQAF9R\\SQLEXPRESS;Initial Catalog=CLOTHING;Integrated Security=True;";
+        public static string connection = "Data Source=LAPTOP-UJCQAF9R\\SQLEXPRESS;Initial Catalog=myapp;Integrated Security=True;";
         public static SqlConnection connect = new SqlConnection();
         public static SqlCommand cmd = new SqlCommand("", connect);
         public static SqlDataReader rd;
@@ -23,7 +23,6 @@ namespace View.Database
                 {
                     connect.ConnectionString = connection;
                     connect.Open();
-                    MessageBox.Show("Server is running...");
                 }
             }catch(Exception ex)
             {

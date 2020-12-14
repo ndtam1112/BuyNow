@@ -8,6 +8,7 @@
 
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d"
+             Name="home"
              d:DesignHeight="621" d:DesignWidth="1000">
 
     <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
@@ -117,14 +118,14 @@
                     <Button Padding="0" BorderThickness="0" Margin="0 0 5 0"
                         Grid.RowSpan="2" Height="600">
                         <Button.Background>
-                            <ImageBrush ImageSource="..\image\SanPham\Sweater\reflection-2020.jpg"
+                            <ImageBrush ImageSource="{Binding Image1,ElementName=home}"
                                         Stretch="UniformToFill" />
                         </Button.Background>
                     </Button>
                     <Button Padding="0" BorderThickness="0"
                         Height="275" Margin="5 0 0 5" Grid.Column="1">
                         <Button.Background>
-                            <ImageBrush ImageSource="..\image\SanPham\TShirt\Tropical-Peach.jpg"
+                            <ImageBrush ImageSource="{Binding Image2,ElementName=home}"
                                         Stretch="UniformToFill" />
                         </Button.Background>
                     </Button>
@@ -132,7 +133,7 @@
                             Padding="0" BorderThickness="0"
                             Height="275">
                         <Button.Background>
-                            <ImageBrush ImageSource="..\image\SanPham\Jacket\Spotlight.jpg"
+                            <ImageBrush ImageSource="{Binding Image,ElementName=home}"
                                         Stretch="UniformToFill" />
                         </Button.Background>
                     </Button>

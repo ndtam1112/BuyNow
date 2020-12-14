@@ -19,7 +19,7 @@ namespace View.Database
         {
             try
             {
-                string sqlQuery = "insert into ACCOUNT values(@Phone,@Password,0);";
+                string sqlQuery = "insert into tb_login values(@Phone,@Password);";
 
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
@@ -35,6 +35,7 @@ namespace View.Database
             }
             catch(Exception e)
             {
+                MessageBox.Show("loi o phan insert to login " + e.Message);
                 return false;
             }
             finally
@@ -46,7 +47,7 @@ namespace View.Database
         public static Boolean CheckAccount(string phone, string password)
         {
 
-            string sqlQuery = $"select count(*) from ACCOUNT where Phone=@Phone and Password=@Password;";
+            string sqlQuery = $"select count(*) from tb_login where _phone_number=@Phone and _password=@Password;";
             try
             {
                 Connection.OpenConnection();
@@ -81,14 +82,6 @@ namespace View.Database
 
         }
 
-        internal static bool CheckAccount(string phone_number, object password)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal static bool CheckAccount(object phone_number, object password)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

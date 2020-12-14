@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace View.Classess
 {
-    class Client
+    public class Client
     {
         private string _name_client;
         private string _phone_number;
@@ -21,6 +21,10 @@ namespace View.Classess
             Name_client = name_client;
             Phone_number = phone_number;
             Address_client = address_client;
+        }
+        public Client()
+        {
+
         }
     }
 }
