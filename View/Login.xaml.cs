@@ -41,15 +41,7 @@ namespace View
             System.Windows.Application.Current.Shutdown();
         }
 
-        private void btSkip_Click(object sender, RoutedEventArgs e)
-        {
-            Grid1.Opacity = 1;
-            
-            tb1.Opacity = 0;
-            tb2.Opacity = 0;
-            tb3.Opacity = 0;
-            tb4.Opacity = 0;
-        }
+       
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {

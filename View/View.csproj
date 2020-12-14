@@ -199,13 +199,13 @@
     <Resource Include="image\icon\search.ico" />
     <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
-    <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
+    <Content Include="image\thumb\Untitled_design.mp4" />
+    <Content Include="image\thumb\Untitled-design-2.mp4" />
     <Resource Include="image\icon\icon-ava.ico" />
     <Resource Include="icon-ava.ico" />
     <Resource Include="image\thumb\account-thumb.jpg" />
     <Resource Include="image\thumb\san-pham-chi-tiet.jpg" />
-    <Content Include="image\thumb\sign-up-thumb-2.mp4" />
     <Resource Include="image\category\bag.jpg" />
     <Resource Include="image\icon\right.png" />
     <Resource Include="image\icon\minus.png" />
