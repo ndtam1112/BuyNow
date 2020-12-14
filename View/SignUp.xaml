@@ -15,9 +15,30 @@
         Title="SignUp" Height="621" Width="1000">
     <Grid>
         <Grid>
-
-            <Border>
-                <MediaElement Source="D:\My App\BuyNow\View\image\thumb\Untitled-design-2.mp4"></MediaElement>
+            <Border x:Name="border" BorderThickness="1" BorderBrush="#FF000000" CornerRadius="20" Padding="1"
+        HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid>
+                    <Border Name="mask" Background="White" CornerRadius="{Binding ElementName=border, Path=CornerRadius}"/>
+                    <Grid>
+                        <Grid.OpacityMask>
+                            <VisualBrush Visual="{Binding ElementName=mask}"/>
+                        </Grid.OpacityMask>
+                        <MediaElement x:Name="movieLoader" HorizontalAlignment="Left" Height="621" LoadedBehavior="Play"
+                          VerticalAlignment="Top" Width="1000" >
+                            <MediaElement.Triggers>
+                                <EventTrigger RoutedEvent="MediaElement.Loaded">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <MediaTimeline Source="D:\My App\BuyNow\View\image\thumb\Untitled-design-2.mp4" Storyboard.TargetName="movieLoader" RepeatBehavior="Forever" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </MediaElement.Triggers>
+                        </MediaElement>
+                    </Grid>
+                </Grid>
             </Border>
         </Grid>
         <StackPanel>
@@ -53,13 +74,91 @@
                     <TextBlock Text="to ShopNow" FontSize="50" Style="{DynamicResource NameProductStyle}" />
                 </StackPanel>
             </StackPanel>
-            <TextBlock Text="Sign Up" FontSize="50" HorizontalAlignment="Center"
+            <TextBlock Text="Sign Up" Name="txtSignUp" Opacity="0" FontSize="50" HorizontalAlignment="Center"
                        Margin="0,0,0,5" FontWeight="Bold" FontFamily="Gabriola"
                        Foreground="White"></TextBlock>
+
             <!--#region Introduce-->
             <Grid>
 
-                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Grid1" Opacity="1">
+                <TextBlock FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb1" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb1"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0.0" To="1.0" Duration="0:0:3" />
+                                    <DoubleAnimation Storyboard.TargetName="tb1"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1.0" To="0.0" Duration="0:0:3" BeginTime="0:0:3" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                ShopName® Streetwear <LineBreak /> We are the Street Movement.
+                </TextBlock>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb2" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb2"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:3" BeginTime="0:0:5.5" />
+                                    <DoubleAnimation Storyboard.TargetName="tb2"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0" Duration="0:0:3" BeginTime="0:0:8.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                Introduce your brand
+                </TextBlock>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb3" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb3"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:3" BeginTime="0:0:11.5" />
+                                    <DoubleAnimation Storyboard.TargetName="tb3"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0" Duration="0:0:3" BeginTime="0:0:14.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+               Short - Attractive - Unique
+                </TextBlock>
+                <TextBlock  FontSize="40" HorizontalAlignment="Center"
+                        FontWeight="Bold" FontFamily="Gabriola"
+                       Foreground="White" Opacity="0" x:Name="tb4" TextAlignment="Center">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="tb4"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1" Duration="0:0:3" BeginTime="0:0:17.5" />
+                                    <DoubleAnimation Storyboard.TargetName="tb4"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0" Duration="0:0:3" BeginTime="0:0:20.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+               Join With Us
+                </TextBlock>
+
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Grid1" Opacity="0">
                     <Grid.Triggers>
                         <EventTrigger RoutedEvent="Grid.Loaded">
                             <BeginStoryboard>
@@ -82,7 +181,7 @@
                             <RowDefinition Height="65"></RowDefinition>
                         </Grid.RowDefinitions>
                         <Border Background="White" Width="380" Height="65" HorizontalAlignment="Center"
-                    BorderThickness="0,1,0,1" Grid.Row="0" Grid.ColumnSpan="2"
+                    BorderThickness="0" Grid.Row="0" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom" CornerRadius="50,50,0,0">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -90,16 +189,18 @@
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <Image Margin="20 0 0 0" Source="image\icon\phone.ico" Height="40"></Image>
-                                <TextBox Style="{DynamicResource BaseTextBoxStyle}"
-                             Width="280" Height="40" Margin="10 5 0 0"
+                                <TextBox
+                                    materialDesign:HintAssist.Hint="Phone"
+                    BorderThickness="0" FontSize="15"
+                             Width="280"  Margin="10 5 0 0"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
-                             Grid.Column="1" Tag="Phone">
+                             Grid.Column="1">
                                 </TextBox>
                             </Grid>
                         </Border>
 
                         <Border Background="White" Width="380" Height="65" HorizontalAlignment="Center"
-                    BorderBrush="Gray" BorderThickness="0,1,0,1" Grid.Row="1" Grid.ColumnSpan="2"
+                    BorderBrush="Gray" BorderThickness="0" Grid.Row="1" Grid.ColumnSpan="2"
                     VerticalAlignment="Bottom">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -107,14 +208,16 @@
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <Image Margin="20 0 0 0" Source="image\icon\password.ico" Height="40" />
-                                <PasswordBox Margin="5,0,0,0" Tag="Password"  Width="200"
+                                <PasswordBox Margin="10,5,0,0" Width="280"
+                                              materialDesign:HintAssist.Hint="Password"
+                    materialDesign:TextFieldAssist.HasClearButton="True"
                              VerticalAlignment="Center" HorizontalAlignment="Left"
-                     Grid.Column="1" Grid.Row="1" FontSize="20" BorderThickness="0"></PasswordBox>
+                     Grid.Column="1" Grid.Row="1" FontSize="15" BorderThickness="0"></PasswordBox>
                             </Grid>
                         </Border>
 
                         <Border Background="White" Width="380" Height="65" HorizontalAlignment="Center"
-                    BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2"
+                    BorderBrush="Transparent" Grid.Row="2" Grid.ColumnSpan="2" BorderThickness="0"
                     VerticalAlignment="Bottom" CornerRadius="0,0,50,50">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -122,26 +225,28 @@
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <Image Source="image\icon\confirm-password.ico" Height="40" Margin="20 0 0 0" />
-                                <PasswordBox Margin="5,0,0,0"
-                             Width="200" Tag="Confirm Password"
+                                <PasswordBox Margin="10,5,0,0"
+                             Width="280"
+                                             materialDesign:HintAssist.Hint="Confirm Password"
+                    materialDesign:TextFieldAssist.HasClearButton="True"
                          x:Name="passWordSignUp"
-                             VerticalAlignment="Center" HorizontalAlignment="Center"
-                     Grid.Column="1" Grid.Row="2" FontSize="20" BorderThickness="0"></PasswordBox>
+                             VerticalAlignment="Center" HorizontalAlignment="Left"
+                     Grid.Column="1" Grid.Row="2" FontSize="15" BorderThickness="0"></PasswordBox>
                             </Grid>
                         </Border>
 
                         <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
-                    Width="65" Height="65" Margin="180,0,0,0" Background="DeepSkyBlue"
+                    Width="65" Height="65" Margin="200,0,0,0" Background="DeepSkyBlue"
                     BorderThickness="0" Grid.Column="1"
 					x:Name="btnSignUp" Click="btnSignUp_Click">
-                            <Image Source="image\icon\done.png"></Image>
+                            <Image Source="image\icon\done.ico"></Image>
                         </Button>
                     </Grid>
                 </Grid>
             </Grid>
             <!--#endregion-->
             <!--#region Button Skip-->
-            <Button Width="100" Height="50" BorderThickness="0" Click="btSkip_Click" Background="Transparent">
+            <Button x:Name="btnSkip" Width="100" Opacity="1" Height="50" BorderThickness="0" Click="btSkip_Click" Background="Transparent">
                 <Button.Content>
                     <DockPanel>
                         <Image x:Name="skip1" Width="25">
@@ -191,13 +296,14 @@
                 </Button.Content>
             </Button>
             <!--#endregion-->
-            
+
             <Button
-				    Content="Sign in" FontSize="20" Height="60" Width="145"
+				    Height="60" Width="145"
                     materialDesign:ButtonAssist.CornerRadius="0,30,30,0" Background="WhiteSmoke"
-                    BorderThickness="2" Foreground="Red" BorderBrush="DarkGray"
-                    Margin="0,20,0,0" HorizontalAlignment="Left" FontFamily="Montserrat" FontWeight="Bold"
+                    BorderThickness="2" BorderBrush="DarkGray"
+                    Margin="0,20,0,0" HorizontalAlignment="Left" 
 					x:Name="btnWantSignin" Click="btnWantSignin_Click">
+                <TextBlock Text="Sign In" FontFamily="Montserrat" FontSize="15" Foreground="Blue" FontWeight="Bold"/>
             </Button>
         </StackPanel>
     </Grid>

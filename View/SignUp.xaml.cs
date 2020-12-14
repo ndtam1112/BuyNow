@@ -41,12 +41,14 @@ namespace View
 
         private void btSkip_Click(object sender, RoutedEventArgs e)
         {
-            //Grid1.Opacity = 1;
+            Grid1.Opacity = 1;
+            txtSignUp.Opacity = 1;
 
-            //tb1.Opacity = 0;
-            //tb2.Opacity = 0;
-            //tb3.Opacity = 0;
-            //tb4.Opacity = 0;
+            tb1.Opacity = 0;
+            tb2.Opacity = 0;
+            tb3.Opacity = 0;
+            tb4.Opacity = 0;
+            btnSkip.Opacity = 0;
         }
 
         private void btnWantSignin_Click(object sender, RoutedEventArgs e)

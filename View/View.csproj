@@ -189,14 +189,14 @@
     <Resource Include="image\icon\account.ico" />
     <Resource Include="image\icon\back.ico" />
     <Resource Include="image\icon\category.ico" />
-    <Resource Include="image\icon\confirm-password.ico" />
     <Resource Include="image\icon\close-window-2.png" />
-    <Content Include="image\icon\done.png" />
+    <Resource Include="image\icon\done.ico" />
     <Resource Include="image\icon\sign-out.ico" />
     <Resource Include="image\icon\home.ico" />
-    <Resource Include="image\icon\password.ico" />
     <Resource Include="image\icon\phone.ico" />
     <Resource Include="image\icon\search.ico" />
+    <Resource Include="image\icon\confirm-password.ico" />
+    <Resource Include="image\icon\password.ico" />
     <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />

@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/icon/done.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/logo-2.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/login-thumb.mp4")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thumb/untitled-design.mp4")]
