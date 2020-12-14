@@ -3,26 +3,81 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
-    <Border Padding="10" CornerRadius="10" Background="White">
-        <Border.Effect>
-            <DropShadowEffect BlurRadius="5" ShadowDepth="0"/>
-        </Border.Effect>
+    <UserControl.Resources>
+        <Style x:Key="BaseBorder" TargetType="Border">
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Triggers>
+                <Trigger Property="Border.IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <BlurEffect Radius="10" KernelType="Gaussian"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Button Width="300" Height="450" Padding="0" 
+            Background="Transparent" BorderThickness="0"
+            MouseLeave="ItemProduct_MouseLeave" PreviewMouseMove="ItemProduct_PreviewMouseMove">
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Image Margin="10" Source="{Binding Image}" Stretch="UniformToFill"/>
-            <StackPanel Grid.Row="1">
-                <TextBlock Text="{Binding NameProduct}" Style="{DynamicResource NameProductStyle}"/>
-                <TextBlock Text="{Binding PriceProduct}" Style="{DynamicResource PriceProductStyle}"/>
-            </StackPanel>
-            
+            <Border Padding="10" CornerRadius="10" Background="White" Style="{DynamicResource BaseBorder}">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="0"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Margin="10" Source="..\image\SanPham\TShirt\Tropical-Peach.jpg" Stretch="UniformToFill"/>
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="Áo cho gái xinh" FontSize="30" Style="{DynamicResource NameProductStyle}"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0 15">
+                                <TextBlock FontSize="10" Text="Category"/>
+                                <TextBlock Text="Sweater" Style="{DynamicResource NameProductStyle}" FontSize="15" />
+                            </StackPanel>
+                            <TextBlock Grid.Column="1" Text="$1999" FontSize="20" Style="{DynamicResource PriceProductStyle}"/>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border x:Name="twobutton" Opacity="0" Height="50" Width="120" BorderThickness="0">
+                <StackPanel Orientation="Horizontal">
+                    <Button Height="40" materialDesign:ButtonAssist.CornerRadius="20 0 0 20"
+                            Background="Transparent" 
+                              BorderThickness="0 0 1 0" BorderBrush="{DynamicResource ForegroundSilverBrush}" Foreground="Gray">
+                        <Button.ToolTip>
+                            <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
+                                           Text="Add To Shopping Bag">
+                            </TextBlock>
+                        </Button.ToolTip>
+                        <Image Source="..\image\icon\add.ico"></Image>
+                    </Button>
+                    <Button Height="40"
+                            materialDesign:ButtonAssist.CornerRadius="0 20 20 0"
+                            Background="Transparent" BorderThickness="0">
+                        <Button.ToolTip>
+                            <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
+                                           Text="See Now">
+                            </TextBlock>
+                        </Button.ToolTip>
+                        <Image Source="..\image\icon\see.ico"></Image>
+                    </Button>
+                </StackPanel>
+            </Border>
+
         </Grid>
-        
-            
-    </Border>
+    </Button>
 </UserControl>

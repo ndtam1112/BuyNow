@@ -24,5 +24,15 @@ namespace View.User_Control
         {
             InitializeComponent();
         }
+
+        private void ItemProduct_MouseLeave(object sender, MouseEventArgs e)
+        {
+            twobutton.Opacity = 0;
+        }
+
+        private void ItemProduct_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            twobutton.Opacity = 1;
+        }
     }
 }

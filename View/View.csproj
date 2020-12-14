@@ -87,14 +87,14 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SanPhamChiTiet.xaml.cs">
-      <DependentUpon>SanPhamChiTiet.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="User Control\Account.xaml.cs">
       <DependentUpon>Account.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\Cart.xaml.cs">
+      <DependentUpon>Cart.xaml</DependentUpon>
     </Compile>
     <Compile Include="User Control\Category.xaml.cs">
       <DependentUpon>Category.xaml</DependentUpon>
@@ -110,6 +110,9 @@
     </Compile>
     <Compile Include="User Control\List_Product.xaml.cs">
       <DependentUpon>List_Product.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\ProductDetail.xaml.cs">
+      <DependentUpon>ProductDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\Helpers.cs" />
   </ItemGroup>
@@ -197,6 +200,9 @@
     <Resource Include="image\icon\search.ico" />
     <Resource Include="image\icon\confirm-password.ico" />
     <Resource Include="image\icon\password.ico" />
+    <Resource Include="image\icon\see.ico" />
+    <Resource Include="image\icon\delete.ico" />
+    <Resource Include="image\thumb\bill.jpg" />
     <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
@@ -295,10 +301,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SanPhamChiTiet.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="SignUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -327,6 +329,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="User Control\Cart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="User Control\Category.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -344,6 +350,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="User Control\List_Product.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Control\ProductDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
