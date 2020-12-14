@@ -80,5 +80,15 @@ namespace View.Database
 
 
         }
+
+        internal static bool CheckAccount(string phone_number, object password)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static bool CheckAccount(object phone_number, object password)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

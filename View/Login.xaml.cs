@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using View.Classess;
 using View.Database;
+using View.Utils;
+
 
 namespace View
 {
@@ -22,7 +24,10 @@ namespace View
     /// </summary>
     public partial class Login : Window
     {
-        public Login()
+        public string Phone_number { get; private set; }
+        public string Password { get; private set; }
+
+        public Login(string v, string v1)
         {
             InitializeComponent();
         }
@@ -48,8 +53,8 @@ namespace View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Account account = new Account(tbPhone.Text.Trim(), pbPassword.Password.Trim(),0);
-            if (Accountdatabase.CheckAccount(account.Phone, account.Password))
+            Login login = new Login(tbPhone.Text.Trim(), pbPassword.Password.Trim());
+            if (Accountdatabase.CheckAccount(login.Phone_number, login.Password))
             {
                 MainWindow m = new MainWindow();
                 Window.GetWindow(this).Hide();
