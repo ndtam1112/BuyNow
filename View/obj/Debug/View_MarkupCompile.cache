@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\My App\BuyNow\View\App.xaml
-161684820081
+18-1551460932
 13-561485005
-20389851884
+23-1467789109
 16-1826298898
-Login.xaml;MainWindow.xaml;SignUp.xaml;Style\Buttons.xaml;Style\Color.xaml;Style\Fonts.xaml;Style\Texts.xaml;Style\Window.xaml;User Control\Account.xaml;User Control\Cart.xaml;User Control\Category.xaml;User Control\Home.xaml;User Control\ItemProduct.xaml;User Control\ItemCart.xaml;User Control\List_Product.xaml;User Control\ProductDetail.xaml;
+Login.xaml;MainWindow.xaml;SignUp.xaml;Style\Buttons.xaml;Style\Color.xaml;Style\Fonts.xaml;Style\Texts.xaml;Style\Window.xaml;User Control\Account.xaml;User Control\Cart.xaml;User Control\CartView.xaml;User Control\Category.xaml;User Control\Home.xaml;User Control\ItemCartView.xaml;User Control\ItemProduct.xaml;User Control\ItemCart.xaml;User Control\List_Product.xaml;User Control\ProductDetail.xaml;
 
-False
+True
 

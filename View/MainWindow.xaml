@@ -43,6 +43,7 @@
                 </Grid>
             </Grid>
         </Border>
+        <Border Background="White" Height="500" Width="300" Margin="619,62,81,59"/>
 
         <Grid>
             <Grid.RowDefinitions>
@@ -158,16 +159,16 @@
                         </Button>
                     </StackPanel>
                 </materialDesign:PopupBox>
-
+                
                 <Button Width="70" Height="30"
                         VerticalAlignment="Center" Margin="5"
                                 BorderThickness="0" Grid.Column="3"
                         HorizontalAlignment="Center" Background="Transparent"
                         x:Name="btnCart"
                         Click="btnCart_Click" Padding="0">
-                    <DockPanel LastChildFill="True">
-                        <TextBlock Text="0" Margin="0 0 3 0"/>
-                        <Border BorderThickness="0 0 1 0" BorderBrush="White" RenderTransformOrigin="0.5,0.5">
+                    <DockPanel>
+                        <TextBlock Text="0" Margin="0 0 5 0"/>
+                        <Border BorderThickness="0 0 1 0" BorderBrush="{DynamicResource ForeGrayBrush}" RenderTransformOrigin="0.5,0.5">
                             <Border.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -177,7 +178,7 @@
                                 </TransformGroup>
                             </Border.RenderTransform>
                         </Border>
-                        <TextBlock Margin="3 0 3 0" Text="0"/>
+                        <TextBlock Margin="5 0 3 0" Text="0"/>
                         <TextBlock Text="VND"/>
                     </DockPanel>
                 </Button>
