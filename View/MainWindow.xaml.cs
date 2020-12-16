@@ -55,7 +55,9 @@ namespace View
         }
         private void btnCart_Click(object sender, RoutedEventArgs e)
         {
-
+            cartview.Opacity = 1;
+            cartview.Children.Clear();
+            cartview.Children.Add(new CartView());
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -67,8 +69,12 @@ namespace View
         {
 
         }
+
         #endregion
 
-
+        private void cartview_MouseLeave(object sender, MouseEventArgs e)
+        {
+            
+        }
     }
 }

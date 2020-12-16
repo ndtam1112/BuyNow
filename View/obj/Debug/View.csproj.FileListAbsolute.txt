@@ -49,3 +49,8 @@ D:\My App\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\My App\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\My App\BuyNow\View\obj\Debug\View.exe
 D:\My App\BuyNow\View\obj\Debug\View.pdb
+D:\My App\BuyNow\View\obj\Debug\User Control\CartView.g.cs
+D:\My App\BuyNow\View\obj\Debug\User Control\ItemCartView.g.cs
+D:\My App\BuyNow\View\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\My App\BuyNow\View\obj\Debug\User Control\CartView.baml
+D:\My App\BuyNow\View\obj\Debug\User Control\ItemCartView.baml

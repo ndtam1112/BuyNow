@@ -43,8 +43,10 @@
                 </Grid>
             </Grid>
         </Border>
-        <Border Background="White" Height="500" Width="300" Margin="619,62,81,59"/>
-
+        
+            <Grid Background="White" MouseLeave="cartview_MouseLeave" Opacity="0" Cursor="AppStarting" Height="500" Width="300" Margin="619,62,81,59" x:Name="cartview">
+            </Grid>
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="61" />

@@ -7,10 +7,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="300">
     <Border BorderThickness="0 0 0 1" BorderBrush="Gray">
-        <StackPanel Orientation="Horizontal">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <Image Width="80" Height="80" Stretch="UniformToFill" Margin="10" Source="..\image\SanPham\TShirt\Tropical-Peach.jpg"/>
-        
-        </StackPanel>
+            <Grid Grid.Column="1">
+                <TextBlock Text="Tên sản phẩm ở đây" Style="{DynamicResource NameProductCartStyle}" FontSize="15" HorizontalAlignment="Left" Margin="0,30,0,51" />
+                <TextBlock Text="Giá" Style="{DynamicResource PriceProductStyle}" FontSize="10" HorizontalAlignment="Left" Margin="0,53,0,34" />
+
+            </Grid>
+        </Grid>
+       
 
     </Border>
 </UserControl>

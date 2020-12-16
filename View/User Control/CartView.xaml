@@ -7,6 +7,30 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="300">
     <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:ItemCartView/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+        <StackPanel Grid.Row="1">
+            <DockPanel>
+                <TextBlock Margin="10" Text="SUBTOTAL" HorizontalAlignment="Left"/>
+                <TextBlock Margin="10" Text="Price" HorizontalAlignment="Right"/>
+            </DockPanel>
+            <Button Content="Checkout" Margin="10"/>
+            <Button Content="View Cart" Margin="10"/>
+        </StackPanel>
+        
+        
+        
             
     </Grid>
 </UserControl>
