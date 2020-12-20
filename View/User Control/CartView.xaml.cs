@@ -24,5 +24,11 @@ namespace View.User_Control
         {
             InitializeComponent();
         }
+
+        private void btnCloseCartView_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
+    
 }

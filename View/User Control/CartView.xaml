@@ -11,6 +11,12 @@
             <RowDefinition Height="350"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Button Panel.ZIndex="1" VerticalAlignment="Top" HorizontalAlignment="Right" 
+                    BorderThickness="0" Margin="5" Height="20" Width="20" Click="btnCloseCartView_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="..\image\icon\cancel.ico"/>
+            </Button.Background>
+        </Button>
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
             <ListView>
                 <ListView.ItemTemplate>

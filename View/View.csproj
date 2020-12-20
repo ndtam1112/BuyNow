@@ -209,6 +209,7 @@
     <Resource Include="image\icon\see.ico" />
     <Resource Include="image\icon\delete.ico" />
     <Resource Include="image\thumb\bill.jpg" />
+    <Resource Include="image\icon\cursor-close.png" />
     <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />

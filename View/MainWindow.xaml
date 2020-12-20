@@ -14,7 +14,7 @@
         AllowsTransparency="True"
         Title="Main" Height="621" Width="1000">
     <Window.Resources>
-        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
     </Window.Resources>
 
     <Grid>
@@ -44,7 +44,9 @@
             </Grid>
         </Border>
         
-            <Grid Background="White" MouseLeave="cartview_MouseLeave" Opacity="0" Cursor="AppStarting" Height="500" Width="300" Margin="619,62,81,59" x:Name="cartview">
+            <Grid Background="Transparent"
+                  Name="cartview" Height="500" Width="300" Margin="647,60,53,61">
+            
             </Grid>
         
         <Grid>

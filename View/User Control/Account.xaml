@@ -6,17 +6,25 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d" 
-             d:DesignHeight="488" d:DesignWidth="980">
+             d:DesignHeight="621" d:DesignWidth="1000">
     <Grid>
-        <Grid>
-            <Border CornerRadius="30">
-                <Border.Background>
-                    <ImageBrush ImageSource="..\image\thumb\account-thumb.jpg"></ImageBrush>
-                </Border.Background>
-            </Border>
-        </Grid>
-
-
+        <MediaElement x:Name="movieLoader" HorizontalAlignment="Left" Height="621" LoadedBehavior="Play"
+                          VerticalAlignment="Top" Width="1000" >
+            <MediaElement.Effect>
+                <BlurEffect Radius="20" KernelType="Gaussian"/>
+            </MediaElement.Effect>
+            <MediaElement.Triggers>
+                <EventTrigger RoutedEvent="MediaElement.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <MediaTimeline Source="D:\My App\BuyNow\View\image\thumb\Untitled-design.mp4" Storyboard.TargetName="movieLoader" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </MediaElement.Triggers>
+        </MediaElement>
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="20">
                 <StackPanel.Resources>
@@ -28,13 +36,6 @@
                     <Style TargetType="TextBlock">
                         <Setter Property="VerticalAlignment" Value="Center" />
                         <Setter Property="FontSize" Value="15" />
-                    </Style>
-                    <Style TargetType="TextBox">
-                        <Setter Property="FontSize" Value="15" />
-                        <Setter Property="Padding" Value="15" />
-                        <Setter Property="BorderBrush" Value="Gray" />
-                        <Setter Property="BorderThickness" Value="0,0,0,1" />
-                        <Setter Property="Background" Value="Transparent" />
                     </Style>
                 </StackPanel.Resources>
 
@@ -64,23 +65,6 @@
                             materialDesign:ButtonAssist.CornerRadius="20" BorderBrush="{StaticResource MaterialDesignFlatButtonClick}" />
                     </Grid>
                 </StackPanel>
-                <TextBlock Text="Purchase History" FontSize="30" FontWeight="ExtraBold"></TextBlock>
-                <ScrollViewer Width="500" HorizontalAlignment="Left">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <ListView>
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <DataTemplate.Triggers>
-                                    </DataTemplate.Triggers>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </Grid>
-                </ScrollViewer>
 
                 <TextBlock Text="Change Password" FontSize="30" FontWeight="ExtraBold"></TextBlock>
                 <StackPanel Margin="20">
