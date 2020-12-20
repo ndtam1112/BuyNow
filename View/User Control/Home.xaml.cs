@@ -65,8 +65,7 @@ namespace View.User_Control
         {
             InitializeComponent();
             Image = Productdatabase.GetProductByID("JK003.2").Image_product;
-            Image1 = Productdatabase.GetProductByID("J\" +
-                "002.2").Image_product;
+            Image1 = Productdatabase.GetProductByID("J002.2 ").Image_product;
             Image2 = Productdatabase.GetProductByID("SHI002.2").Image_product;
         }
 

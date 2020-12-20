@@ -48,7 +48,7 @@
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
 
-    <Style TargetType="{x:Type TextBox}" x:Key="BaseTextBoxStyle">
+    <!--<Style TargetType="{x:Type TextBox}" x:Key="BaseTextBoxStyle">
         <Setter Property="FontFamily" Value="{StaticResource LatoThin}"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="Foreground" Value="{DynamicResource BackgroundMidGrayBrush}"/>
@@ -174,10 +174,10 @@
             </Setter.Value>
         </Setter>
 
-    </Style>
+    </Style>-->
 
-    <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource BasePasswordBoxStyle}"/>
-    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseTextBoxStyle}"/>
+    <!--<Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource BasePasswordBoxStyle}"/>
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseTextBoxStyle}"/>-->
     <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource TextBlockStyle}"/>
     <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource BaseStyle}"/>
 

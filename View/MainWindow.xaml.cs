@@ -50,8 +50,6 @@ namespace View
         private void btnMe_Click(object sender, RoutedEventArgs e)
         {
             HomeLayout.Children.Clear();
-            HomeLayout.Width = 980;
-            HomeLayout.Height = 488;
             HomeLayout.Children.Add(new Account(PhoneNumber));
         }
         private void btnCart_Click(object sender, RoutedEventArgs e)

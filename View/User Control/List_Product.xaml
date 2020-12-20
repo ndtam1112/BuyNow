@@ -21,14 +21,19 @@
             <TextBlock Text="#Jacket" Style="{DynamicResource TextBlockStyle}" FontSize="60"/>
         </Grid>
         
-        <ListView Margin="10" Height="500" Name="lvDataBinding">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <WrapPanel Orientation="Horizontal">
-                        
-                    </WrapPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+        <ListView Margin="10" Height="500" Name="lvDataBinding"
+                  ItemsSource="{Binding Product}"
+                  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:ItemProduct Margin="5"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
         </ListView>
     </StackPanel>
     </ScrollViewer>

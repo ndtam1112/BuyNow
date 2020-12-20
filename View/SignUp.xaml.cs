@@ -39,6 +39,18 @@ namespace View
             Window.GetWindow(this).WindowState = WindowState.Minimized;
         }
 
+        private void btSkip_Click(object sender, RoutedEventArgs e)
+        {
+            Grid1.Opacity = 1;
+            txtSignUp.Opacity = 1;
+
+            tb1.Opacity = 0;
+            tb2.Opacity = 0;
+            tb3.Opacity = 0;
+            tb4.Opacity = 0;
+            btnSkip.Opacity = 0;
+        }
+
         private void btnWantSignin_Click(object sender, RoutedEventArgs e)
         {
             Login l = new Login();
@@ -48,10 +60,11 @@ namespace View
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
+
             if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
             {
-                if(Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "",""))
-                MessageBox.Show("hi");
+                if (Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "", ""))
+                    MessageBox.Show("hi");
             }
             else
             {

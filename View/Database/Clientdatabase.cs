@@ -111,10 +111,10 @@ namespace View.Database
 
         }
 
-        public static UpdateClient(string phone)
-        {
+        //public static UpdateClient(string phone)
+        //{
 
-        }
+        //}
 
     }
 }
