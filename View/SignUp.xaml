@@ -201,7 +201,7 @@
                         </Border>
 
                         <Border Background="White" Width="380" Height="65" HorizontalAlignment="Center"
-                    BorderBrush="Gray" Grid.Row="1" Grid.ColumnSpan="2" BorderThickness="0,0,0,1"
+                   Grid.Row="1" Grid.ColumnSpan="2" BorderThickness="0,0,0,1"
                     VerticalAlignment="Bottom">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -217,7 +217,26 @@
                             </Grid>
                         </Border>
 
-            
+                        <Border Background="White" Width="380" Height="65" HorizontalAlignment="Center"
+                    Grid.Row="2" Grid.ColumnSpan="2" BorderThickness="0"
+                    VerticalAlignment="Bottom" CornerRadius="0,0,50,50">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Image Source="image\icon\confirm-password.ico" Height="40" Margin="20 0 0 0" />
+                                <PasswordBox Margin="10,5,0,0"
+                             Width="280"
+                                             materialDesign:HintAssist.Hint="Confirm Password"
+                    materialDesign:TextFieldAssist.HasClearButton="True"
+                         x:Name="ConfirmPassWordSignUp"
+                             VerticalAlignment="Center" HorizontalAlignment="Left"
+                     Grid.Column="1" Grid.Row="2" FontSize="15" BorderThickness="0"></PasswordBox>
+                            </Grid>
+                        </Border>
+
+
                         <Button Grid.RowSpan="3" materialDesign:ButtonAssist.CornerRadius="60"
                     Width="65" Height="65" Margin="200,0,0,0" Background="DeepSkyBlue"
                     BorderThickness="0" Grid.Column="1"

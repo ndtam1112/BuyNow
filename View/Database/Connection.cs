@@ -10,7 +10,7 @@ namespace View.Database
 {
     public class Connection
     {
-        public static string connection = "Data Source=LAPTOP-UJCQAF9R\\SQLEXPRESS;Initial Catalog=appclothing;Integrated Security=True;";
+        public static string connection = "Data Source=DESKTOP-CSQNOTS;Initial Catalog=appclothing;Integrated Security=True;";
         public static SqlConnection connect = new SqlConnection();
         public static SqlCommand cmd = new SqlCommand("", connect);
         public static SqlDataReader rd;

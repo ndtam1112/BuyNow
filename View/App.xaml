@@ -3,11 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:View"
 
-<<<<<<< HEAD
              StartupUri="Login.xaml">
-=======
-             StartupUri="SignUp.xaml">
->>>>>>> 0ab6575c94096d2ea92c264ba562f385a22e1093
 
     <Application.Resources>
         <ResourceDictionary>
