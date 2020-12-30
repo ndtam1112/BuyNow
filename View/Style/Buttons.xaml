@@ -13,6 +13,8 @@
     <ImageBrush x:Key="close-window" ImageSource="..\image\icon\cancel.ico" />
     <ImageBrush x:Key="xbox-menu" ImageSource="pack://application:,,,/image\icon\xbox_menu_1.ico" />
     
+    
+    
 
 
 

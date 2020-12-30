@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using View.Classess;
+using View.Database;
 
 namespace View.User_Control
 {
@@ -20,9 +22,22 @@ namespace View.User_Control
     /// </summary>
     public partial class Cart : UserControl
     {
-        public Cart()
+        private List<History> listCart = new List<History>();
+        private string Phone;
+        public Cart(string phone)
         {
+            Phone = phone;
             InitializeComponent();
+            GetCart();
+        }
+        public void GetCart()
+        {
+            listCart = Productdatabase.GetProductInHistory(Phone);
+            lvCart.ItemsSource = listCart;
+            int sumMoney = 0;
+            foreach(History item in listCart)
+                sumMoney += item.Price_product;
+            tbPriceSumAll.Text = sumMoney + "";
         }
     }
 }

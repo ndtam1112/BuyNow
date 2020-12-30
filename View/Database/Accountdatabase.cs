@@ -19,12 +19,11 @@ namespace View.Database
         {
             try
             {
-                string sqlQuery = "insert into tb_login values(@Phone,@Password);";
+                string sqlQuery = "insert into _tb_log_in values(@Phone,@Password);";
 
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;
-
                 Connection.cmd.Parameters.Clear();
                 Connection.cmd.Parameters.AddWithValue("@Phone", phone);
                 Connection.cmd.Parameters.AddWithValue("@Password", password);
@@ -47,7 +46,7 @@ namespace View.Database
         public static Boolean CheckAccount(string phone, string password)
         {
 
-            string sqlQuery = $"select count(*) from tb_login where _phone_number=@Phone and _password=@Password;";
+            string sqlQuery = $"select count(*) from _tb_log_in where _phone_number=@Phone and _pass_word=@Password;";
             try
             {
                 Connection.OpenConnection();

@@ -13,7 +13,7 @@
         AllowsTransparency="True"
         Title="Main" Height="621" Width="1000">
     <Window.Resources>
-        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
     </Window.Resources>
 
     <Grid>
@@ -42,7 +42,7 @@
                 </Grid>
             </Grid>
         </Border>
-
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="61" />
@@ -157,16 +157,16 @@
                         </Button>
                     </StackPanel>
                 </materialDesign:PopupBox>
-
-                <Button Width="70" Height="30"
+                
+                <Button Width="70" Height="30" 
                         VerticalAlignment="Center" Margin="5"
                                 BorderThickness="0" Grid.Column="3"
                         HorizontalAlignment="Center" Background="Transparent"
-                        x:Name="btnCart"
-                        Click="btnCart_Click" Padding="0">
-                    <DockPanel LastChildFill="True">
-                        <TextBlock Text="0" Margin="0 0 3 0"/>
-                        <Border BorderThickness="0 0 1 0" BorderBrush="White" RenderTransformOrigin="0.5,0.5">
+                        x:Name="btnCart" Click="btnCart_Click"
+                         Padding="0">
+                    <DockPanel>
+                        <TextBlock Text="0" Margin="0 0 5 0"/>
+                        <Border BorderThickness="0 0 1 0" BorderBrush="{DynamicResource ForeGrayBrush}" RenderTransformOrigin="0.5,0.5">
                             <Border.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -176,11 +176,14 @@
                                 </TransformGroup>
                             </Border.RenderTransform>
                         </Border>
-                        <TextBlock Margin="3 0 3 0" Text="0"/>
+                        <TextBlock Margin="5 0 3 0" Text="0"/>
                         <TextBlock Text="VND"/>
                     </DockPanel>
                 </Button>
                
+            </Grid>
+            <Grid Grid.Row="1" x:Name="mainLayout">
+                
             </Grid>
 
             <!--#endregion-->

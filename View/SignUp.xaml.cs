@@ -64,12 +64,11 @@ namespace View
             if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
             {
                 if (Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "", ""))
-                    MessageBox.Show("hi");
+                    MessageBox.Show("Sign Up Success");
             }
             else
             {
-                MessageBox.Show("");
-
+                MessageBox.Show("Registration failed");
             }
         }
     }

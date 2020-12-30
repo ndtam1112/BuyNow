@@ -79,8 +79,10 @@
     </Compile>
     <Compile Include="Classess\Client.cs" />
     <Compile Include="Classess\History.cs" />
+    <Compile Include="Classess\Image_Product.cs" />
     <Compile Include="Classess\LoginUser.cs" />
     <Compile Include="Classess\Product.cs" />
+    <Compile Include="Classess\ProductDetailModel.cs" />
     <Compile Include="Database\Clientdatabase.cs" />
     <Compile Include="Database\Connection.cs" />
     <Compile Include="Database\Accountdatabase.cs" />
@@ -207,6 +209,7 @@
     <Resource Include="image\icon\see.ico" />
     <Resource Include="image\icon\delete.ico" />
     <Resource Include="image\thumb\bill.jpg" />
+    <Resource Include="image\icon\cursor-close.png" />
     <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />

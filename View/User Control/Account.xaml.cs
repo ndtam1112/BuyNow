@@ -75,5 +75,10 @@ namespace View.User_Control
             address = c.Address_client;
 
         }
+
+        private void btnChangePass_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

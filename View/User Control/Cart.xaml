@@ -6,6 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:View.User_Control"
              mc:Ignorable="d" 
+            
              d:DesignHeight="621" d:DesignWidth="1000">
     <Grid Background="White">
         
@@ -13,9 +14,42 @@
             <ColumnDefinition Width="600"/>
             <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <ListView  Height="auto" 
+                  Width="auto"
+                  x:Name="lvCart" 
+                  ItemsSource="{Binding History}"
+                      >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="Background"
+                                                Value="Transparent" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                    <ContentPresenter />
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:ItemCart Margin="5"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Width="600" Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+        </Grid>
         <Image Grid.Column="1" Source="..\image\thumb\bill.jpg"/>
         <TextBlock Grid.Column="1" Text="Cart Totals" Style="{DynamicResource NameProductCartStyle}" Margin="30,206,232,379"/>
-        <TextBlock Grid.Column="1" Text="$1999" Style="{DynamicResource PriceProductStyle}" Margin="30,282,290,303"/>
+        <TextBlock 
+            x:Name="tbPriceSumAll"
+            Grid.Column="1" Style="{DynamicResource PriceProductStyle}" Margin="30,282,290,303"/>
         <Button Style="{DynamicResource MaterialDesignFlatAccentBgButton}"
                 materialDesign:ButtonAssist.CornerRadius="30" Height="60" Width="170" Grid.Column="1" Margin="30,370,200,191">
             <TextBlock Text="Proceed to checkout"/>

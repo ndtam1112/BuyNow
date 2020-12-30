@@ -20,7 +20,7 @@ namespace View
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string PhoneNumber;
+        public string PhoneNumber;
         public MainWindow(string phone)
         {
             this.PhoneNumber = phone;
@@ -52,22 +52,26 @@ namespace View
             HomeLayout.Children.Clear();
             HomeLayout.Children.Add(new Account(PhoneNumber));
         }
-        private void btnCart_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void btnSignOut_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+
+
+
         #endregion
 
-
+        private void btnCart_Click(object sender, RoutedEventArgs e)
+        {
+            HomeLayout.Children.Clear();
+            HomeLayout.Children.Add(new Cart(PhoneNumber));
+        }
     }
 }

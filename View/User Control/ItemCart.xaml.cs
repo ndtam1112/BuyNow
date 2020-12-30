@@ -24,5 +24,15 @@ namespace View.User_Control
         {
             InitializeComponent();
         }
+
+        private void delCart_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buyNow_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

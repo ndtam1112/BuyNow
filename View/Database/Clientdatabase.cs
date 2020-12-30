@@ -47,7 +47,7 @@ namespace View.Database
         {
             try
             {
-                string sqlQuery = "insert into tb_client Values(@Name_Client,@Phone,@Address);";
+                string sqlQuery = "insert into _tb_client Values(@Name_Client,@Phone,@Address);";
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;
@@ -79,7 +79,7 @@ namespace View.Database
             Client c = new Client();
             try
             {
-                string sqlQuery = "select * from tb_client where _phone_number=@phone;";
+                string sqlQuery = "select * from _tb_client where _phone_number=@phone;";
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;
@@ -111,10 +111,7 @@ namespace View.Database
 
         }
 
-        //public static UpdateClient(string phone)
-        //{
-
-        //}
+      
 
     }
 }

@@ -22,6 +22,7 @@ D:\My App\BuyNow\View\obj\Debug\User Control\List_Product.g.cs
 D:\My App\BuyNow\View\obj\Debug\User Control\ProductDetail.g.cs
 D:\My App\BuyNow\View\obj\Debug\App.g.cs
 D:\My App\BuyNow\View\obj\Debug\View_Content.g.cs
+D:\My App\BuyNow\View\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\My App\BuyNow\View\obj\Debug\View_MarkupCompile.cache
 D:\My App\BuyNow\View\obj\Debug\View_MarkupCompile.lref
 D:\My App\BuyNow\View\obj\Debug\App.baml
@@ -48,5 +49,3 @@ D:\My App\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\My App\BuyNow\View\obj\Debug\View.csproj.CopyComplete
 D:\My App\BuyNow\View\obj\Debug\View.exe
 D:\My App\BuyNow\View\obj\Debug\View.pdb
-D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
-D:\My App\BuyNow\View\obj\Debug\GeneratedInternalTypeHelper.g.cs

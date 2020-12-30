@@ -61,12 +61,12 @@ namespace View.User_Control
 
 
 
-        public Home()
+        public Home() 
         {
             InitializeComponent();
-            Image = Productdatabase.GetProductByID("JK003.2").Image_product;
-            Image1 = Productdatabase.GetProductByID("J002.2 ").Image_product;
-            Image2 = Productdatabase.GetProductByID("SHI002.2").Image_product;
+            Image = Productdatabase.GetImageProductByID("JK002").Image_product;
+            Image1 = Productdatabase.GetImageProductByID("JK003").Image_product;
+            Image2 = Productdatabase.GetImageProductByID("SHI001").Image_product;
         }
 
     }

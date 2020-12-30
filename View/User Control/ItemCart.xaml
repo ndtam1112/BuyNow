@@ -4,17 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:View.User_Control"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="200" d:DesignWidth="800">
     <Border Padding="10" BorderThickness="0 0 0 1" BorderBrush="Gray" Background="White">
         <DockPanel>
-            <Button VerticalAlignment="Center" Background="Transparent" Padding="0" BorderThickness="0">
+            <Button VerticalAlignment="Center" x:Name="delCart" Click="delCart_Click"
+                    Background="Transparent" Padding="0" BorderThickness="0">
                 <Image Source="D:\My App\BuyNow\View\image\icon\delete.ico"/>
             </Button>
-            <Image Source="..\image\SanPham\Jacket\Donut-Jacket-Beige-2.png" Width="160" Height="180"/>
-            <TextBlock Text="Ten san pham" Style="{DynamicResource NameProductCartStyle}"/>
-            <TextBlock Margin="20" Text="100$" Style="{DynamicResource PriceProductStyle}"/>
-            <StackPanel  VerticalAlignment="Center"
+            <Image Source="{Binding Image_product}" Width="160" Height="180"/>
+            <TextBlock Text="" Style="{DynamicResource NameProductCartStyle}"/>
+            <!--<TextBlock Margin="20" Text="100$" Style="{DynamicResource PriceProductStyle}"/>-->
+            <!--<StackPanel  VerticalAlignment="Center"
                             Height="32" Orientation="Horizontal">
                 <Button BorderBrush="Gray"
                             Height="32" Width="32">
@@ -30,8 +31,11 @@
                         <ImageBrush ImageSource="..\image\icon\plus.png"></ImageBrush>
                     </Button.Background>
                 </Button>
-            </StackPanel>
-            <TextBlock Text="200$" Style="{DynamicResource PriceProductStyle}"/>
+            </StackPanel>-->
+            <TextBlock Text="{Binding Price_product}" Style="{DynamicResource PriceProductStyle}"/>
+            <TextBlock Text="{Binding Name_product}" ></TextBlock>
+            <TextBlock Text="{Binding Size_product}"/>
+            <TextBlock Text="{Binding }"/>
         </DockPanel>
             
     </Border>

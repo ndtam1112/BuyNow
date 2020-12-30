@@ -23,20 +23,17 @@
             </Style.Triggers>
         </Style>
     </UserControl.Resources>
-    <Button Width="300" Height="450" Padding="0" 
+    <Button Width="300" Height="450" Padding="0" x:Name="btnViewProductDetail" Click="btnViewProductDetail_Click"
             Background="Transparent" BorderThickness="0"
             MouseLeave="ItemProduct_MouseLeave" PreviewMouseMove="ItemProduct_PreviewMouseMove">
         <Grid>
             <Border Padding="10" CornerRadius="10" Background="White" Style="{DynamicResource BaseBorder}">
-                <Border.Effect>
-                    <DropShadowEffect BlurRadius="5" ShadowDepth="0"/>
-                </Border.Effect>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Image Margin="10" Source="{Binding Image_product}" Stretch="UniformToFill"/>
+                    <Image  Source="{Binding Image_product}" Stretch="UniformToFill"/>
                     <StackPanel Grid.Row="1">
                         <TextBlock Text="{Binding Name_product}" FontSize="30" Style="{DynamicResource NameProductStyle}"/>
                         <Grid>
@@ -44,8 +41,14 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-
-                            <TextBlock Grid.Column="1" Text="{Binding Price_product}" FontSize="20" Style="{DynamicResource PriceProductStyle} "/>
+                            <StackPanel Margin="0 15">
+                                <TextBlock FontSize="10" Text="Category"/>
+                                <TextBlock Text="{Binding Category_product}" Style="{DynamicResource NameProductStyle}" FontSize="15" />
+                            </StackPanel>
+                            <DockPanel Grid.Column="1" >
+                                <TextBlock Text="$" FontSize="20" Style="{DynamicResource PriceProductStyle}"/>
+                                <TextBlock Text="{Binding Price_product}" FontSize="20" Style="{DynamicResource PriceProductStyle}"/>
+                            </DockPanel>
                         </Grid>
                     </StackPanel>
                 </Grid>
@@ -53,7 +56,7 @@
             <Border x:Name="twobutton" Opacity="0" Height="50" Width="120" BorderThickness="0">
                 <StackPanel Orientation="Horizontal">
                     <Button Height="40" materialDesign:ButtonAssist.CornerRadius="20 0 0 20"
-                            Background="Transparent" 
+                            Background="Transparent"  x:Name="btnAddToCart" Click="btnAddToCart_Click"
                               BorderThickness="0 0 1 0" BorderBrush="{DynamicResource ForegroundSilverBrush}" Foreground="Gray">
                         <Button.ToolTip>
                             <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
@@ -62,7 +65,7 @@
                         </Button.ToolTip>
                         <Image Source="..\image\icon\add.ico"></Image>
                     </Button>
-                    <Button Height="40"
+                    <Button Height="40" x:Name="btnViewProductDetail2" Click="btnViewProductDetail2_Click"
                             materialDesign:ButtonAssist.CornerRadius="0 20 20 0"
                             Background="Transparent" BorderThickness="0">
                         <Button.ToolTip>

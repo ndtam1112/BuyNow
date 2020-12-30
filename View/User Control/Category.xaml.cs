@@ -28,7 +28,7 @@ namespace View.User_Control
         private void Jacket_Click(object sender, RoutedEventArgs e)
         {
             CategoryLayout.Children.Clear();
-            CategoryLayout.Children.Add(new List_Product());
+            CategoryLayout.Children.Add(new List_Product("Jacket"));
         }
 
         private void TShirt_PreviewMouseMove(object sender, MouseEventArgs e)
@@ -90,6 +90,36 @@ namespace View.User_Control
         private void Bags_PreviewMouseMove(object sender, MouseEventArgs e)
         {
             bag.Opacity = 1;
+        }
+
+        private void TShirt_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryLayout.Children.Clear();
+            CategoryLayout.Children.Add(new List_Product("T_Shirt"));
+        }
+
+        private void Sweater_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryLayout.Children.Clear();
+            CategoryLayout.Children.Add(new List_Product("Sweater"));
+        }
+
+        private void Pants_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryLayout.Children.Clear();
+            CategoryLayout.Children.Add(new List_Product("Jean"));
+        }
+
+        private void Short_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryLayout.Children.Clear();
+            CategoryLayout.Children.Add(new List_Product("Shirt"));
+        }
+
+        private void Bags_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryLayout.Children.Clear();
+            CategoryLayout.Children.Add(new List_Product("Bag"));
         }
     }
 }
