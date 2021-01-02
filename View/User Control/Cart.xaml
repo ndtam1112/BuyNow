@@ -8,18 +8,17 @@
              mc:Ignorable="d" 
             
              d:DesignHeight="621" d:DesignWidth="1000">
-    <Grid Background="White">
-        
+    <Grid Background="White" Width="1000" Height="621">
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="600"/>
-            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="700"/>
+            <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0">
+        <Grid Grid.Column="0" Margin="0 60 0 0">
             <ListView  Height="auto" 
                   Width="auto"
-                  x:Name="lvCart" 
-                  ItemsSource="{Binding History}"
-                      >
+                  x:Name="lvCart" ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderThickness="0"
+                  ItemsSource="{Binding History}">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="{x:Type ListViewItem}">
                         <Setter Property="Background"
@@ -46,15 +45,22 @@
             </ListView>
         </Grid>
         <Image Grid.Column="1" Source="..\image\thumb\bill.jpg"/>
-        <TextBlock Grid.Column="1" Text="Cart Totals" Style="{DynamicResource NameProductCartStyle}" Margin="30,206,232,379"/>
-        <TextBlock 
-            x:Name="tbPriceSumAll"
-            Grid.Column="1" Style="{DynamicResource PriceProductStyle}" Margin="30,282,290,303"/>
-        <Button Style="{DynamicResource MaterialDesignFlatAccentBgButton}"
-                materialDesign:ButtonAssist.CornerRadius="30" Height="60" Width="170" Grid.Column="1" Margin="30,370,200,191">
-            <TextBlock Text="Proceed to checkout"/>
-        </Button>
-        <TextBlock Margin="0 40 0 0" Text="Shopping Cart" Grid.ColumnSpan="2" VerticalAlignment="Top" 
+        <StackPanel Grid.Column="1" Margin="0 200 0 0" HorizontalAlignment="Left">
+            <TextBlock FontSize="20" Margin="0 20 0 0" Text="Cart Totals" Style="{DynamicResource NameProductCartStyle}" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+            x:Name="tbPriceSumAll" Margin="20 40 0 0"
+            Style="{DynamicResource PriceProductStyle}"/>
+                <TextBlock Margin="5 40 0 0" Text="VND"/>
+            </StackPanel>
+            
+            <Button Style="{DynamicResource MaterialDesignFlatAccentBgButton}" Margin="0 40 0 0"
+                materialDesign:ButtonAssist.CornerRadius="15" Width="130" Height="30">
+                <TextBlock FontSize="10" Text="Proceed to checkout"/>
+            </Button>
+        </StackPanel>
+        
+        <TextBlock Margin="0 45 0 0" Text="Shopping Cart" Grid.ColumnSpan="2" VerticalAlignment="Top" 
                    Style="{DynamicResource NameProductStyle}"/>
     </Grid>
 </UserControl>

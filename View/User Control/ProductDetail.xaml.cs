@@ -86,6 +86,8 @@ namespace View.User_Control
         public static readonly DependencyProperty CategoryProductProperty =
             DependencyProperty.Register("CategoryProduct", typeof(string), typeof(ProductDetail), new PropertyMetadata("No type"));
 
+       
+
 
 
 
@@ -107,6 +109,7 @@ namespace View.User_Control
             ImageSub2 = productDetail.Image_product2;
             NameProduct = productDetail.Name_product;
             CategoryProduct = productDetail.Category_product;
+
         }
 
         private void operationsProduct()
@@ -124,7 +127,7 @@ namespace View.User_Control
                 int temp = convertStringToInt(tbNumOfPro.Text) - 1;
                 if (temp < 0) temp = 0;
                 tbNumOfPro.Text = temp + "";
-                tbPrice.Text = productDetail.Price_product * temp + "";
+               tbPrice.Text = productDetail.Price_product * temp + "";
             };
 
         }

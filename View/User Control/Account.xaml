@@ -4,10 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Foreground="White"
              xmlns:local="clr-namespace:View.User_Control"
              Name="account"
              mc:Ignorable="d" 
              d:DesignHeight="621" d:DesignWidth="1000">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style TargetType="TextBlock">
+                <Setter Property="Foreground" Value="White"></Setter>
+                <Setter Property="FontFamily" Value="{DynamicResource LatoThin}"/>
+                <Setter Property="FontSize" Value="15"/>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid>
         <MediaElement x:Name="movieLoader" HorizontalAlignment="Left" Height="621" LoadedBehavior="Play"
                           VerticalAlignment="Top" Width="1000" >
@@ -28,18 +38,6 @@
         </MediaElement>
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="20">
-                <StackPanel.Resources>
-                    <Style TargetType="DockPanel">
-                        <Setter Property="Height" Value="60" />
-                        <Setter Property="Width" Value="480" />
-                        <Setter Property="HorizontalAlignment" Value="Left" />
-                    </Style>
-                    <Style TargetType="TextBlock">
-                        <Setter Property="VerticalAlignment" Value="Center" />
-                        <Setter Property="FontSize" Value="15" />
-                    </Style>
-                </StackPanel.Resources>
-
 
                 <TextBlock 
                        FontSize="80" FontWeight="UltraBold" Margin="20"></TextBlock>
@@ -60,16 +58,16 @@
                         <TextBlock Text="Phone:"
                                    Grid.Column="0" Grid.Row="0" 
                                    ></TextBlock>
-                        <TextBox  Grid.Column="1" 
+                        <TextBox  Grid.Column="1" FontSize="15"
                                    IsEnabled="False"
                                   Grid.Row="0" Text="{Binding phone,ElementName=account}"
                                   ></TextBox>
                         
                         <TextBlock Text="Name:" Grid.Column="0" Grid.Row="1" ></TextBlock>
-                        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding name,ElementName=account}"></TextBox>
+                        <TextBox Grid.Column="1" FontSize="15" Grid.Row="1" Text="{Binding name,ElementName=account}"></TextBox>
                         
                         <TextBlock Text="Address:" Grid.Column="0" Grid.Row="2"></TextBlock>
-                        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding address, ElementName=account}"></TextBox>
+                        <TextBox Grid.Column="1" FontSize="15" Grid.Row="2" Text="{Binding address, ElementName=account}"></TextBox>
                         
                         <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
                                  Grid.Row="3"

@@ -26,32 +26,7 @@ namespace View.User_Control
             InitializeComponent();
         }
 
-        private void ItemProduct_MouseLeave(object sender, MouseEventArgs e)
-        {
-            twobutton.Opacity = 0;
-        }
-
-        private void ItemProduct_PreviewMouseMove(object sender, MouseEventArgs e)
-        {
-            twobutton.Opacity = 1;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void btnViewProductDetail_Click(object sender, RoutedEventArgs e)
-        {
-          
-        }
-
-        private void btnAddToCart_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnViewProductDetail2_Click(object sender, RoutedEventArgs e)
         {
             Button buttonContext = sender as Button;
             Product pr = buttonContext.DataContext as Product;
@@ -60,5 +35,7 @@ namespace View.User_Control
             ProductDetail detailProduct = new ProductDetail(pr.Id_product);
             pannel.HomeLayout.Children.Add(detailProduct);
         }
+
+        
     }
 }

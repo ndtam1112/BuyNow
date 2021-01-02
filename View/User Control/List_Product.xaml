@@ -9,7 +9,7 @@
              Name="listProduct"
              d:DesignHeight="621" d:DesignWidth="1000">
 
-    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible">
+    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
         <StackPanel>
             <Grid>
                 <Border CornerRadius="20" Height="621" Width="1000">
@@ -24,10 +24,9 @@
             </Grid>
 
             <ListView  Height="auto" 
-                   Width="auto"
-                  x:Name="lvDataBinding" 
-                  ItemsSource="{Binding Product}"
-                      >
+                   Width="auto" BorderThickness="0"
+                  x:Name="lvDataBinding"
+                  ItemsSource="{Binding Product}" >
                 <ListView.ItemContainerStyle>
                     <Style TargetType="{x:Type ListViewItem}">
                         <Setter Property="Background"

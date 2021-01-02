@@ -26,7 +26,7 @@
 
     <Style TargetType="{x:Type TextBlock}" x:Key="NameProductStyle">
         <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
-        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="FontSize" Value="30"/>
         <Setter Property="Foreground" Value="{DynamicResource ForegroundDimGrayBrush}"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>

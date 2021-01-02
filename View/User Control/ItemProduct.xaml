@@ -8,34 +8,58 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
     <UserControl.Resources>
-        <Style x:Key="BaseBorder" TargetType="Border">
-            <Setter Property="Background" Value="{x:Null}"/>
-            <Setter Property="BorderThickness" Value="0"/>
+        <!--<Style x:Key="BaseBorder" TargetType="Border">
+            <Setter Property="Background" Value="{x:Null}" />
+            <Setter Property="BorderThickness" Value="0" />
             <Style.Triggers>
                 <Trigger Property="Border.IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Background" Value="Black" />
                     <Setter Property="Effect">
                         <Setter.Value>
-                            <BlurEffect Radius="10" KernelType="Gaussian"/>
+                            <BlurEffect Radius="10" KernelType="Gaussian" />
                         </Setter.Value>
                     </Setter>
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width"
+                    To="320" From="280" Duration="0:0:0.5"
+                    AccelerationRatio="0.4" DecelerationRatio="0.4" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                    To="400" From="360" Duration="0:0:0.5"
+                    AccelerationRatio="0.4" DecelerationRatio="0.4" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width"
+                    To="280" From="320" Duration="0:0:1"
+                    AccelerationRatio="0.4" DecelerationRatio="0.4" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                    To="360" From="400" Duration="0:0:1"
+                    AccelerationRatio="0.4" DecelerationRatio="0.4" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
                 </Trigger>
             </Style.Triggers>
-        </Style>
+        </Style>-->
+
     </UserControl.Resources>
     <Button Width="300" Height="450" Padding="0" x:Name="btnViewProductDetail" Click="btnViewProductDetail_Click"
-            Background="Transparent" BorderThickness="0"
-            MouseLeave="ItemProduct_MouseLeave" PreviewMouseMove="ItemProduct_PreviewMouseMove">
+            Background="Transparent" BorderThickness="0">
         <Grid>
-            <Border Padding="10" CornerRadius="10" Background="White" Style="{DynamicResource BaseBorder}">
+            <Border Padding="10" CornerRadius="10" Background="White" >
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Image  Source="{Binding Image_product}" Stretch="UniformToFill"/>
+                        <Image Width="280" Height="360" Source="{Binding Image_product}" Stretch="Uniform"/>
                     <StackPanel Grid.Row="1">
-                        <TextBlock Text="{Binding Name_product}" FontSize="30" Style="{DynamicResource NameProductStyle}"/>
+                        <TextBlock Text="{Binding Name_product}" FontSize="20" Style="{DynamicResource NameProductStyle}"/>
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
@@ -45,38 +69,15 @@
                                 <TextBlock FontSize="10" Text="Category"/>
                                 <TextBlock Text="{Binding Category_product}" Style="{DynamicResource NameProductStyle}" FontSize="15" />
                             </StackPanel>
-                            <DockPanel Grid.Column="1" >
-                                <TextBlock Text="$" FontSize="20" Style="{DynamicResource PriceProductStyle}"/>
+                            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Column="1" Margin="0 0 18 0">
                                 <TextBlock Text="{Binding Price_product}" FontSize="20" Style="{DynamicResource PriceProductStyle}"/>
-                            </DockPanel>
+                                <TextBlock Text=" VND" FontSize="15" Style="{DynamicResource PriceProductStyle}"/>
+                            </StackPanel>
                         </Grid>
                     </StackPanel>
                 </Grid>
             </Border>
-            <Border x:Name="twobutton" Opacity="0" Height="50" Width="120" BorderThickness="0">
-                <StackPanel Orientation="Horizontal">
-                    <Button Height="40" materialDesign:ButtonAssist.CornerRadius="20 0 0 20"
-                            Background="Transparent"  x:Name="btnAddToCart" Click="btnAddToCart_Click"
-                              BorderThickness="0 0 1 0" BorderBrush="{DynamicResource ForegroundSilverBrush}" Foreground="Gray">
-                        <Button.ToolTip>
-                            <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
-                                           Text="Add To Shopping Bag">
-                            </TextBlock>
-                        </Button.ToolTip>
-                        <Image Source="..\image\icon\add.ico"></Image>
-                    </Button>
-                    <Button Height="40" x:Name="btnViewProductDetail2" Click="btnViewProductDetail2_Click"
-                            materialDesign:ButtonAssist.CornerRadius="0 20 20 0"
-                            Background="Transparent" BorderThickness="0">
-                        <Button.ToolTip>
-                            <TextBlock Foreground="{DynamicResource BackgroundLightBrush}"
-                                           Text="See Now">
-                            </TextBlock>
-                        </Button.ToolTip>
-                        <Image Source="..\image\icon\see.ico"></Image>
-                    </Button>
-                </StackPanel>
-            </Border>
+            
 
         </Grid>
     </Button>
