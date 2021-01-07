@@ -9,7 +9,7 @@
              Name="listProduct"
              d:DesignHeight="621" d:DesignWidth="1000">
 
-    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible" materialDesign:ScrollViewerAssist.IsAutoHideEnabled="True">
         <StackPanel>
             <Grid>
                 <Border CornerRadius="20" Height="621" Width="1000">
@@ -53,6 +53,7 @@
             </ListView>
 
         </StackPanel>
+        
     </ScrollViewer>
     
 </UserControl>

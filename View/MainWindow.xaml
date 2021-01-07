@@ -39,6 +39,7 @@
                             </EventTrigger>
                         </MediaElement.Triggers>
                     </MediaElement>
+                    
                 </Grid>
             </Grid>
         </Border>
@@ -82,7 +83,18 @@
 								Click="btnMe_Click" Margin="3,0">
                     <Image Source="image\icon\account.ico" ></Image>
                 </Button>
-                
+
+                <Button Background="Transparent"
+                                Height="50"
+                                BorderThickness="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+								x:Name="btnSearch"
+								Click="btnSearch_Click" Margin="3,0">
+                    <Image Source="image\icon\search.ico" ></Image>
+                </Button>
+
+
             </StackPanel>
 
             <Grid>
@@ -155,7 +167,7 @@
                         HorizontalAlignment="Center" Background="Transparent"
                         x:Name="btnCart" Click="btnCart_Click"
                          Padding="0">
-                    <Image Source="D:\My App\BuyNow\View\image\icon\icon-ava.ico"/>
+                    <Image Source="D:\My App\BuyNow\View\image\icon\cart.ico"/>
                     <!--<DockPanel>
                         <TextBlock Text="0" Margin="0 0 5 0"/>
                         <Border BorderThickness="0 0 1 0" BorderBrush="{DynamicResource ForeGrayBrush}" RenderTransformOrigin="0.5,0.5">

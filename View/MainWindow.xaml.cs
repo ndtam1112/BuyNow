@@ -53,6 +53,11 @@ namespace View
             HomeLayout.Children.Add(new Account(PhoneNumber));
         }
 
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void btnSignOut_Click(object sender, RoutedEventArgs e)
         {
 

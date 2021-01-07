@@ -93,6 +93,9 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User Control\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
@@ -196,7 +199,6 @@
     <Resource Include="image\icon\buy.ico" />
     <Resource Include="image\icon\xbox_menu.ico" />
     <Resource Include="image\icon\account.ico" />
-    <Resource Include="image\icon\back.ico" />
     <Resource Include="image\icon\category.ico" />
     <Resource Include="image\icon\close-window-2.png" />
     <Resource Include="image\icon\done.ico" />
@@ -210,6 +212,8 @@
     <Resource Include="image\icon\delete.ico" />
     <Resource Include="image\thumb\bill.jpg" />
     <Resource Include="image\icon\cursor-close.png" />
+    <Resource Include="image\icon\back.ico" />
+    <Resource Include="image\icon\cart.ico" />
     <Content Include="image\thumb\logo-2.ico" />
     <Content Include="image\thumb\login-thumb.mp4" />
     <Content Include="image\thumb\Untitled-design.mp4" />
@@ -305,6 +309,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Control\Search.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

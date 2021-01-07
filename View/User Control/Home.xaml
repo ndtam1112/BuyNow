@@ -126,7 +126,7 @@
                         Height="275" Margin="5 0 0 5" Grid.Column="1">
                         <Button.Background>
                             <ImageBrush ImageSource="{Binding Image2,ElementName=home}"
-                                        Stretch="UniformToFill" />
+                                        Stretch="Uniform" />
                         </Button.Background>
                     </Button>
                     <Button Margin="5 5 0 0" Grid.Column="1" Grid.Row="1"
@@ -134,7 +134,7 @@
                             Height="275">
                         <Button.Background>
                             <ImageBrush ImageSource="{Binding Image,ElementName=home}"
-                                        Stretch="UniformToFill" />
+                                        Stretch="Uniform" />
                         </Button.Background>
                     </Button>
                 </Grid>

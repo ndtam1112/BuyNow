@@ -55,18 +55,18 @@
                             <RowDefinition Height="50"></RowDefinition>
                             <RowDefinition Height="70"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Text="Phone:"
+                        <TextBlock Text="Phone:" HorizontalAlignment="Center" VerticalAlignment="Center"
                                    Grid.Column="0" Grid.Row="0" 
                                    ></TextBlock>
                         <TextBox  Grid.Column="1" FontSize="15"
                                    IsEnabled="False"
                                   Grid.Row="0" Text="{Binding phone,ElementName=account}"
                                   ></TextBox>
-                        
-                        <TextBlock Text="Name:" Grid.Column="0" Grid.Row="1" ></TextBlock>
+
+                        <TextBlock Text="Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" ></TextBlock>
                         <TextBox Grid.Column="1" FontSize="15" Grid.Row="1" Text="{Binding name,ElementName=account}"></TextBox>
-                        
-                        <TextBlock Text="Address:" Grid.Column="0" Grid.Row="2"></TextBlock>
+
+                        <TextBlock Text="Address:" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"></TextBlock>
                         <TextBox Grid.Column="1" FontSize="15" Grid.Row="2" Text="{Binding address, ElementName=account}"></TextBox>
                         
                         <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2"
@@ -90,12 +90,12 @@
                             <RowDefinition Height="50"></RowDefinition>
                             <RowDefinition Height="70"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Text="Old Password:"></TextBlock>
+                        <TextBlock Text="Old Password:" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                         <TextBox Grid.Column="1" ></TextBox>
-                        <TextBlock Text="Password:" Grid.Row="1"></TextBlock>
+                        <TextBlock Text="Password:" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                         <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
                              Padding="5" Grid.Row="1" Grid.Column="1"></PasswordBox>
-                        <TextBlock Text="Confirm Password:" Grid.Row="2"></TextBlock>
+                        <TextBlock Text="Confirm Password:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                         <PasswordBox BorderThickness="0,0,0,1" BorderBrush="Gray" FontSize="15"
                              Padding="5" Grid.Row="2" Grid.Column="1"></PasswordBox>
                         <Button Background="Gray" Height="40" Width="70" Grid.ColumnSpan="2" x:Name="btnChangePass"
