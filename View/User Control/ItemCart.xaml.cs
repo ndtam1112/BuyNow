@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using View.Classess;
+using View.Database;
 
 namespace View.User_Control
 {
@@ -27,12 +29,25 @@ namespace View.User_Control
 
         private void delCart_Click(object sender, RoutedEventArgs e)
         {
-
+            Button button = sender as Button;
+            History history = button.DataContext as History;
+            MessageBoxResult result = MessageBox.Show("Are you sure ?", "Notify", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    Productdatabase.DeleteToHistory(history.Id_product);
+                    MainWindow mainWindow = (MainWindow)Window.GetWindow(this);
+                    mainWindow.HomeLayout.Children.Clear();
+                    mainWindow.HomeLayout.Children.Add(new Cart(mainWindow.PhoneNumber));
+                    break;
+            }
+           
         }
 
         private void buyNow_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
     }
 }

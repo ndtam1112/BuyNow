@@ -10,7 +10,7 @@
              d:DesignHeight="621" d:DesignWidth="1000">
 
     <Grid Width="1000">
-        <Button Height="50" Width="50" Panel.ZIndex="1" 
+        <Button Height="50" Width="50" Panel.ZIndex="1"  x:Name="btnBack" Click="btnBack_Click"
                             HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5 60 0 0"   BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="..\image\icon\back.ico"></ImageBrush>

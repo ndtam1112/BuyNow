@@ -43,7 +43,6 @@ namespace View
         {
             Grid1.Opacity = 1;
             txtSignUp.Opacity = 1;
-
             tb1.Opacity = 0;
             tb2.Opacity = 0;
             tb3.Opacity = 0;
@@ -60,15 +59,21 @@ namespace View
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-
-            if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
+            if (passWordSignUp.Password == passWordSignUp2.Password)
             {
-                if (Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "", ""))
-                    MessageBox.Show("Sign Up Success");
+                if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
+                {
+                    if (Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "", ""))
+                        MessageBox.Show("Sign Up Success!");
+                }
+                else
+                {
+                    MessageBox.Show("Registration failed");
+                }
             }
-            else
+           else
             {
-                MessageBox.Show("Registration failed");
+                MessageBox.Show("That password doesn't match, please re-enter it!");
             }
         }
     }

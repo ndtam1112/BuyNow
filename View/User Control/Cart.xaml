@@ -60,7 +60,7 @@
             </Button>
         </StackPanel>
         
-        <TextBlock Margin="0 45 0 0" Text="Shopping Cart" Grid.ColumnSpan="2" VerticalAlignment="Top" 
+        <TextBlock Margin="0 55 0 0" Text="Shopping Cart" Grid.ColumnSpan="2" VerticalAlignment="Top" 
                    Style="{DynamicResource NameProductStyle}"/>
     </Grid>
 </UserControl>

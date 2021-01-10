@@ -55,12 +55,17 @@ namespace View
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-
+            string text = search.Text.Trim();
+            search.Text = "";
+            HomeLayout.Children.Clear();
+            HomeLayout.Children.Add(new ProductDetail(text));
         }
 
         private void btnSignOut_Click(object sender, RoutedEventArgs e)
         {
-
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
 
 

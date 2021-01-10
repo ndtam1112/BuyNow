@@ -16,7 +16,7 @@ namespace View.Database
         {
             try
             {
-                string sqlQuery = "update client set Name_Client = @_name_client, adress = @_adress_client where Phone_Number = @_phone;";
+                string sqlQuery = "update _tb_client set _name_client = @Name_Client, _adress_client = @Adress_Client where _phone_number = @Phone;";
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;

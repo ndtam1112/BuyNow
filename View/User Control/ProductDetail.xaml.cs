@@ -170,5 +170,12 @@ namespace View.User_Control
 
 
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainwindow = (MainWindow)Window.GetWindow(this);
+            mainwindow.HomeLayout.Children.Clear();
+            mainwindow.HomeLayout.Children.Add(new Category());
+        }
     }
 }

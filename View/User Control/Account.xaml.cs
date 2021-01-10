@@ -78,7 +78,14 @@ namespace View.User_Control
 
         private void btnChangePass_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Clientdatabase.UpdateToClient(Phone_clientt.Text.Trim(), Name_clientt.Text.Trim(), Address_clientt.Text.Trim());
+        }
+
+
     }
 }

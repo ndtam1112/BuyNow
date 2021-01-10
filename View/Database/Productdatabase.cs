@@ -47,40 +47,32 @@ namespace View.Database
            
         }
 
-        //public static History DeleteToHistory(string id)
-        //{
-        //    History pr = new History();
-        //    string sqlQuery = $"DELETE FROM _tb_history WHERE id= @id;";
-        //    try
-        //    {
-        //        Connection.OpenConnection();
-        //        Connection.cmd.CommandType = CommandType.Text;
-        //        Connection.cmd.CommandText = sqlQuery;
-        //        Connection.cmd.Parameters.Clear();
-        //        Connection.cmd.Parameters.AddWithValue("@id", id);
-        //        Connection.rd = Connection.cmd.ExecuteReader();
-        //        if (Connection.rd.Read())
-        //        {
-        //            pr.Id_product = Connection.rd.GetValue(0).ToString();
-        //            pr.Size_product = Connection.rd.GetValue(1).ToString();
-        //            pr.Amount_product = Connection.rd.GetValue(2).ToString();
-        //            pr.Image_product = Helpers.ConvertByteToImageBitmap((byte[])Connection.rd.GetValue(3));
-        //            return pr;
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        MessageBox.Show("Error get Product " + e.Message);
-        //        return pr;
-        //    }
-        //    finally
-        //    {
-        //        Connection.rd.Close();
-        //        Connection.CloseConnection();
-        //    }
-        //    return pr;
+        public static void DeleteToHistory(string id)
+        {
+            string sqlQuery = $"DELETE FROM _tb_history WHERE _id_product = @id;";
+            try
+            {
+                Connection.OpenConnection();
+                Connection.cmd.CommandType = CommandType.Text;
+                Connection.cmd.CommandText = sqlQuery;
+                Connection.cmd.Parameters.Clear();
+                Connection.cmd.Parameters.AddWithValue("@id", id);
+                Connection.cmd.ExecuteScalar();
+                
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error delete Product " + e.Message);
+                
+            }
+            finally
+            {
+               
+                Connection.CloseConnection();
+            }
+          
 
-        //}
+        }
 
         public static bool InsertToHistory(string id, string phone, byte status, string size,int quantity,int price)
         {
@@ -167,7 +159,7 @@ namespace View.Database
         {
             List<History> list = new List<History>();
 
-            string sqlQuery = $"select _tb_product._id_product,_tb_product._name_product,_tb_history._price_sum,_tb_history._size_product,_tb_history._quantity,_tb_image._image_product from _tb_product,_tb_history,_tb_image where _tb_product._id_product = _tb_history._id_product and _tb_image._id_product = _tb_history._id_product and _tb_history._phone_number = @phone;";
+            string sqlQuery = $"select _tb_product._id_product,_tb_product._name_product,_tb_history._price_sum,_tb_history._size_product,_tb_history._amount_product,_tb_image._image_product from _tb_product,_tb_history,_tb_image where _tb_product._id_product = _tb_history._id_product and _tb_image._id_product = _tb_history._id_product and _tb_history._phone_number = @phone;";
             try
             {
 

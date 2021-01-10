@@ -27,14 +27,13 @@ namespace View.Database
                 Connection.cmd.Parameters.Clear();
                 Connection.cmd.Parameters.AddWithValue("@Phone", phone);
                 Connection.cmd.Parameters.AddWithValue("@Password", password);
-
                 Connection.cmd.ExecuteScalar();
                 return true;
 
             }
             catch(Exception e)
             {
-                MessageBox.Show("loi o phan insert to login " + e.Message);
+                MessageBox.Show("Please enter both phone and password!");
                 return false;
             }
             finally
@@ -56,7 +55,6 @@ namespace View.Database
                 Connection.cmd.Parameters.AddWithValue("@Phone", phone);
                 Connection.cmd.Parameters.AddWithValue("@Password", password);
                 int count = Convert.ToInt32(Connection.cmd.ExecuteScalar().ToString());
-
                 if (count != 0)
                 {
                     return true;
@@ -80,7 +78,35 @@ namespace View.Database
 
 
         }
+        public static bool UpdateToPassWord(string phone, string password)
+        {
+            try
+            {
+                string sqlQuery = "update _tb_client set _pass_word = @Password where _phone_number = @Phone;";
+                Connection.OpenConnection();
+                Connection.cmd.CommandType = System.Data.CommandType.Text;
+                Connection.cmd.CommandText = sqlQuery;
 
-       
-    }
+                Connection.cmd.Parameters.Clear();
+                Connection.cmd.Parameters.AddWithValue("@Password", password);
+                
+                Connection.cmd.Parameters.AddWithValue("@Phone", phone);
+
+                Connection.cmd.ExecuteScalar();
+
+                MessageBox.Show("Update password successfully!");
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("update to password: " + e.Message);
+                return false;
+            }
+            finally
+            {
+                Connection.CloseConnection();
+            }
+        }
+
+        }
 }

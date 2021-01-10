@@ -226,11 +226,11 @@
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <Image Source="image\icon\confirm-password.ico" Height="40" Margin="20 0 0 0" />
-                                <PasswordBox Margin="10,5,0,0"
+                                <PasswordBox Margin="10,5,0,0" x:Name="passWordSignUp2"
                              Width="280"
                                              materialDesign:HintAssist.Hint="Confirm Password"
                     materialDesign:TextFieldAssist.HasClearButton="True"
-                         x:Name="ConfirmPassWordSignUp"
+                         
                              VerticalAlignment="Center" HorizontalAlignment="Left"
                      Grid.Column="1" Grid.Row="2" FontSize="15" BorderThickness="0"></PasswordBox>
                             </Grid>

@@ -13,19 +13,21 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
                 <ColumnDefinition Width="200"/>
             </Grid.ColumnDefinitions>
             <Button VerticalAlignment="Center" x:Name="delCart" Click="delCart_Click"
-                    Background="Transparent" Padding="5" BorderThickness="0">
+                    Background="Transparent" Padding="5" BorderThickness="0" Grid.Column="0">
                 <Image Source="D:\My App\BuyNow\View\image\icon\delete.ico"/>
             </Button>
             <Image Grid.Column="1" Source="{Binding Image_product}" Width="160" Height="180"/>
-            <StackPanel Orientation="Horizontal" Grid.Column="4">
+            <StackPanel Orientation="Horizontal" Grid.Column="5">
                 <TextBlock Text="{Binding Price_product}" Margin="5 5 0 5" FontSize="15" Style="{DynamicResource PriceProductStyle}"/>
                 <TextBlock Text="VND" Margin="5" FontSize="15"/>
             </StackPanel>
-            <TextBlock Grid.Column="2"  Text="{Binding Name_product}" Margin="5" FontSize="15" ></TextBlock>
-            <TextBlock Grid.Column="3"  Text="{Binding Size_product}" Margin="5" FontSize="15"/>
+            <TextBlock Grid.Column="3" Text="{Binding Amount_product}" Margin="5" FontSize="15"/>
+            <TextBlock Grid.Column="2"  Text="{Binding Name_product}" Margin="5" FontSize="15"></TextBlock>
+            <TextBlock Grid.Column="4"  Text="{Binding Size_product}" Margin="5" FontSize="15"/>
         </Grid>
             
     </Border>
