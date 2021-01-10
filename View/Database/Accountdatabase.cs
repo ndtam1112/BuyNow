@@ -82,7 +82,7 @@ namespace View.Database
         {
             try
             {
-                string sqlQuery = "update _tb_client set _pass_word = @Password where _phone_number = @Phone;";
+                string sqlQuery = "update _tb_log_in set _pass_word = @Password where _phone_number = @Phone;";
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;

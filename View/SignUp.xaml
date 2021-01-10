@@ -191,6 +191,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Margin="20 0 0 0" Source="image\icon\phone.ico" Height="40"></Image>
                                 <TextBox x:Name="phoneSignUp"
+                                         PreviewTextInput="phoneSignUp_PreviewTextInput"
                                     materialDesign:HintAssist.Hint="Phone"
                     BorderThickness="0" FontSize="15"
                              Width="280"  Margin="10 5 0 0"

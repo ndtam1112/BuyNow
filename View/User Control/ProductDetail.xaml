@@ -80,7 +80,6 @@
                     materialDesign:HintAssist.Hint="Size"
                     materialDesign:HintAssist.HelperText="Select one Size"
                     Width="80" HorizontalAlignment="Left">
-                            <ComboBoxItem Content="S" />
                             <ComboBoxItem Content="M" />
                             <ComboBoxItem Content="L" />
                             <ComboBoxItem Content="XL" />
@@ -96,7 +95,7 @@
                             </Button>
                             <TextBlock Foreground="Black" Padding="30 5"
                                        x:Name="tbNumOfPro"
-                                   Text="1" FontSize="20" Height="32" Width="70" ></TextBlock>
+                                   Text="0" FontSize="20" Height="32" Width="70" ></TextBlock>
                             <Button BorderBrush="Gray"
                                     x:Name="btnPlus"
                             Height="32" Width="32">

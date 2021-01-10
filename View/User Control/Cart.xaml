@@ -45,7 +45,7 @@
             </ListView>
         </Grid>
         <Image Grid.Column="1" Source="..\image\thumb\bill.jpg"/>
-        <StackPanel Grid.Column="1" Margin="0 200 0 0" HorizontalAlignment="Left">
+        <StackPanel Grid.Column="1" Margin="0,200,0,197" HorizontalAlignment="Left">
             <TextBlock FontSize="20" Margin="0 20 0 0" Text="Cart Totals" Style="{DynamicResource NameProductCartStyle}" />
             <StackPanel Orientation="Horizontal">
                 <TextBlock 
@@ -54,9 +54,10 @@
                 <TextBlock Margin="5 40 0 0" Text="VND"/>
             </StackPanel>
             
-            <Button Style="{DynamicResource MaterialDesignFlatAccentBgButton}" Margin="0 40 0 0"
-                materialDesign:ButtonAssist.CornerRadius="15" Width="130" Height="30">
-                <TextBlock FontSize="10" Text="Proceed to checkout"/>
+            <Button Style="{DynamicResource MaterialDesignFlatAccentBgButton}" Margin="0 50 0 0"
+                    x:Name="btnBuyNow" Click="btnBuyNow_Click"
+                materialDesign:ButtonAssist.CornerRadius="15" Width="150" Height="40">
+                <TextBlock FontSize="20" Text="BuyNow"/>
             </Button>
         </StackPanel>
         

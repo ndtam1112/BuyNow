@@ -46,6 +46,35 @@ namespace View.Database
             return pr;
            
         }
+        public static bool UpdateStatusHistory (string phone, string status)
+        {
+            try
+            {
+                string sqlQuery = "update _tb_history set _status_product = @Status where _phone_number = @Phone;";
+                Connection.OpenConnection();
+                Connection.cmd.CommandType = System.Data.CommandType.Text;
+                Connection.cmd.CommandText = sqlQuery;
+
+                Connection.cmd.Parameters.Clear();
+                
+
+                Connection.cmd.Parameters.AddWithValue("@Phone", phone);
+                Connection.cmd.Parameters.AddWithValue("@Status", 1);
+                Connection.cmd.ExecuteScalar();
+
+                MessageBox.Show("Update status successfully!");
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("update to status: " + e.Message);
+                return false;
+            }
+            finally
+            {
+                Connection.CloseConnection();
+            }
+        }
 
         public static void DeleteToHistory(string id)
         {

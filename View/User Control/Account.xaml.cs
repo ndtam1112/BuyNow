@@ -78,12 +78,28 @@ namespace View.User_Control
 
         private void btnChangePass_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (Accountdatabase.CheckAccount(phoneNumberto.Text.Trim(), passwordold.Text.Trim()))
+            {
+                if (passssword1.Password.Equals("")||password2.Password.Equals(""))
+                {
+                    MessageBox.Show("ERROR: account or password is blank");
+                }
+                else
+                {
+                    if (passssword1.Password == password2.Password)
+                    {
+                        Accountdatabase.UpdateToPassWord(phoneNumberto.Text.Trim(), passssword1.Password.Trim());
+                        MessageBox.Show("Update Success!");
+                    }
+                    else MessageBox.Show("That password doesn't match, please re-enter it!");
+                }
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Clientdatabase.UpdateToClient(Phone_clientt.Text.Trim(), Name_clientt.Text.Trim(), Address_clientt.Text.Trim());
+            MessageBox.Show("Update Success!");
         }
 
 

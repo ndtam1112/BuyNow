@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -57,24 +58,44 @@ namespace View
             this.Hide();
         }
 
+        private Boolean  ktra()
+        {
+            if (phoneSignUp.Text.Equals("") || passWordSignUp.Password.Equals("") || passWordSignUp2.Password.Equals(""))
+            {
+                MessageBox.Show("ERROR:account or password is blank");
+                return false;
+            }
+
+            return true;
+        }
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            if (passWordSignUp.Password == passWordSignUp2.Password)
+           if(ktra())
             {
-                if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
+                if (passWordSignUp.Password == passWordSignUp2.Password)
                 {
-                    if (Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "", ""))
-                        MessageBox.Show("Sign Up Success!");
+                    if (Accountdatabase.insert(phoneSignUp.Text.Trim(), passWordSignUp.Password.Trim()))
+                    {
+                        if (Clientdatabase.InsertToClient(phoneSignUp.Text.Trim(), "", ""))
+                            MessageBox.Show("Sign Up Success!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Registration failed");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Registration failed");
+                    MessageBox.Show("That password doesn't match, please re-enter it!");
                 }
             }
-           else
-            {
-                MessageBox.Show("That password doesn't match, please re-enter it!");
-            }
+           
+        }
+
+        private void phoneSignUp_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

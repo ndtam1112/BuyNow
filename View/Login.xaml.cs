@@ -54,13 +54,9 @@ namespace View
             if (Accountdatabase.CheckAccount(lu.Phone_number, lu.Password))
             {
                 MainWindow m = new MainWindow(lu.Phone_number);
-                Window.GetWindow(this).Hide();
+                Window.GetWindow(this).Hide();  
                 m.Show();
-            }
-            else
-            {
-                MessageBox.Show("Error join app");
-            }
+            } 
         }
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)

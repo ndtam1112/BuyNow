@@ -69,5 +69,26 @@ namespace View.User_Control
             Image2 = Productdatabase.GetImageProductByID("SHI001").Image_product;
         }
 
+        private void btnSale1_Click(object sender, RoutedEventArgs e)
+        {
+           
+            MainWindow main = (MainWindow)Window.GetWindow(this);
+            main.HomeLayout.Children.Clear();
+            main.HomeLayout.Children.Add(new ProductDetail("JK003")); 
+        }
+
+        private void btnSale2_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = (MainWindow)Window.GetWindow(this);
+            main.HomeLayout.Children.Clear();
+            main.HomeLayout.Children.Add(new ProductDetail("SHI001"));
+        }
+
+        private void btnSale3_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = (MainWindow)Window.GetWindow(this);
+            main.HomeLayout.Children.Clear();
+            main.HomeLayout.Children.Add(new ProductDetail("JK002"));
+        }
     }
 }
