@@ -101,3 +101,4 @@ D:\New folder (2)\BuyNow\View\obj\Debug\View.Properties.Resources.resources
 D:\New folder (2)\BuyNow\View\obj\Debug\View.csproj.GenerateResource.cache
 D:\New folder (2)\BuyNow\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 D:\New folder (2)\BuyNow\View\obj\Debug\View.csproj.CopyComplete
+D:\My App\BuyNow\View\obj\Debug\View.csprojAssemblyReference.cache
