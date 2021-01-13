@@ -39,5 +39,11 @@ namespace View.User_Control
                 sumMoney += item.Price_product;
             tbPriceSumAll.Text = sumMoney + "";
         }
+
+        private void btnBuyNow_Click(object sender, RoutedEventArgs e)
+        {
+            //đổi status từ 0 sang 1
+            //Productdatabase.UpdateStatusHistory()
+        }
     }
 }

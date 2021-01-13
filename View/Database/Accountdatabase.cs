@@ -61,7 +61,7 @@ namespace View.Database
                 }
                 else
                 {
-                    MessageBox.Show("Email or Password not correct", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Phone or Password not correct", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
                     return false;
 
                 }

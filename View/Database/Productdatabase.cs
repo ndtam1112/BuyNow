@@ -46,18 +46,18 @@ namespace View.Database
             return pr;
            
         }
-        public static bool UpdateStatusHistory (string phone, string status)
+        public static bool UpdateStatusHistory (string phone, string status, string id)
         {
             try
             {
-                string sqlQuery = "update _tb_history set _status_product = @Status where _phone_number = @Phone;";
+                string sqlQuery = "update _tb_history set _status_product = @Status, _id_product = @Id where _phone_number = @Phone;";
                 Connection.OpenConnection();
                 Connection.cmd.CommandType = System.Data.CommandType.Text;
                 Connection.cmd.CommandText = sqlQuery;
 
                 Connection.cmd.Parameters.Clear();
-                
 
+                Connection.cmd.Parameters.AddWithValue("@Id", id);
                 Connection.cmd.Parameters.AddWithValue("@Phone", phone);
                 Connection.cmd.Parameters.AddWithValue("@Status", 1);
                 Connection.cmd.ExecuteScalar();
@@ -197,6 +197,7 @@ namespace View.Database
                 Connection.cmd.CommandText = sqlQuery;
                 Connection.cmd.Parameters.Clear();             
                 Connection.cmd.Parameters.AddWithValue("@phone", phone);
+                
                 Connection.rd = Connection.cmd.ExecuteReader();
                 byte check = 0;
                 while (Connection.rd.Read())
